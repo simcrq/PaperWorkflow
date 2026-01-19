@@ -141,7 +141,7 @@ class ApiPDFProcessor:
                             
                             if dl_url:
                                 logger.info(f"提取成功!正在下载 {dl_url[:30]}...")
-                                dl_res = requests.get(dl_url)
+                                dl_res = requests.get(dl_url,proxies={'http': None, 'https': None})
                                 
                                 if dl_url.endswith(".zip") or "zip" in dl_url:
                                      zip_path = os.path.join(output_path, f"{file_name}_result.zip")
