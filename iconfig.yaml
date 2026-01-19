@@ -1,0 +1,52 @@
+# 项目配置文件
+# 向LLM发送请求长度最大值 [:30000] 设置在 utils/prompt_builder.py 第 46 行 中，默认长度30000，可根据模型能力调整
+# 路径配置 (使用正斜杠 / 或双反斜杠 \\)
+paths:
+  # 待处理的论文根目录，会自动递归搜索该目录下的 PDF
+  input_dir: "d:/0_Project/PaperWorkflow/INput"
+  # 结果输出目录 (空则默认保存在 PDF 同级目录)
+  output_dir: ""
+  # MinerU 转换结果缓存目录，默认当前目录下 temp_markdowns 文件夹
+  temp_dir: "./temp_markdowns"
+
+# API 配置
+api:
+  # MinerU  配置 (如果是本地 CLI 可忽略 api_key)。若选择local_cli模式，请前往 utils/pdf_local_handler.py 中的第20行`cmd=[]`中修改相关实现，且此处的设置会作废
+  mineru:
+    mode: "api"  # 可选: "api" 或 "local_cli"
+    api_url: "https://mineru.net/api/v4/file-urls/batch" # 如果 mode 是 api,这里是批量文件上传接口
+    polling_interval: 10 # API 轮询间隔(秒)
+    api_key: "xxxxxxxxxxxxxxxxx" # 请替换为您的 MinerU API Key，前往 https://mineru.net 申请
+
+  # 大模型配置 (OpenAI 兼容接口)
+  llm:
+    api_key: "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    base_url: "https://api.openai.com/v1" # 例如 DeepSeek, Moonshot 等
+    model_name: "gpt-5"
+    timeout: 400
+
+# 处理规则配置
+# 这里的 ID 对应文件夹名称，例如 4586, 4698 等。
+# 意思是若`paths`中`input_dir`中子文件夹名称为 4586，则使用 skim 模式处理该文件夹下的所有 PDF。若为 4698，则使用 deep_read 模式处理。
+# 若文件夹名称不在列表中，则使用 default_mode 指定的默认模式处理
+processing_rules:
+  # 是否去除参考文献(可能会误删其他部分) (True/False)
+  remove_references: false
+  
+  # 默认模式 (如果 ID 不在下面列表中)
+  default_mode: "skim"
+  
+  # 精读列表 (Deep Read) - 需要详细总结
+  deep_read_ids:
+    - "4668"
+    - "4670"
+    - "4698"
+  
+  # 浏览列表 (Skim) - 仅摘要和结论
+  skim_ids:
+    - "4586"
+    - "4587"
+
+# 并发配置，防止触发API并发限制
+concurrency:
+  max_workers: 4 # 同时处理的线程数
