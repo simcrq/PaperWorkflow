@@ -45,12 +45,12 @@ PaperWorkflow 是一个基于 MinerU 和 OpenAI compatible API 的自动化论�
   - 建议：添加类型注解（Type Hints），提高代码质量
 
 #### 2. 功能局限
-- **单文件处理限制**：workflow_utils.py 第 24 行有 `continue` 语句，表明每个 ID 文件夹只处理一个 PDF
-  - 建议：支持处理文件夹内所有 PDF 文件
-- **参考文献去除逻辑简单**：使用正则表达式匹配标题，可能误删内容或遗漏
+- **参考文献去除逻辑简单**：prompt_builder.py 使用正则表达式匹配标题，可能误删内容或遗漏
   - 建议：使用更智能的内容分割方法，或提供手动标注选项
-- **Token 截断粗暴**：prompt_builder.py 第 46 行直接截断到 30000 字符
+- **Token 截断粗暴**：prompt_builder.py 第 40-46 行直接截断 content 到 30000 字符
   - 建议：实现更智能的内容摘要或分块处理策略
+- **代码注释与实际不符**：workflow_utils.py 第 24 行注释"每个 ID 文件夹只处理一个 PDF？假设是这样"，但实际代码会处理所有 PDF
+  - 建议：修正注释，确保代码注释与实际行为一致
 
 #### 3. 可维护性
 - **硬编码问题**：部分配置（如 local CLI 命令参数）需要修改代码
@@ -75,7 +75,7 @@ PaperWorkflow 是一个基于 MinerU 和 OpenAI compatible API 的自动化论�
 #### 6. 代码风格
 - **命名不一致**：部分变量使用拼音（如 `md_outputs`）、部分使用英文
 - **注释不足**：关键逻辑缺少注释说明
-- **打印语句混用**：同时使用 logger 和 print 语句（prompt_builder.py）
+- **打印语句混用**：prompt_builder.py 第 15 和 18 行同时使用 logger 和 print 语句，应统一使用 logger
 
 ### 技术栈评估
 
@@ -186,12 +186,12 @@ PaperWorkflow is an automated paper reading and summarization workflow tool base
   - Suggestion: Add type annotations to improve code quality
 
 #### 2. Functional Limitations
-- **Single File Processing**: workflow_utils.py line 24 has `continue`, limiting to one PDF per folder
-  - Suggestion: Support processing all PDFs in a folder
-- **Simple Reference Removal**: Uses regex pattern matching, may miss content
+- **Simple Reference Removal**: prompt_builder.py uses regex pattern matching, may miss content or delete incorrectly
   - Suggestion: Implement smarter content splitting or manual annotation
-- **Crude Token Truncation**: prompt_builder.py line 46 directly truncates to 30000 characters
+- **Crude Token Truncation**: prompt_builder.py lines 40-46 directly truncates content to 30000 characters
   - Suggestion: Implement intelligent summarization or chunking strategies
+- **Code Comments Mismatch**: workflow_utils.py line 24 comment suggests "only process one PDF per folder?", but code actually processes all PDFs
+  - Suggestion: Correct comments to match actual behavior
 
 #### 3. Maintainability
 - **Hard-Coded Values**: Some configurations (like local CLI command parameters) require code changes
@@ -216,7 +216,7 @@ PaperWorkflow is an automated paper reading and summarization workflow tool base
 #### 6. Code Style
 - **Inconsistent Naming**: Mix of pinyin and English variable names
 - **Insufficient Comments**: Key logic lacks explanatory comments
-- **Mixed Print Statements**: Uses both logger and print statements
+- **Mixed Print Statements**: prompt_builder.py lines 15 and 18 use both logger and print statements, should unify to logger
 
 ### Technology Stack Assessment
 
@@ -292,9 +292,9 @@ For an early version (V0.1.1), this is a **commendable** project. With continuou
 
 ### 中优先级 (Medium Priority)
 5. 添加类型注解 / Add type annotations
-6. 支持处理文件夹内所有 PDF / Support processing all PDFs in folders
-7. 改进 Token 截断策略 / Improve token truncation strategy
-8. 添加开发者文档 / Add developer documentation
+6. 改进 Token 截断策略 / Improve token truncation strategy
+7. 添加开发者文档 / Add developer documentation
+8. 修正代码注释与实际行为不符的问题 / Fix code comments that don't match actual behavior
 
 ### 低优先级 (Low Priority)
 9. 实现指数退避轮询 / Implement exponential backoff polling
