@@ -25,6 +25,7 @@ def find_pdf_files(root_dir):
     
     return pdf_list
 
+
 def determine_mode(paper_id, rules_config):
     """
     根据 ID 和配置判断阅读模式
