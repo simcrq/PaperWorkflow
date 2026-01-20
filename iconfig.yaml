@@ -2,10 +2,13 @@
 # 向LLM发送请求长度最大值 [:30000] 设置在 utils/prompt_builder.py 第 46 行 中，默认长度30000，可根据模型能力调整
 # 路径配置 (使用正斜杠 / 或双反斜杠 \\)
 paths:
-  # 待处理的论文根目录，会自动递归搜索该目录下的 PDF
-  input_dir: "d:/0_Project/PaperWorkflow/INput"
+  # 待处理的论文根目录，会自动递归搜索该目录下的 PDF；
+  # 注意：务必将待处理的pdf放入input_dir的子文件夹如路径 ./INput/4668 等中，否则会报错！
+  input_dir: "./INput"
   # 结果输出目录 (空则默认保存在 PDF 同级目录)
   output_dir: ""
+  # 合并输出目录 (空则输出到项目根目录)
+  merge_output_dir: "./Merge_outputs"
   # MinerU 转换结果缓存目录，默认当前目录下 temp_markdowns 文件夹
   temp_dir: "./temp_markdowns"
 
@@ -32,6 +35,9 @@ api:
 processing_rules:
   # 是否去除参考文献(可能会误删其他部分) (True/False)
   remove_references: false
+
+  # 额外的可选功能
+  is_merger_md: true  # 是否将同一文件夹下的多个 PDF 合并为一个 Markdown 文件输出 (True/False)
   
   # 默认模式 (如果 ID 不在下面列表中)
   default_mode: "skim"

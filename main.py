@@ -10,11 +10,11 @@ from utils.pdf_handler import PDFProcessor
 from utils.llm_handler import LLMHandler
 from utils.prompt_builder import PromptBuilder
 from utils.workflow_utils import find_pdf_files, determine_mode
-
+from utils.md_merger import merge_markdown_files
 
 logger.remove()
 # 设置 level="INFO"，但要过滤更高级别
-
+md_outputs = []
 
 logger.add(
     sys.stderr,
@@ -49,7 +49,9 @@ def process_single_paper(paper_info, config, pdf_processor, llm_handler):
     if os.path.exists(output_path):
         logger.warning(f"Output for {paper_id} already exists. Skipping.")
         return
-    
+    md_outputs.append(output_path)
+
+
     try:
         # 2. PDF -> Markdown
         start_time = time.time()
@@ -66,16 +68,19 @@ def process_single_paper(paper_info, config, pdf_processor, llm_handler):
         
         # 5. Save Result
         with open(output_path, 'w', encoding='utf-8') as f:
-            f.write(f"# Paper Summary: {file_name}\n")
+            f.write(f"# Summary: {file_name}\n")
             f.write(f"- **ID**: {paper_id}\n")
             f.write(f"- **Mode**: {mode}\n")
             f.write(f"- **Date**: {time.strftime('%Y-%m-%d')}\n\n")
             f.write(summary)
             
         logger.success(f"[{paper_id}] Summary saved to {output_path}")
+
+        
         
     except Exception as e:
         logger.error(f"[{paper_id}] Failed: {str(e)}")
+
 
 def main():
     # Setup Logger
@@ -101,6 +106,9 @@ def main():
         logger.error(f"Input directory not found: {input_dir}")
         return
     papers = find_pdf_files(input_dir)
+    # file_paths = [item['file_path'] for item in papers]
+    # print(file_paths)
+    # return
     logger.info(f"共找到 {len(papers)} 篇论文待处理。")
     logger.info(f"本项目已在github开源, 仓库地址:https://github.com/SimCr/PaperWorkflow")
     
@@ -109,6 +117,12 @@ def main():
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         # 使用 list 强制执行，配合 tqdm 显示进度
         list(tqdm(executor.map(lambda p: process_single_paper(p, config, pdf_processor, llm_handler), papers), total=len(papers)))
+
+    # Optional Post-Processing Steps
+    # 1.合并所有Markdown文件
+    if config.get('processing_rules', {}).get('is_merger_md', False):
+        logger.info("正在合并所有Markdown文件...")
+        merge_markdown_files(md_outputs, os.path.join(config['paths']['merge_output_dir'], f"Merged_Summaries+{time.strftime('%Y%m%d')}.md"))
 
 if __name__ == "__main__":
     main()
