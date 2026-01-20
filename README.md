@@ -25,6 +25,9 @@ source .venv/bin/activate  # macOS/Linux
 python main.py
 ```
 
+### 更新日志
+*   V0.1 初始版本发布，支持 MinerU API 进行 PDF 转 Markdown 转换，结合 OpenAI compatible API 进行论文总结。
+*   V0.1.1 修复向MinerU提交pdf时代理问题，并添加了markdown合并功能
 ### 代码功能亮点：
 *   **分级阅读**：自动根据 ID 区分精读/浏览，发送不同的 Prompt。
 *   **XML 包装**：应用 XML 格式包装正文内容和提示词，提高模型遵循度。
