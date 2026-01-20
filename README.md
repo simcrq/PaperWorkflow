@@ -1,5 +1,5 @@
 
-## PaperWorkflow V0.1
+## PaperWorkflow V0.1.1
 基于 MinerU 和 OpenAI compatible API 的自动化论文阅读与总结工作流。
 
 ### 开始：
