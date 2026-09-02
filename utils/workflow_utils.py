@@ -1,28 +1,35 @@
-from loguru import logger
-import os
+from pathlib import Path
 
 def find_pdf_files(root_dir):
     """
     遍历目录查找所有 PDF 文件
     返回列表: [{'id': '4586', 'path': '...'}]
     """
+    root = Path(root_dir).expanduser().resolve()
+    if not root.is_dir():
+        raise FileNotFoundError(root)
+
     pdf_list = []
-    
-    # 假设结构是 root_dir/ID/*.pdf
-    for item in os.listdir(root_dir):
-        sub_path = os.path.join(root_dir, item).replace('\\', '/')
-        if os.path.isdir(sub_path): # 4586, 4587...
-            # 在子文件夹中找 pdf
-            for file in os.listdir(sub_path):
-                if file.endswith('.pdf'):
-                    pdf_list.append({
-                        'id': item, # 文件夹名作为 ID
-                        'folder_path': sub_path,
-                        'file_path': os.path.join(sub_path, file).replace('\\', '/'),
-                        'file_name': file
-                    })
-                    continue # 每个 ID 文件夹只处理一个 PDF？假设是这样
-    
+    # The first directory below input_dir is the user-facing paper/task ID.
+    # Deeper nesting is allowed so a task can keep supplementary PDFs nearby.
+    for path in sorted(root.rglob("*"), key=lambda item: str(item).lower()):
+        if not path.is_file() or path.suffix.lower() != ".pdf":
+            continue
+        relative_parts = path.parent.relative_to(root).parts
+        if not relative_parts:
+            # Keep the documented ID-folder contract explicit instead of
+            # silently treating a loose PDF as a task.
+            continue
+        paper_id = relative_parts[0]
+        pdf_list.append(
+            {
+                "id": paper_id,
+                "folder_path": str(path.parent),
+                "file_path": str(path),
+                "file_name": path.name,
+            }
+        )
+
     return pdf_list
 
 
@@ -33,10 +40,13 @@ def determine_mode(paper_id, rules_config):
     # 强制转字符串比较
     paper_id = str(paper_id)
     
-    if 'deep_read_ids' in rules_config and paper_id in rules_config['deep_read_ids']:
+    deep_ids = {str(value) for value in rules_config.get('deep_read_ids', [])}
+    skim_ids = {str(value) for value in rules_config.get('skim_ids', [])}
+
+    if paper_id in deep_ids:
         return 'deep_read'
     
-    if 'skim_ids' in rules_config and paper_id in rules_config['skim_ids']:
+    if paper_id in skim_ids:
         return 'skim'
         
     return rules_config.get('default_mode', 'skim')

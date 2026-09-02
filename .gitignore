@@ -7,7 +7,7 @@ wheels/
 logs/
 temp_markdowns/
 *.egg-info
-
+rpa-pipe/
 # Virtual environments
 .venv
 MinerU调用.md

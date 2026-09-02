@@ -1,0 +1,71 @@
+{
+  "source": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/da5887e5859d6783/e1.md",
+  "query": "synthesis methods parameters conclusions",
+  "note": "中文查询'实验方法、关键参数和结论'在该词法检索器中命中为0（正文为英文），故改用等价英文关键词检索。",
+  "results": [
+    {
+      "chunk_id": "E009",
+      "heading": "Conclusions",
+      "line_start": 136,
+      "line_end": 138,
+      "score": 3.0,
+      "snippet": "## Conclusions\n\nWe have reported a scalable method for synthesizing 2D TMDC heterostructures with high quality, uniformity and flexible pattern designs, which offers a promising route for the mass production of 2D electronic devices. Our 2D metal–semiconductor heterojunctions are particularly promising for the development of low-power devices due to the reduction in energy consumption achieved through the lowering of contact resistance. Moreover, we use the heterostructures to create non-volatile memory devices with excellent programming capabilities, robust data storage performance and promising potential for scaling the gate length down to 10 nm. Unlike 3D NAND flash memory, which relies on vertical stacking to achieve a high storage density, our atomically thin $NbS_{2}-MoS_{2}$ memory "
+    },
+    {
+      "chunk_id": "E010",
+      "heading": "Methods",
+      "line_start": 140,
+      "line_end": 140,
+      "score": 3.0,
+      "snippet": "## Methods"
+    },
+    {
+      "chunk_id": "E011",
+      "heading": "MoS $_{2}$ film synthesis",
+      "line_start": 142,
+      "line_end": 144,
+      "score": 3.0,
+      "snippet": "## MoS $_{2}$ film synthesis\n\nTo synthesize the $MoS_{2}$ film, a two-inch c-plane sapphire wafer was first annealed in air for 6 h to achieve an atomically smooth surface. After annealing, the substrate was treated with a 10 wt% of potassium hydroxide solution and then cleaned with deionized water. A mixture solution containing 0.1 mol l $^{-1}$ of sodium chloride and 0.015 mol l $^{-1}$ of sodium molybdate was spin coated onto the sapphire substrate. Sodium chloride was used to accelerate the growth and decrease the nucleation density, whereas sodium molybdate served as the Mo precursor in the initial stage. The substrate was then loaded into the centre of a quartz tube inside a furnace. During the growth process, molybdenum hexacarbonyl and diethyl sulfide were introduced into the quart"
+    },
+    {
+      "chunk_id": "E020",
+      "heading": "References",
+      "line_start": 180,
+      "line_end": 262,
+      "score": 3.0,
+      "snippet": "## References\n\n1. Xu, X. et al. Scaling for edge inference of deep neural networks. Nat. Electron. 1, 216–222 (2018).\n\n2. Kononenko, I. Machine learning for medical diagnosis: history, state of the art and perspective. Artif. Intell. Med. 23, 89–109 (2001).\n\n3. Carleo, G. et al. Machine learning and the physical sciences. Rev. Mod. Phys. 91, 045002 (2019).\n\n4. Yu, S. Neuro-inspired computing with emerging nonvolatile memories. Proc. IEEE 106, 260–285 (2018).\n\n5. Sebastian, A., Le Gallo, M., Khaddam-Aljameh, R. & Eleftheriou, E. Memory devices and applications for in-memory computing. Nat. Nanotechnol. 15, 529–544 (2020).\n\n6. McKee, S. A. Reflections on the memory wall. In Proc. 1st Conference on Computing Frontiers 162 (Association for Computing Machinery, 2004).\n\n7. Migliato Marega, G. et"
+    },
+    {
+      "chunk_id": "E002",
+      "heading": "Non-volatile memories based on patterned metal-semiconductor heterostructures of niobium disulfide and molybdenum disulfide",
+      "line_start": 5,
+      "line_end": 25,
+      "score": 2.0,
+      "snippet": "# Non-volatile memories based on patterned metal-semiconductor heterostructures of niobium disulfide and molybdenum disulfide\n\nReceived: 1 September 2025\n\nAccepted: 15 April 2026\n\nPublished online: 19 May 2026\n\nCheck for updates\n\nZhenyu Wang $^{1,2,3,4}$ , Guilherme Migliato Marega $^{1,2}$ , Eloi Collette $^{1,2}$ , Mukesh Tripathi $^{1,2}$ , Hyun Goo Ji $^{1,2}$ , Zhi Tao $^{3,4}$ , Nan Zheng $^{3,4}$ , Aleksandra Radenovic $^{5}$ , Gino Giusi $^{6}$ , Giuseppe Iannaccone $^{7}$ , Jianhua Zhang $^{3,4}$ & Andras Kis $^{1,2}$\n\nThe performance of transistors based on two-dimensional transition metal dichalcogenide semiconductors is restricted by the poor interface quality between two-dimensional materials and conventional three-dimensional contacts. Transition-metal-dichalcogenide-based me"
+    },
+    {
+      "chunk_id": "E003",
+      "heading": "Production and characterization of patterned $NbS_{2}-MoS_{2}$ heterostructures",
+      "line_start": 27,
+      "line_end": 37,
+      "score": 1.0,
+      "snippet": "## Production and characterization of patterned $NbS_{2}-MoS_{2}$ heterostructures\n\nWe synthesized $NbS_{2}-MoS_{2}$ patterned heterostructures via a two-step process involving MOCVD and sulfurization (Fig. 1a). First, monolayer $MoS_{2}$ was grown on sapphire by MOCVD and transferred onto a Si/ $SiO_{2}$ substrate (Supplementary Fig. 1). Photolithography and dry etching were then used to define $MoS_{2}$ channels, followed by Nb deposition and sulfurization to form $NbS_{2}$ and heterostructures. This approach is generalizable for fabricating other TMDC heterostructures composed of a monolayer semiconductor and few-layer metallic contacts. Additional details on the production are available in the Methods.\n\nThe quality of the as-grown $NbS_{2}$ samples in the heterostructure was first exam"
+    },
+    {
+      "chunk_id": "E005",
+      "heading": "Electrical transport of $NbS_{2}-MoS_{2}$ patterned heterostructures",
+      "line_start": 60,
+      "line_end": 100,
+      "score": 1.0,
+      "snippet": "![](images/a74a7b17317b22acc8fc2ac05ee3cee58a1cc521f8ee0cf456a81c0ae39ba53f.jpg)  \nFig. 2 | FET devices based on $NbS_{2}-MoS_{2}$ patterned heterostructures.\n\na, Schematic side view of an FET device fabricated using $NbS_{2}-MoS_{2}$ patterned heterostructures.\n\nb, Photograph of a part of a fabricated FET array based on the patterned heterostructures on a $Si/SiO_{2}$ substrate.\n\nc, Typical temperature dependence of the transfer characteristics (red plots) for $NbS_{2}-MoS_{2}$ patterned heterostructure FETs and room-temperature transfer characteristics for the FET devices based on pristine $MoS_{2}$ (blue plot). Inset: optical micrograph of an FET device fabricated using $NbS_{2}-MoS_{2}$ patterned heterostructures. Scale bar,\n\n![](images/af66e5a7b7d0d9beac978a1b2cdfbadaf01a472800f234bce"
+    },
+    {
+      "chunk_id": "E021",
+      "heading": "References",
+      "line_start": 264,
+      "line_end": 276,
+      "score": 1.0,
+      "snippet": "42. Debbarma, R., Nguyen, N. H. L. & Berry, V. Defect guided conduction in graphene-derivatives and $MoS_{2}$ : two-dimensional nanomaterial models. Appl. Mater. Today 23, 101072 (2021).\n\n43. Smithe, K. K. H., Suryavanshi, S. V., Muñoz Rojo, M., Tedjarati, A. D. & Pop, E. Low variability in synthetic monolayer MoS $_{2}$ devices. ACS Nano 11, 8456–8463 (2017).\n\n44. Smets, Q. et al. Ultra-scaled MOCVD MoS2 MOSFETs with 42 nm contact pitch and 250 $\\mu$ A/ $\\mu$ m drain current. In Proc. IEEE International Electron Devices Meeting 23.2.1–23.2.4 (IEEE, 2019).\n\n45. Synopsys. Technology computer aided design (TCAD); https://www.synopsys.com/manufacturing/tcad.html\n\n46. Giusi, G., Marega, G. M., Kis, A. & Iannaccone, G. Impact of interface traps in floating-gate memory based on monolayer MoS. IE"
+    }
+  ]
+}
