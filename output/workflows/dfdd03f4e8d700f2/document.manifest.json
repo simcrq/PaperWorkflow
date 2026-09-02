@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "char_count": 44337,
+  "chunk_count": 24,
+  "chunks": [
+    {
+      "chunk_id": "E001",
+      "heading": "ARTICLE TYPE",
+      "level": 1,
+      "part": 1,
+      "text": "# ARTICLE TYPE\n\nCite this: DOI: 00.0000/xxxxxxxxxx",
+      "char_start": 0,
+      "char_end": 50,
+      "line_start": 1,
+      "line_end": 3
+    },
+    {
+      "chunk_id": "E002",
+      "heading": "Growth of Large Crystals of Janus Phase RhSeCl Using Self-Selecting Vapour Growth",
+      "level": 1,
+      "part": 1,
+      "text": "# Growth of Large Crystals of Janus Phase RhSeCl Using Self-Selecting Vapour Growth†\n\nAnastasiia Lukovkina, $^{\\ddagger a}$  Maria A. Herz, $^{\\ddagger a}$  Xiaohanwen Lin $^{a}$ , Volodymyr Multian $^{a}$ , Alberto Morpurgo $^{a}$ , Enrico Giannini $^{a}$  and Fabian O. von Rohr $^{*a}$\n\nReceived Date Accepted Date\n\nDOI:00.0000/xxxxxxxxxx\n\nIn recent years, interest in 2D Janus materials has grown exponentially, particularly with regard to their applications in spintronics and optoelectronic devices. The defining feature of Janus materials is the ordered arrangement of different layer terminations – creating chemically distinct surfaces and an inherent out-of-plane polarity. Among the few known Janus materials, RhSeCl is particularly intriguing as a rare example of an intrinsic Janus compound. Owing to its exceptional chemical stability, RhSeCl offers a promising platform for exploring the physics related to the Janus-structure. However, synthesising large, high-quality crystals of this compound remains a significant challenge. Here, we report a novel synthetic pathway for growing crystals up to  $6\\mathrm{mm}$  in lateral size via a two-step self-selecting vapour growth reaction. We further present a comprehensive comparison of newly developed synthesis routes with all previously reported methods for RhSeCl. During these investigations, we identified a previously unreported impurity that forms in specific growth pathways and demonstrate how it can be avoided to obtain phase-pure few- and monolayer flakes. We showcase the reproducibility of the process to obtain high-quality, large single-crystals and flakes.",
+      "char_start": 52,
+      "char_end": 1688,
+      "line_start": 5,
+      "line_end": 13
+    },
+    {
+      "chunk_id": "E003",
+      "heading": "1 Introduction",
+      "level": 1,
+      "part": 1,
+      "text": "# 1 Introduction\n\nMixed-anion materials, in which two or more different anions coexist within one crystal structure at separate crystallographic sites, have emerged as a versatile platform for designing functional materials with tunable physical properties. $^{1,2}$  Their chemical flexibility enables fine control over electronic structure, bonding, and symmetry – leading to phenomena such as ferroelectricity, Rashba splitting, and nonlinear optical effects. $^{3-5}$\n\nMixed-anion van der Waals (vdW) materials have recently attracted increasing interest, as this particular type of chemistry enables controlled structural symmetry breaking. [6] Representative examples include the magnetic semiconductor  $\\mathrm{CrSBr}$ , [7-9], which displays quasi-one-dimensional transport properties, and  $\\mathrm{CrPS}_4$ , a layered thiophosphate antiferromagnet with weak and tunable magnetic anisotropy, as well as a pronounced structural and optical anisotropy. [10,11] Of particular interest are intrinsic Janus materials, a distinct type of mixed-anion compound in which different anions occupy opposite sides of each layer, breaking the local inversion symmetry of the central atoms. [12,13] This separation due to the different determination of the layers leads to an internal electric field, as well as Rashba splitting, and piezoelectricity. [14]\n\nThe properties of two-dimensional Janus materials were first predicted theoretically and then studied experimentally using a bottom-up approach based on layer engineering. This was realised by a multitude of ways: through asymmetric modification of graphene with halogen atoms or organic molecules with various functional groups;[15-17] by replacing one layer of S or Se atoms in a monolayer of  $\\mathrm{MoSe}_2$  or  $\\mathrm{MoS}_2$ , respectively, to obtain MoSeS;[13,18,19] and through layer-by-layer deposition using epitaxial techniques.[20]\n\nThe top-down approach, in which bulk crystals can be exfoliated down to a monolayer, is a simple and inexpensive method, but it can only be implemented if large, high-quality crystals of intrinsic Janus materials are grown. Only a few Janus compounds have been discovered so far that crystallise directly with separated ordered anionic layers. Among them are a family of bismuth chalcohalides $^{21-23}$  and breathing kagome  $\\mathrm{Nb}_3\\mathrm{ChI}_7$  (with  $Ch = \\mathrm{Se}, \\mathrm{Te}$ ). $^{24,25}$  In addition to these materials, a further compound, RhSeCl, has recently been found to crystallise in a van der Waals layered structure, in the space group  $P6_{3}mc$ , with separated layer determinations of chlorine and selenium anions, i.e., in a Janus structure. This phase was initially discovered in 2018 as an analogue to RhTeCl, $^{26}$  and was later identified as a noncentrosymmetric 2D Janus material in 2023. $^{27}$\n\nThe growth of large RhSeCl crystals has proven to be difficult, and the reported syntheses produce only polycrystalline powders or small intergrown crystals. The initial successful approach in\n\n$^{a}$  Department of Quantum Matter Physics, University of Geneva, 24 Quai Ernest-Ansermet, CH-1211 Geneva, Switzerland.; Tel: +41 22 379 64 78; E-mail: fabian.vonrohr@unige.ch  \n $\\ddagger$  Shared first co-authorship.  \n* Corresponding author.\n\n2018 departed from employing  $\\mathrm{AlCl}_3$  as a chlorine source as used in RhTeCl, and instead was completed as a one-step solid-state reaction employing merely Se and  $\\mathrm{RhCl}_3$ , see equation (1).26 To avoid the formation of  $\\mathrm{SeCl}_4$  and  $\\mathrm{Se}_2\\mathrm{Cl}_2$ , Nowak et al. adapted this to a chemical-vapour-transport (CVT) synthesis and introduced elemental Rh into the reaction, see equation (2). In their CVT, they employed a sink temperature  $T_{1} = 900^{\\circ}\\mathrm{C}$  and source temperature  $T_{2} = 1000^{\\circ}\\mathrm{C}$ , as well as a small excess of  $\\mathrm{RhCl}_3$ .27 In addition to this conventional CVT approach with a static temperature profile, they performed crystal growth from the gas phase with 27 temperature oscillation cycles.28 In early 2025, Liu et al. adapted the CVT approach by adjusting the  $\\mathrm{RhCl}_3$  excess to  $10\\%$  to enhance the transport rate of the crystals, and changing the sink temperature to  $T_{1} = 930^{\\circ}\\mathrm{C}$  with maintaining  $T_{2} = 1000^{\\circ}\\mathrm{C}$  as they found that a smaller  $\\Delta T$  of  $70^{\\circ}\\mathrm{C}$  reduced the thermal stress and the formation of defects in the crystals during growth.29 All the methods resulted in up to  $1\\mathrm{mm}$  laterally-sized crystals.27-29\n\n$$\n2 \\mathrm {R h C l} _ {3} + 3 \\mathrm {S e} \\longrightarrow 2 \\mathrm {R h S e C l} + \\mathrm {S e C l} _ {4} \\tag {1}\n$$\n\n$$\n2 \\mathrm {R h} + \\mathrm {R h C l} _ {3} + 3 \\mathrm {S e} \\longrightarrow 3 \\mathrm {R h S e C l} \\tag {2}\n$$",
+      "char_start": 1690,
+      "char_end": 6537,
+      "line_start": 15,
+      "line_end": 39
+    },
+    {
+      "chunk_id": "E004",
+      "heading": "1 Introduction",
+      "level": 1,
+      "part": 2,
+      "text": "Here, we present a systematic study of the synthesis and crystal growth of the Janus compound RhSeCl. Understanding and exploiting the properties of this intrinsically non-centrosymmetric material requires large, phase-pure, and reproducible single crystals, which in turn can only be obtained through a comprehensive exploration of the growth parameters and optimisation of the processing conditions. We have compared solid-state reactions, chemical vapour transport (CVT), and self-selecting vapour growth (SSVG) and have identified the key parameters that govern crystal quality and size. Building on the proven SSVG method for transition-metal halides,[30,31] we applied this approach to RhSeCl, achieving large single crystals. Introducing  $\\mathrm{SeCl}_4$  as a new starting material further enhanced the chemical purity by eliminating  $\\mathrm{RhCl}_3$  intergrowths during crystal formation. By combining a two-step optimised SSVG process with the new reagent composition, we have substantially increased the final crystal size. Our results establish practical guidelines for producing high-quality RhSeCl crystals and provide a foundation for future physical properties studies and device applications of transition-metal Janus materials.",
+      "char_start": 6539,
+      "char_end": 7789,
+      "line_start": 41,
+      "line_end": 41
+    },
+    {
+      "chunk_id": "E005",
+      "heading": "2 Experimental Methods",
+      "level": 1,
+      "part": 1,
+      "text": "# 2 Experimental Methods",
+      "char_start": 7791,
+      "char_end": 7815,
+      "line_start": 43,
+      "line_end": 43
+    },
+    {
+      "chunk_id": "E006",
+      "heading": "2.1 Synthesis",
+      "level": 1,
+      "part": 1,
+      "text": "# 2.1 Synthesis\n\nAs starting materials Rh powder (Alfa Aesar,  $99.9\\%$ ),  $\\mathrm{RhCl}_3$  powder (ChemPur,  $49.9\\%$  Rh), Se pieces (Alfa Aesar,  $99.999\\%$ ), and  $\\mathrm{SeCl}_4$  powder (Sigma Aldrich,  $35.0\\%$  Se) were used. All chemical handling was carried out inside an argon-filled glovebox due to the air-sensitivity of  $\\mathrm{SeCl}_4$  and  $\\mathrm{RhCl}_3$ . All syntheses were performed in quartz ampules with an inner diameter of  $10\\mathrm{mm}$  and wall thickness of  $1\\mathrm{mm}$ , sealed under dynamic vacuum, with the starting materials totalling a mass of approximately  $200\\mathrm{mg}$ . Two main combinations of starting materials were used to determine which would yield the best results. These were: (1) Rh:  $\\mathrm{RhCl}_3$ : Se\n\nwith a molar ratio of  $2:1:3$  (with and without  $10\\%$  of  $\\mathrm{RhCl}_3$  excess) and (2) Rh:  $\\mathrm{SeCl}_4$ : Se in a stoichiometric ratio of  $4:1:3$ . The ampules containing  $\\mathrm{SeCl}_4$  were initially cooled with ice and then with liquid nitrogen during the sealing of the ampules to prevent the evaporation of  $\\mathrm{SeCl}_4$  and  $\\mathrm{Se}_2\\mathrm{Cl}_2$  (details in Results and Discussion section). For crystal growth, two main approaches were applied:",
+      "char_start": 7817,
+      "char_end": 9078,
+      "line_start": 45,
+      "line_end": 49
+    },
+    {
+      "chunk_id": "E007",
+      "heading": "2.1.1 Chemical Vapour Transport Method",
+      "level": 1,
+      "part": 1,
+      "text": "# 2.1.1 Chemical Vapour Transport Method\n\nThe RhSeCl crystals were first grown by adapting the CVT protocol reported by Novak et al. [27] using the two different compositions of the starting materials described above. For all syntheses,  $10\\mathrm{cm}$  long quartz ampules were used in a tubular furnace with a temperature difference of  $\\Delta T = 100^{\\circ}\\mathrm{C}$  with  $T_{1} = 900^{\\circ}\\mathrm{C}$  and  $T_{2} = 1000^{\\circ}\\mathrm{C}$ .",
+      "char_start": 9080,
+      "char_end": 9534,
+      "line_start": 51,
+      "line_end": 53
+    },
+    {
+      "chunk_id": "E008",
+      "heading": "2.1.2 Self-Selecting Vapour Growth Method",
+      "level": 1,
+      "part": 1,
+      "text": "# 2.1.2 Self-Selecting Vapour Growth Method\n\nThe  $\\mathrm{SSVG}^{30,31}$  approach was adapted for RhSeCl using both reagent combinations. Two furnace configurations were tested: a box furnace mounted on its side and a tubular furnace (with one end of the quartz ampule positioned in the middle of the furnace), both providing a very small temperature gradient. For all SSVG syntheses  $6\\mathrm{cm}$  long quartz ampules were used. In the box furnace, the following temperature profile was applied: heating from room temperature (RT) with  $50^{\\circ}\\mathrm{h}^{-1}$  up to  $1000^{\\circ}\\mathrm{C}$ , dwelling there for  $24\\mathrm{h}$ , then slowly cooling with  $-1^{\\circ}\\mathrm{h}^{-1}$  down to  $900^{\\circ}\\mathrm{C}$ , followed by cooling to RT at  $-150^{\\circ}\\mathrm{h}^{-1}$ . For the syntheses in a tubular furnace, apart from the two reagent combination discussed above, we also performed recrystallization of RhSeCl (presynthesized by SSVG in a 'flipped' box furnace) and applied a similar temperature profile but at higher temperatures: heating from RT with  $50^{\\circ}\\mathrm{h}^{-1}$  up to  $1100^{\\circ}\\mathrm{C}$ , dwelling there for  $24\\mathrm{h}$ , then slowly cooling with  $-1^{\\circ}\\mathrm{h}^{-1}$  down to  $1075^{\\circ}\\mathrm{C}$ , followed by cooling to RT at  $-150^{\\circ}\\mathrm{h}^{-1}$ . In the tubular furnace, a temperature profile without slow cooling was also employed: heating from RT with  $50^{\\circ}\\mathrm{h}^{-1}$  up to 1100, 1090, or  $1075^{\\circ}\\mathrm{C}$ , dwelling at the respective temperatures for  $120\\mathrm{h}$ , followed by cooling to RT with  $-150^{\\circ}\\mathrm{h}^{-1}$ .\n\nFurthermore, alternative SSVG syntheses were carried out using oscillating temperature profiles either between  $1100^{\\circ}\\mathrm{C}$  and  $1000^{\\circ}\\mathrm{C}$  or between  $1000^{\\circ}\\mathrm{C}$  and  $900^{\\circ}\\mathrm{C}$ , to probe possible crystal growth regions for the two reagent combinations described above. In both cases, the quartz ampules were placed upright in alumina crucibles inside a conventional box furnace.\n\nFor the first variation  $(1100 - 1000^{\\circ}\\mathrm{C})$ , the ampule was heated from RT at  $50^{\\circ}\\mathrm{h}^{-1}$  to  $1100^{\\circ}\\mathrm{C}$ , held for  $24\\mathrm{h}$ , and then cooled stepwise to 1075, 1050, 1025, 1000, and finally to  $900^{\\circ}\\mathrm{C}$  at a rate of  $-1^{\\circ}\\mathrm{h}^{-1}$ , with each step including a  $1\\mathrm{h}$  dwell at the target temperature. The final cooling to RT was performed at  $-150^{\\circ}\\mathrm{h}^{-1}$ .\n\nThe second variation  $(1000 - 900^{\\circ}\\mathrm{C})$  followed the same principle. The ampule was heated from RT at  $50^{\\circ}\\mathrm{h}^{-1}$  to  $1000^{\\circ}\\mathrm{C}$ , held for  $24\\mathrm{h}$ , and then cooled stepwise to 975, 950, 925, and  $900^{\\circ}\\mathrm{C}$ , with  $1\\mathrm{h}$  dwell periods at each step. The sample was then cooled to RT at  $-150^{\\circ}\\mathrm{h}^{-1}$ .\n\nThe grown crystals were washed under vacuum filtration with acetonitrile to remove any residues of  $\\mathrm{Se}_2\\mathrm{Cl}_2$ , then water to hy\n\ndrolyse residues of  $\\mathrm{SeCl}_4$ , and finally ethanol to dry the crystals. Any individual adaptations to these synthetic approaches, as well as further details and differences, are discussed in the Results and Discussion section.",
+      "char_start": 9536,
+      "char_end": 12877,
+      "line_start": 55,
+      "line_end": 67
+    },
+    {
+      "chunk_id": "E009",
+      "heading": "2.2 Scanning Electron Microscopy and Elemental Analysis",
+      "level": 1,
+      "part": 1,
+      "text": "# 2.2 Scanning Electron Microscopy and Elemental Analysis\n\nThe microstructure of the grown crystals was studied with a JEOL JSM-IT800 scanning electron microscope (SEM) equipped with an Oxford Silicon Drift Detector (SDD)  $\\mathrm{X - Max}^{\\mathrm{N}}$  that was used for the energy-dispersive X-ray spectroscopy (EDS) analysis  $(U_{acc} = 15 - 20\\mathrm{keV})$ . Due to the semiconducting nature of RhSeCl, thin crystals were used to avoid charging, and larger crystals were cleaved with Kapton tape beforehand. For both the acquisition of the electron images and the collection of the EDS data, the crystals were fixed on a carbon pad or on a silicon wafer for the exfoliated flakes of RhSeCl.",
+      "char_start": 12879,
+      "char_end": 13577,
+      "line_start": 69,
+      "line_end": 71
+    },
+    {
+      "chunk_id": "E010",
+      "heading": "2.3 Powder X-ray Diffraction",
+      "level": 1,
+      "part": 1,
+      "text": "# 2.3 Powder X-ray Diffraction\n\nPowder X-ray diffraction (PXRD) data  $(\\mathrm{Cu} - K\\alpha, \\lambda \\approx 154\\mathrm{pm}, T = 296(3)^{\\circ}\\mathrm{C})$  were collected on a Rigaku SmartLab diffractometer (Rigaku, Debye-Scherrer geometry, D/tex detector). The crystals for the measurements were finely ground with corn starch in an agate mortar to decrease the preferred orientation of the strongly layered material. The powders were then sealed in borosilicate glass capillaries (Hilgenberg GmbH, outer  $\\varnothing = 0.8\\mathrm{mm}$ , wall thickness  $= 0.01\\mathrm{mm}$ ). Rietveld refinements were performed using TOPAS Academic software.[32]",
+      "char_start": 13579,
+      "char_end": 14231,
+      "line_start": 73,
+      "line_end": 75
+    },
+    {
+      "chunk_id": "E011",
+      "heading": "2.4 Single Crystal X-ray Diffraction",
+      "level": 1,
+      "part": 1,
+      "text": "# 2.4 Single Crystal X-ray Diffraction\n\nSingle crystal X-ray diffraction (SCXRD) was measured on a four-circle Oxford Diffraction SuperNova diffractometer (Agilent/Rigaku SE) with mirror optics and an Atlas CCD detector at  $T = 100(1)^{\\circ}\\mathrm{C}$  or  $T = 250(1)^{\\circ}\\mathrm{C}$ . Mo-  $K\\alpha$  ( $\\lambda = 71.073\\mathrm{pm}$ ) was used. The crystals were prepared in immersion oil and mounted using Cryoloops. A numerical (Gaussian) absorption correction based on the crystal shape was applied, and the structure was solved with direct methods and subsequent refinements against  $F_{o}^{2}$  using SHELXL  $^{33,34}$  and Olex2.  $^{35}$  The integrated CrysAlisPro software was used for data collection and initial treatment of the data.  $^{36}$",
+      "char_start": 14233,
+      "char_end": 14997,
+      "line_start": 77,
+      "line_end": 79
+    },
+    {
+      "chunk_id": "E012",
+      "heading": "2.5 Exfoliation and Raman spectroscopy",
+      "level": 1,
+      "part": 1,
+      "text": "# 2.5 Exfoliation and Raman spectroscopy\n\nThe RhSeCl crystals were exfoliated using standard adhesive-tape methods. Thin flakes were transferred to  $\\mathrm{Si} / \\mathrm{SiO}_2$  substrates (285 nm oxide) and examined under an optical microscope to identify suitable regions for Raman measurements. The number of layers was determined by the optical contrast of the flakes relative to the substrate, following established calibration methods. Raman spectra were recorded with a commercial confocal Raman microscope HORIBA LabRAM HR Evolution equipped with a 532 nm continuous-wave laser. A circularly polarised laser beam was focused through an Olympus  $\\times 100$  ( $NA = 0.9$ ) objective onto the sample, forming a spot with FWHM  $\\sim 0.3\\mu \\mathrm{m}$ . To avoid overheating, the laser power at the sample was reduced to  $200\\mu \\mathrm{W}$ ,\n\nas confirmed by temperature estimates in the laser spot derived from the Stokes/anti-Stokes ratio.",
+      "char_start": 14999,
+      "char_end": 15953,
+      "line_start": 81,
+      "line_end": 85
+    },
+    {
+      "chunk_id": "E013",
+      "heading": "3 Results and Discussion",
+      "level": 1,
+      "part": 1,
+      "text": "# 3 Results and Discussion\n\nIn our exploratory work on the preparation of large RhSeCl crystals, we performed a comparative study of different synthesis and growth methods.\n\nIn the following, we will compare the reactions that develop from two different combinations of starting materials, one based on  $\\mathrm{RhCl}_3$  ( $\\mathrm{Rh}:\\mathrm{RhCl}_3:\\mathrm{Se} = 2:1:3$ ) and described by equation 2, another using  $\\mathrm{SeCl}_4$  ( $\\mathrm{Rh}:\\mathrm{SeCl}_4:\\mathrm{Se} = 4:1:3$ ) and described by equation 3.\n\n$$\n4 \\mathrm {R h} + 3 \\mathrm {S e} + \\mathrm {S e C l} _ {4} = 4 \\mathrm {R h S e C l} \\tag {3}\n$$\n\nThe use of  $\\mathrm{SeCl}_4$  as an alternative chlorine source provides a new synthetic pathway for RhSeCl, enabling a direct comparison of how precursor chemistry influences crystal growth. We employed both reactions with all processing methods investigated here, which are solid-state reaction, chemical vapour transport (CVT), and self-selecting vapour growth (SSVG). These experiments established a baseline for assessing which approach offers the most reliable route to large, phase-pure single crystals.\n\nIn the following, we will refer to the first reagent combination as  $\\mathrm{RhCl}_3$  and the second as  $\\mathrm{SeCl}_4$ . It is important to note that when  $\\mathrm{SeCl}_4$  is used as a starting material, the following reaction occurs at room temperature as soon as Se and  $\\mathrm{SeCl}_4$  are mixed together in a quartz ampule:\n\n$$\n\\mathrm {S e C l} _ {4} + 3 \\mathrm {S e} \\longrightarrow 2 \\mathrm {S e} _ {2} \\mathrm {C l} _ {2} \\tag {4}\n$$\n\nThis could be visually observed through the formation of a brown-red liquid.",
+      "char_start": 15955,
+      "char_end": 17627,
+      "line_start": 87,
+      "line_end": 105
+    },
+    {
+      "chunk_id": "E014",
+      "heading": "3.1 Chemical Vapour Transport Crystal Growth",
+      "level": 1,
+      "part": 1,
+      "text": "# 3.1 Chemical Vapour Transport Crystal Growth\n\nTo establish a reference point for crystal quality, we first reproduced the CVT syntheses reported earlier, using, as discussed above, the previously employed  $\\mathrm{RhCl}_3$ , as well as the here introduced  $\\mathrm{SeCl}_4$ -based precursor mixtures. In both cases, the reactions yielded high phase purity RhSeCl single crystals with comparable morphologies. Interestingly, crystal formation occurred at both ends of the ampules. At the sink  $(T_1 = 900^{\\circ}\\mathrm{C})$ , we observed intergrown crystal aggregates similar to those previously described,[27] whereas the source  $(T_2 = 1000^{\\circ}\\mathrm{C})$  contained larger crystals that reached approximately  $1\\mathrm{mm}$  across (Fig. 1, 2a). This observation suggests that maintaining a small temperature gradient near the solid source promotes crystal growth, a condition inherently realised in the SSVG method. In contrast, under a large temperature gradient of CVT nucleation was not under control, as a consequence, the crystals could not grow large in size. Encouraged by this and by the earlier success of SSVG in the  $\\mathrm{Co}_{1 - x}\\mathrm{Ni}_x\\mathrm{I}_2$ ,  $\\mathrm{RuCl}_3$ , and other transition metal halide systems,[30,31] we next investigated SSVG as an independent growth technique for RhSeCl.\n\n![](images/e83f63443f39d29b4ab2fb58cf5cb6d5b8d7bdaf08ee05a1355aa3991b1d984f.jpg)  \nFig. 1 Synthesis map for RhSeCl crystal growth. Investigated methods are shown in the upper panel. Temperature profiles for each technique are presented in the middle. Pictures of the RhSeCl crystals taken with an optical microscope on millimetre paper at the bottom correspond to the synthesis method above. The turquoise and orange backgrounds represent different synthesis paths: via Rh, Se,  $\\mathrm{RhCl}_3$  or Rh, Se,  $\\mathrm{SeCl}_4$  reagent combinations, respectively. For the SSVG in a tubular furnace, the shown crystals are obtained by two-step SSVG process starting from  $\\mathrm{RhCl}_3$  and  $\\mathrm{SeCl}_4$ , with the first step being SSVG in a 'flipped' box furnace. The green background and the dashed frame highlight the best synthesis methods and conditions, which allow the growth of the largest RhSeCl crystals.",
+      "char_start": 17629,
+      "char_end": 19891,
+      "line_start": 107,
+      "line_end": 112
+    },
+    {
+      "chunk_id": "E015",
+      "heading": "3.2 Self-Selecting Vapour Growth",
+      "level": 1,
+      "part": 1,
+      "text": "# 3.2 Self-Selecting Vapour Growth\n\nTo test whether SSVG alone could promote RhSeCl crystal growth, we next performed experiments in a 'flipped' box furnace, positioned on its side.30,31 Ampules containing  $\\mathrm{RhCl}_3$  or  $\\mathrm{SeCl}_4$ -based precursor mixtures were heated to  $1000^{\\circ}\\mathrm{C}$ , held for  $24\\mathrm{h}$  and then slowly cooled to  $900^{\\circ}\\mathrm{C}$  at a rate of  $-1^{\\circ}\\mathrm{h}^{-1}$  before returning to room temperature. Indeed, crystals with lateral size up to  $1\\mathrm{mm}$  formed when the route with  $\\mathrm{RhCl}_3$  was used and were comparable in size to those obtained by CVT at the source. For the route with  $\\mathrm{SeCl}_4$  predominantly phase-pure polycrystalline powder was observed (Fig. 1). These results demonstrate that SSVG\n\ncan be utilised to synthesise RhSeCl single crystals.",
+      "char_start": 19893,
+      "char_end": 20751,
+      "line_start": 114,
+      "line_end": 118
+    },
+    {
+      "chunk_id": "E016",
+      "heading": "3.3 Crystal Growth Optimization",
+      "level": 1,
+      "part": 1,
+      "text": "# 3.3 Crystal Growth Optimization\n\nSince we succeeded in growing small RhSeCl crystals via SSVG technique in the 'flipped' furnace, we then explored whether higher temperatures and a different temperature gradient could further enhance growth. To achieve this, we carried out SSVG in short ampules (6cm), with the end containing the precursors placed in the centre of a one-zone tubular furnace. This provided a small thermal gradient without inducing undesired CVT transport. We tested three precursor systems:  $\\mathrm{RhCl}_3$ -,  $\\mathrm{SeCl}_4$ -based\n\n![](images/5698ab5bd551b51314605af3569ed54863d9bbb6219c39caa3232c99d249e037.jpg)  \n(a)\n\n![](images/2b462bd1d57672f673b47456467fec8d3340831bc9a4a9da1d724cab9bc4e7f6.jpg)  \n(b)  \n(c)\n\n![](images/18ae525348dedb38677100270098a479019548198430b0ecc00f305f81be2700.jpg)  \nFig. 2 Grown crystals of RhSeCl and crystal structure. (a) Comparison of the RhSeCl crystals grown by chemical vapour transport (CVT) and self-selecting vapour growth (SSVG). The crystals grown with  $\\mathrm{RhCl}_3$  are highlighted via a turquoise background, while the crystals grown with  $\\mathrm{SeCl}_4$  are highlighted via an orange background. (b) PXRD patterns of washed crystals from the different types of reagent combinations and synthesis types. The crystals grown from  $\\mathrm{RhCl}_3$  are in turquoise, the crystals grown with  $\\mathrm{SeCl}_4$  are in orange, and the RhSeCl reference (ICSD 206914) is in black. (c) The crystal structure from a refinement of a RhSeCl crystal grown via the two-step SSVG synthesis with  $\\mathrm{RhCl}_3$  as a reagent. The structure here is viewed along the crystallographic  $b$ -axis to highlight the ordered Janus phase with the Cl atoms forming one layer on one side of the central Rh and the Se atoms forming a layer on the other side.\n\nmixtures, and polycrystalline RhSeCl pre-synthesised via SSVG in a 'flipped' furnace (without opening the ampule between the syntheses). These experiments were carried out in a similar temperature profile as for the previously outlined SSVG setup, but the temperatures were increased to  $1100 - 1075^{\\circ}\\mathrm{C}$ . Under these conditions, all reactions produced larger crystals  $(2 - 4\\mathrm{mm})$ , and the best results were obtained with pre-synthesised via SSVG in the 'flipped' furnace RhSeCl as the starting material (Fig. 1). These findings showed that higher growth temperatures promote crystal enlargement, establishing a two-step SSVG route – initial polycrystalline formation followed by regrowth in a tubular furnace – as the most effective strategy for producing large RhSeCl crystals.\n\nBuilding on the observation that higher growth temperatures improved crystal size, we next optimised the two-step SSVG synthesis by introducing an isothermal dwelling step in the tubular furnace. Using pre-synthesised in a 'flipped' furnace RhSeCl as starting material, we examined the dwell temperatures of 1075, 1090, and  $1100^{\\circ}\\mathrm{C}$  with a duration of  $120\\mathrm{h}$ . The  $1100^{\\circ}\\mathrm{C}$  annealing proved to be the most effective, yielding the largest crystals up to  $0.4\\times 5\\times 6\\mathrm{mm}$  (Fig. 1, 2), while even at lower temperatures, crystals exceeding  $2\\mathrm{mm}$  were readily obtained. Maintaining a closed ampule between the two synthesis steps was essential: reopening or washing the intermediate product led to incongruent melting and decomposition into RhSe, Rh, and  $\\mathrm{SeCl}_4$  (see ESI†). This is likely because sealed tubes retain volatile Cl- and Se-bearing species that act as transport agents during crystal growth. Attempts at higher dwell temperatures ( $>1100^{\\circ}\\mathrm{C}$ ) again produced incongruent melts. Large crystals grown under the best conditions often exhibited a small cavity at the base, suggesting growth from a partially molten phase. Altogether, these experiments identify  $1100^{\\circ}\\mathrm{C}$  as the optimal temperature for reproducible growth of large RhSeCl crystals via the two-step SSVG\n\napproach.",
+      "char_start": 20753,
+      "char_end": 24790,
+      "line_start": 120,
+      "line_end": 138
+    },
+    {
+      "chunk_id": "E017",
+      "heading": "3.4 Self-Selecting Vapour Growth for Crystals with Needle-like Morphology",
+      "level": 1,
+      "part": 1,
+      "text": "# 3.4 Self-Selecting Vapour Growth for Crystals with Needle-like Morphology\n\nAs a final set of experiments, we decided to see whether SSVG reactions where the temperature was oscillated in the previously determined crystal growth regions would lead to any significant improvement or change in the crystal growth. In this case, we carried out the experiments as outlined in the Experimental section above, oscillating the temperature either between 1100 and  $1000^{\\circ}\\mathrm{C}$  or between 1000 and  $900^{\\circ}\\mathrm{C}$ . In both cases, the main difference in comparison to all the other synthetic approaches investigated here lay in the morphology of the grown crystals. While the size of individual crystals was comparable to previously reported results, the crystals grew preferentially in one direction, taking on a needle-like appearance, as can be seen in the last two columns of Fig. 1. Interestingly, crystal growth was also not localised at one end of the ampule, but was rather consistent across the walls, indicating that there was constant movement and deposition of RhSeCl crystal nuclei through the temperature oscillations, demonstrating an SSVG type of growth in a natural vertical temperature gradient of a box furnace. Despite their different morphology, these crystals were found to be structurally identical to the other RhSeCl crystals obtained, as proven by SCXRD measurements (Tables S1 and S6, ESI†).",
+      "char_start": 24792,
+      "char_end": 26225,
+      "line_start": 140,
+      "line_end": 142
+    },
+    {
+      "chunk_id": "E018",
+      "heading": "3.5 Comparison of the Crystal Growth Methods",
+      "level": 1,
+      "part": 1,
+      "text": "# 3.5 Comparison of the Crystal Growth Methods\n\nComparing all crystal-growth approaches reveals how both the reaction chemistry and the thermal environment govern the formation of high-quality RhSeCl crystals. Conventional CVT methods, as previously reported in the literature, reliably produces\n\nRhSeCl crystals, however, their size remains limited. CVT growth for RhSeCl occurs primarily through vapour transport between the hot and cold ends of the ampule, leading to agglomerates of small crystallites, while additional evaporation-condensation processes at the source can occasionally yield larger, isolated crystals. In contrast, the SSVG technique in a 'flipped' box furnace enables growth directly within a minimal temperature gradient, and when applied using  $\\mathrm{RhCl}_3$ -based precursors, it yields crystals comparable in size to those obtained in CVT reactions at the source.\n\nIncreasing the temperature and changing the temperature gradient within short ampules in a tubular furnace markedly improved the crystal size, indicating that crystal growth in this system is favoured by higher vapour pressures and a partially molten phase. The most significant improvement in RhSeCl growth was achieved in the two-step SSVG process: first generating polycrystalline RhSeCl via SSVG in a 'flipped' furnace and then regrowing crystals at elevated temperature in a tubular furnace. Using this two-step process, we could grow RhSeCl crystals up to  $6\\mathrm{mm}$  in lateral size for the synthesis with a dwelling step at  $1100^{\\circ}\\mathrm{C}$ . Maintaining a sealed environment between steps was essential: opening the ampules disrupted the internal vapour balance and led to incongruent melting.\n\nTaken together, these results demonstrate that successful RhSeCl crystal growth depends on ensuring an optimal combination of high temperature, limited temperature gradient, and closed-system vapour chemistry. The two-step SSVG approach thus combines the advantages of solid-state synthesis and vapour transport, providing a reproducible pathway to large, phase-pure RhSeCl single crystals suitable for further physical characterisation and device fabrication. The overall trends and optimal conditions are summarised in the synthesis map (Fig. 1), with alternative routes detailed in the ESI†.",
+      "char_start": 26227,
+      "char_end": 28534,
+      "line_start": 144,
+      "line_end": 152
+    },
+    {
+      "chunk_id": "E019",
+      "heading": "3.6 Crystal structure",
+      "level": 1,
+      "part": 1,
+      "text": "# 3.6 Crystal structure\n\nPowder X-ray diffraction of all our washed samples predominantly showcased the presence of the phase-pure RhSeCl Janus phase. Rietveld refinements of the diffraction patterns obtained for each synthetic approach confirmed an excellent fit to the previously reported structure model of RhSeCl, i.e., for the samples grown with  $\\mathrm{SeCl}_4$  from our two-step SSVG approach we obtained cell parameters of  $a = 348.4(2)\\mathrm{pm}$  and  $c = 1156.9(7)\\mathrm{pm}$  in the space group  $P6_{3}mc$ . PXRD patterns for the CVT-grown crystals and for the largest RhSeCl crystals produced in this work are shown in Fig. 2, while the data for all other syntheses, together with the Rietveld analyses, are presented in the ESI†.\n\nWe tested the single-crystals of the individual methods by SCXRD to verify the crystal quality, and we found all of them to crystallise in the hexagonal space group  $P6_{3}mc$ . The crystals grown by the herein newly reported SSVG approach with  $\\mathrm{SeCl}_4$  as a precursor have lattice parameters of  $a = 349.11(1)\\mathrm{pm}$  and  $c = 1158.89(3)\\mathrm{pm}$ , while the single-crystals grown from  $\\mathrm{SeCl}_4$  that take on a needle-like morphology (see Section 3.4) show lattice parameters of  $a = 349.15(3)\\mathrm{pm}$  and  $c = 1158.29(12)\\mathrm{pm}$ . In both cases, these parameters vary merely by approximately  $0.1\\%$  from those found in earlier work and hence no significant differences\n\nin the crystal structures could be observed (see Table S2, ESI†).\n\nAs expected for these Janus structures, as seen in a representative crystal that was grown from  $\\mathrm{SeCl}_4$  with the two-step SSVG method, the central Rh atom is coordinated by three Cl atoms with a distance of  $250.84(23)\\mathrm{pm}$  and by three Se atoms with a distance of  $240.34(8)\\mathrm{pm}$  in the expected facial arrangement with the anions ordering according to their type on opposite sides (see Fig. 2). These bond lengths only vary minimally from the previously recorded crystal structure of RhSeCl  $(< 0.1\\%)$ . Furthermore, the residual electron density peaks fall within the range of  $\\pm 1$  to 2 electrons  $\\times 10^{-6}\\mathrm{pm}^{-3}$ , mostly within  $0.5 - 2\\AA$  of Rh, or  $0.5 - 1.5\\AA$  of Se. The higher residual electron density peaks near the metal cation (Rh) are expected, especially considering the size of Rh. Although the peaks are close to Rh and Se, they do not indicate disorder, as they are below 5 electrons  $\\times 10^{-6}\\mathrm{pm}^{-3}$  and no negative density is observed on the atomic sites. Additionally, the Debye-Waller factors remain reasonable at both 250 and  $100\\mathrm{K}$  (see Table S2, ESI†), and also do not indicate any substitutional or dynamic disorder.\n\nWe also investigated the possibility of any substitutional disorder by refining mixed Se and Cl sites on both atomic positions. However, this resulted in no significant change in the occupancy of the 'original' atom on that position: in the case of the Cl position, i.e., the  $2a$  Wyckhoff position, the occupancy remained 99.5 to  $99.8\\%$  Cl and on the Se position, i.e., the  $2b$  Wyckhoff position, the occupancy remained approx.  $99.5\\%$  Se, and in both cases, there was no significant change in the refinement parameters. All of this further confirms that there is very little to no intermixing of the Se and Cl sites, and that the Janus structure remains.\n\nAnd finally, we also checked whether any twinning could be observed. First, the possibility of non-merohedral twinning was examined, however, here we found that at most  $5\\%$  of the reflections could be assigned to a further twin component. Due to the small presence of the twinned component and the significant negative impact on the structure solutions where a twin component was present, we did not include it in the final structure solution, especially as other warning signs of non-merohedral twinning, i.e., the  $F_{o}$  values of the most disagreeable reflections are not significantly larger than the  $F_{c}$  values, nor is the  $K = mean(F_{o}^{2}) / mean(F_{c}^{2})$  systematically high for the low-intensity reflections, were not present.\n\nAnd finally, the possibility of twinning by merohedry was also investigated, e.g., in the crystal grown via the CVT method from  $\\mathrm{SeCl}_4$  had a potential merohedric twin with a BASF value of 0.02(4) and a twin law of  $(-100|110|00 - 1)$ . However, when this is taken into account in the refinement of the structure solution, it has next to no effect on the refinement parameters, which also indicates that there is no significant twinning by merohedry. All of this together indicates that despite small, individual crystal-dependent factors, all of the synthetic methods that we have outlined here produce high-quality single crystals.",
+      "char_start": 28536,
+      "char_end": 33382,
+      "line_start": 154,
+      "line_end": 168
+    },
+    {
+      "chunk_id": "E020",
+      "heading": "3.7 Exfoliation of RhSeCl",
+      "level": 1,
+      "part": 1,
+      "text": "# 3.7 Exfoliation of RhSeCl\n\nOne of the initial aims of producing larger crystals was to investigate their viability in device applications. As reported in both\n\n![](images/9ce72759626a75e81db013e36f9b3d178d7e136c117800199a43fdf938e8c981.jpg)  \n(a)\n\n![](images/a7a1eb6bfadb3fb50f9050f4761823ea56cc262735adf143659e93633ab19e48.jpg)  \n(c)\n\n![](images/11fc790fdab88016898cee05ea34fd47f7d9fe8bafacfeb05a0a726764437a66.jpg)  \n(e)\n\n![](images/9cb087b6e035d20e820d783746b768a708f20fc21b9a2a11144bd4bfcf5d98a5.jpg)  \n(b)\n\n![](images/f3fe9775b6bd771f646813774df6655da9e532cc63243b530625ffd339854dff.jpg)  \n(d)\n\n![](images/4d7857fd04815380a97061dcfbc9b3fa02f0833318ddd42a8d0a00846f9562fb.jpg)  \n(f)  \nFig. 3 Elemental analysis and Raman spectra of bulk and exfoliated RhSeCl crystals grown via two-step SSVG starting from two different reagent combinations. The upper panels show results for RhSeCl crystals grown from  $\\mathrm{RhCl}_3$ , the bottom ones from  $\\mathrm{SeCl}_4$ . (a,b) Micrograph and elemental analysis of exfoliated RhSeCl crystals. The dominant phase observed is  $\\mathrm{RhCl}_3$  for crystals grown from  $\\mathrm{RhCl}_3$ , while for crystals grown from  $\\mathrm{SeCl}_4$  it is RhSeCl. (c,d) Comparison of Raman spectra of bulk and exfoliated RhSeCl crystals. (e,f) Polarised optical microscope pictures of RhSeCl flakes on which Raman measurements were performed.\n\nprevious works $^{27,29}$  and confirmed here by our CVT-grown crystals, conventional vapour transport only provides small crystals at the lower limit of what is required in terms of exfoliation of thin flakes. Following the successful growth of larger crystals via the two-step SSVG method, we began investigations to determine whether these crystals of RhSeCl were also suitable for potential device fabrication. We could successfully exfoliate the RhSeCl van der Waals material using the standard mechanical scotch-tape method. We reproductively obtained large flakes down to few-layers and monolayer thicknesses, which indicates that the crystals grown via the two-step SSVG route are indeed suitable for Janus-type device fabrications. To assess the structural and chemical uniformity of these exfoliated layers, we examined both bulk and few-layer flakes using EDX and Raman spectroscopy.\n\nFor crystals with  $\\mathrm{RhCl}_3$  as the starting reagent in the two-step SSVG synthesis, we observed two different phases with Raman spectroscopy (see Fig. 3) after being exfoliated. We found that these RhSeCl crystals in fact contain some intergrown layers of  $\\mathrm{RhCl}_3$  which only became visible once we began to exfoliate the crystals down to few-layers (bulk crystals were checked by PXRD, SCXRD and EDX prior to exfoliation, see ESI†). We confirmed this\n\nthrough EDS analysis of the same bilayers and bulk flakes, as can be seen in Fig. 3 (a).\n\nThis impurity becomes visible after exfoliation, probably because  $\\mathrm{RhCl}_3$  exfoliates more easily than  $\\mathrm{RhSeCl}$ , and due to this, even tiny amounts of intergrown  $\\mathrm{RhCl}_3$  result in the dominant appearance of  $\\mathrm{RhCl}_3$  flakes.\n\nWhen we repeated the same exfoliation experiments with the crystals grown starting from  $\\mathrm{SeCl}_4$ , we observed that they did not contain any inclusions of  $\\mathrm{RhCl}_3$ , as can be seen in Figs. 3(b), (d), and (f). Even down to the monolayer, only pure RhSeCl was found, which was reproducible between all batches grown starting from  $\\mathrm{SeCl}_4$  via the two-step SSVG synthesis route. Hence, the crystals grown as such are the only ones that are both large enough to be used in device applications and for exfoliation experiments, and in addition to this, they are free of inherently intergrown impurities that would hinder their suitability.\n\nAs a result of both the optimizations in crystal synthesis with regard to the method and the combination of reagents, together with the initial EDX and Raman investigations of the exfoliated bilayer and few-layer flakes, we can say that the crystals grown from  $\\mathrm{SeCl}_4$  by the two-step SSVG method yield the best, repro\n\nducible and most promising samples for further explorations towards device fabrication.",
+      "char_start": 33384,
+      "char_end": 37583,
+      "line_start": 170,
+      "line_end": 205
+    },
+    {
+      "chunk_id": "E021",
+      "heading": "4 Conclusions",
+      "level": 1,
+      "part": 1,
+      "text": "# 4 Conclusions\n\nWe have thoroughly investigated the crystal growth process of the recently discovered and highly promising Janus material RhSeCl. We grew single crystals using various methods and two different reagent combinations with  $\\mathrm{RhCl}_3$  and  $\\mathrm{SeCl}_4$  as the chlorine source. First, we could confirm and reproduce the results previously obtained by the CVT method and proved that the crystal size remains very limited while using this technique. We found that the two-step SSVG process (pre-synthesis performed in a 'flipped' furnace, followed by recrystallisation at higher temperatures in a tubular furnace) provides reproducible crystals up to  $0.4 \\times 5 \\times 6 \\mathrm{~mm}^3$ . Moreover, the choice of the precursor phases was also found to be critical. We observed the intergrowth of thin  $\\mathrm{RhCl}_3$  flakes when this compound is used as a reagent. The volume fraction of these  $\\mathrm{RhCl}_3$  flakes was not visible by bulk-sensitive probes, but was sufficient to dramatically affect the device fabrication. We propose an alternative synthesis approach in which  $\\mathrm{SeCl}_4$  is used as a precursor, and we proved that in this case, no intergrown impurities were detected and the exfoliated flakes all show a high and reproducible quality. Taken together, we find the optimal crystal growth conditions to be a two-step SSVG process, starting with the synthesis of polycrystalline RhSeCl from Rh, Se, and  $\\mathrm{SeCl}_4$  in a 'flipped' furnace via slow cooling from  $1000^{\\circ}\\mathrm{C}$  to  $900^{\\circ}\\mathrm{C}$ , followed by recrystallisation by dwelling at  $1100^{\\circ}\\mathrm{C}$  (or slow cooling from  $1100^{\\circ}\\mathrm{C}$  to  $1075^{\\circ}\\mathrm{C}$ ) in a tubular furnace to yield large single crystals. These optimised conditions now provide reliable access to large, structurally pure RhSeCl crystals, creating a solid foundation for meaningful device-level studies.",
+      "char_start": 37585,
+      "char_end": 39540,
+      "line_start": 207,
+      "line_end": 209
+    },
+    {
+      "chunk_id": "E022",
+      "heading": "Conflicts of interest",
+      "level": 1,
+      "part": 1,
+      "text": "# Conflicts of interest\n\nThere are no conflicts to declare.",
+      "char_start": 39542,
+      "char_end": 39601,
+      "line_start": 211,
+      "line_end": 213
+    },
+    {
+      "chunk_id": "E023",
+      "heading": "Acknowledgements",
+      "level": 1,
+      "part": 1,
+      "text": "# Acknowledgements\n\nThis work was supported by the Swiss National Science Foundation under Grants No. PCEFP2_194183 and No. 200021-204065.",
+      "char_start": 39603,
+      "char_end": 39741,
+      "line_start": 215,
+      "line_end": 217
+    },
+    {
+      "chunk_id": "E024",
+      "heading": "Notes and references",
+      "level": 1,
+      "part": 1,
+      "text": "# Notes and references\n\n1 H. Kageyama, K. Hayashi, K. Maeda, J. P. Attfield, Z. Hiroi, J. M. Rondinelli and K. R. Poeppelmeier, Nature communications, 2018, 9, 772.  \n2 J. K. Harada, N. Charles, K. R. Poeppelmeier and J. M. Rondinelli, Advanced Materials, 2019, 31, 1805295.  \n3 D. Oka, Y. Hirose, H. Kamisaka, T. Fukumura, K. Sasa, S. Ishii, H. Matsuzaki, Y. Sato, Y. Ikuhara and T. Hasegawa, Scientific reports, 2014, 4, 4987.  \n4 K. Ishizaka, M. Bahramy, H. Murakawa, M. Sakano, T. Shimojima, T. Sonobe, K. Koizumi, S. Shin, H. Miyahara, A. Kimura et al., Nature materials, 2011, 10, 521-526.  \n5 Y. Zhang, H. Wu, Z. Hu and H. Yu, Chemistry-A European Journal, 2023, 29, e202203597.  \n6 Q. D. Gibson, T. D. Manning, M. Zanella, T. Zhao, P. A. Murgatroyd, C. M. Robertson, L. A. Jones, F. McBride, R. Raval,\n\nF.Cora et al.,Journal of the American Chemical Society,2019 142,847-856.  \n7 M. E. Ziebel, M. L. Feuer, J. Cox, X. Zhu, C. R. Dean and X. Roy, Nano letters, 2024, 24, 4319-4329.  \n8 F. Wu, I. Gutiérrez-Lezama, S. A. López-Paz, M. Gibertini, K. Watanabe, T. Taniguchi, F. O. von Rohr, N. Ubrig and A. F. Morpurgo, Advanced Materials, 2022, 34, 2109759.  \n9 S. A. López-Paz, Z. Guguchia, V. Y. Pomjakushin, C. Witteveen, A. Cervellino, H. Luetkens, N. Casati, A. F. Morpurgo and F. O. von Rohr, Nature Communications, 2022, 13, 4745.  \n10 J. Lee, T. Y. Ko, J. H. Kim, H. Bark, B. Kang, S.-G. Jung, T. Park, Z. Lee, S. Ryu and C. Lee, ACS nano, 2017, 11, 10935-10944.  \n11 Y.-X. Wang, T. K. Graham, R. Rama-Eiroa, M. A. Islam, M. H. Badarneh, R. Nunes Gontijo, G. P. Tiwari, T. Adhikari, X.-Y. Zhang, K. Watanabe et al., Nature Materials, 2025, 1-10.  \n12 Y. Cheng, Z. Zhu, M. Tahir and U. Schwingenschlögl, *Europhysics Letters*, 2013, **102**, 57001.  \n13 A.-Y. Lu, H. Zhu, J. Xiao, C.-P. Chuu, Y. Han, M.-H. Chiu, C.-C. Cheng, C.-W. Yang, K.-H. Wei, Y. Yang et al., Nature nanotechnology, 2017, 12, 744-749.  \n14 L. Zhang, Z. Yang, T. Gong, R. Pan, H. Wang, Z. Guo, H. Zhang and X. Fu, Journal of Materials Chemistry A, 2020, 8, 8813-8830.  \n15 L. Zhang, J. Yu, M. Yang, Q. Xie, H. Peng and Z. Liu, Nature Communications, 2013, 4, 1443.  \n16 M. A. Bissett, Y. Takesaki, M. Tsuji and H. Ago, RSC Advances, 2014, 4, 52215-52219.  \n17 R. Li, Y. Cheng and W. Huang, Small, 2018, 14, 1802091.  \n18 J. Zhang, S. Jia, I. Kholmanov, L. Dong, D. Er, W. Chen, H. Guo, Z. Jin, V. B. Shenoy, L. Shi and J. Lou, ACS Nano, 2017, 11, 8192-8198.  \n19 M. Liu, W. Wu, Z. Chen, Y. Zhang, X. Yu, S. Yang, H. Wang, F. Xu, L. Chen, X. Li et al., Nano Letters, 2025, 25, 5723-5730.  \n20 D. Hajra, R. Sailus, M. Blei, K. Yumigeta, Y. Shen and S. Tonggay, ACS Nano, 2020, 14, 15626-15632.  \n21 I. Y. Sklyadneva, R. Heid, K.-P. Bohnen, V. Chis, V. Volodin, K. Kokh, O. Tereshchenko, P. Echenique and E. Chulkov, Physical Review B—Condensed Matter and Materials Physics, 2012, 86, 094302.  \n22 J. Jacimovic, X. Mettan, A. Pisoni, R. Gaal, S. Katrych, L. Demko, A. Akrap, L. Forro, H. Berger, P. Bugnon and A. Magrez, Scripta Materialia, 2014, 76, 69-72.  \n23 A. Akrap, J. Teyssier, A. Magrez, P. Bugnon, H. Berger, A. B. Kuzmenko and D. Van Der Marel, Physical Review B, 2014, 90, 035201.  \n24 J. Wang, X. Yuan, Y. Fang, X. Chen, Z. Zhong, S. Lin, J. Qu, J. Fu, Y. Liu, Z. Li et al., Small, 2025, 21, 2408628.  \n25 J. H. Yun, M. Sung, M. Choi, K. Kim, W. Yang, D. Kim, M. J. Kim, S.-H. Her, S.-Y. Choi, T.-H. Kim et al., Advanced Materials, 2025, 37, 2415045.  \n26 J. Kretschmer, PhD thesis, Rheinische Friedrich-Wilhelms-Universität Bonn, 2019.  \n27 D. Nowak, M. Valldor, B. Rubrecht, S. Froeschke, S. Eltoukhy,\n\nB. Buchner, S. Hampel and N. Gräßler, Inorganic Chemistry Frontiers, 2023, 10, 2911-2916.  \n28 D. Nowak, PhD thesis, Technische Universität Dresden, Dresden, 2025.  \n29 K. Liu, X. Sun, P. Cheng, Z. Li, P. Li, D. Jia, S. Zhao, X. Yang, X. Wang, L. Ye et al., Advanced Science, 2025, 12, e05279.  \n30 J.-Q. Yan and M. A. McGuire, Physical Review Materials, 2023, 7, 013401.  \n31 A. Lukovkina, S. A. López-Paz, C. Besnard, L. Guenee, F. O. von Rohr and E. Giannini, Chemistry of Materials, 2024, 36, 6237-6245.\n\n32 A. A. Coelho, Journal of Applied Crystallography, 2018, 51, 210-218.  \n33 G. M. Sheldrick, Acta Crystallographica Section A: Foundations of Crystallography, 2015, 71, 3-8.  \n34 G. M. Sheldrick, Acta Crystallographica Section C: Structural Chemistry, 2015, 71, 3-8.  \n35 O. V. Dolomanov, L. J. Bourhis, R. J. Gildea, J. A. Howard and H. Puschmann, Journal of Applied Crystallography, 2009, 42, 339-341.  \n36 CrysAlis PRO, 2014, Agilent Technologies Ltd., Yarnton, Oxfordshire, England.",
+      "char_start": 39743,
+      "char_end": 44337,
+      "line_start": 219,
+      "line_end": 261
+    }
+  ],
+  "markdown_path": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/2601.11319v1/full.md"
+}

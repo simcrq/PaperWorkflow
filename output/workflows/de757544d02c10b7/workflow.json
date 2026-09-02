@@ -1,0 +1,4123 @@
+{
+  "schema_version": 4,
+  "workflow_id": "7dde3945b421c1a6",
+  "generated_at": "2026-08-20T03:58:46.385437+00:00",
+  "source": {
+    "input_path": "/home/simcrq/0_Project/paperworkflow/INput/Li.pdf",
+    "input_type": "pdf",
+    "markdown_path": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/de757544d02c10b7/Li.md",
+    "source_fingerprint": "de757544d02c10b7",
+    "source_sha256": "6ba6a953d4469967694f93fb2d8a727905fa3a5a0f1f277cafa73ba1ea464b91",
+    "markdown_sha256": "6a9dd35ea88a8eada7ae10ad29c876fb0228cb1efb68fd37a93e5f8ba90b9171",
+    "mineru": {
+      "source": "/home/simcrq/0_Project/paperworkflow/INput/Li.pdf",
+      "mineru_mode": "official_cli",
+      "cache_dir": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/de757544d02c10b7",
+      "requested_cache_dir": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/de757544d02c10b7",
+      "cache_hit": true,
+      "markdown_path": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/de757544d02c10b7/Li.md",
+      "char_count": 64103,
+      "message": "MinerU PDF-to-Markdown/OCR completed; no LLM summary was requested."
+    }
+  },
+  "stages": [
+    {
+      "stage": "ingestion",
+      "status": "completed",
+      "details": {
+        "source": "/home/simcrq/0_Project/paperworkflow/INput/Li.pdf",
+        "mineru_mode": "official_cli",
+        "cache_dir": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/de757544d02c10b7",
+        "requested_cache_dir": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/de757544d02c10b7",
+        "cache_hit": true,
+        "markdown_path": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/de757544d02c10b7/Li.md",
+        "char_count": 64103,
+        "message": "MinerU PDF-to-Markdown/OCR completed; no LLM summary was requested."
+      }
+    },
+    {
+      "stage": "metadata",
+      "status": "completed"
+    },
+    {
+      "stage": "extraction_quality_audit",
+      "status": "completed"
+    },
+    {
+      "stage": "structure_quality_audit",
+      "status": "completed"
+    },
+    {
+      "stage": "quantity_consistency_audit",
+      "status": "completed"
+    },
+    {
+      "stage": "source_dependency_audit",
+      "status": "completed"
+    },
+    {
+      "stage": "document_graph",
+      "status": "completed",
+      "chunk_count": 34,
+      "span_count": 683
+    },
+    {
+      "unique_evidence_count": 39,
+      "stage": "evidence_retrieval",
+      "status": "completed",
+      "query_count": 8,
+      "readiness": "ready"
+    },
+    {
+      "stage": "artifact_export",
+      "status": "completed"
+    }
+  ],
+  "metadata": {
+    "title_guess": "Printable meta-assemblies enable synergetic colouration",
+    "title_source": "filtered_level_one_heading",
+    "language_profile": "latin-dominant",
+    "dois": [
+      "10.1038/s41586-026-10408-8"
+    ],
+    "arxiv_ids": [],
+    "urls": [
+      "https://doi.org/10.1038/s41586-026-10408-8",
+      "http://www.nature.com/reprints"
+    ],
+    "section_headings": [
+      "Printable meta-assemblies enable synergetic colouration",
+      "Article",
+      "Principles for scalable R2R-ANP",
+      "Optical synergies in meta-assembly systems",
+      "Article",
+      "Rich colour tunability of the meta-assembly",
+      "Macroscopic synergetic colouration",
+      "Conclusions",
+      "Online content",
+      "Article",
+      "Methods",
+      "Materials",
+      "Preparing monodispersed core-shell PS nanoparticles",
+      "Fabricating hydrophobic and low-adhesion substrates",
+      "Fabricating heterogeneous wettability substrates",
+      "Fabricating black background",
+      "Printing DCPCs",
+      "Coating PDMS polymer matrix",
+      "Curing the PDMS prepolymer",
+      "Peeling off the cured PDMS",
+      "Experimental details during R2R processing",
+      "Microscopic optical intensity test and normalization",
+      "Macroscopic optical performance test",
+      "Mechanical performance test",
+      "Stability tests",
+      "Numerical simulation of meta-assemblies",
+      "Characterizations",
+      "Data availability",
+      "Additional information",
+      "Article",
+      "Article"
+    ],
+    "section_coverage": {
+      "abstract": false,
+      "introduction": true,
+      "methods": true,
+      "results": false,
+      "discussion": false,
+      "conclusion": true,
+      "references": false
+    }
+  },
+  "quality_audit": {
+    "scope": "OCR/Markdown extraction usability only; not scientific-quality assessment",
+    "score": 100,
+    "readiness": "ready",
+    "metrics": {
+      "char_count": 64103,
+      "line_count": 461,
+      "nonempty_line_count": 258,
+      "heading_count": 31,
+      "chunk_count": 34,
+      "readable_character_ratio": 0.743226,
+      "replacement_character_count": 0,
+      "replacement_character_ratio": 0.0,
+      "duplicate_long_line_ratio": 0.0,
+      "broken_hyphen_line_count": 0
+    },
+    "content_inventory": {
+      "markdown_image_count": 53,
+      "figure_caption_count": 6,
+      "table_caption_count": 0,
+      "markdown_table_count": 0,
+      "formula_block_count": 4,
+      "inline_formula_estimate": 133,
+      "citation_marker_count": 39
+    },
+    "section_coverage": {
+      "abstract": false,
+      "introduction": true,
+      "methods": true,
+      "results": false,
+      "discussion": false,
+      "conclusion": true,
+      "references": false
+    },
+    "warnings": []
+  },
+  "quality_dimensions": {
+    "extraction": {
+      "scope": "OCR/Markdown extraction usability only; not scientific-quality assessment",
+      "score": 100,
+      "readiness": "ready",
+      "metrics": {
+        "char_count": 64103,
+        "line_count": 461,
+        "nonempty_line_count": 258,
+        "heading_count": 31,
+        "chunk_count": 34,
+        "readable_character_ratio": 0.743226,
+        "replacement_character_count": 0,
+        "replacement_character_ratio": 0.0,
+        "duplicate_long_line_ratio": 0.0,
+        "broken_hyphen_line_count": 0
+      },
+      "content_inventory": {
+        "markdown_image_count": 53,
+        "figure_caption_count": 6,
+        "table_caption_count": 0,
+        "markdown_table_count": 0,
+        "formula_block_count": 4,
+        "inline_formula_estimate": 133,
+        "citation_marker_count": 39
+      },
+      "section_coverage": {
+        "abstract": false,
+        "introduction": true,
+        "methods": true,
+        "results": false,
+        "discussion": false,
+        "conclusion": true,
+        "references": false
+      },
+      "warnings": []
+    },
+    "structure": {
+      "scope": "Semantic structure, reading order and chunk-coherence audit.",
+      "score": 54,
+      "readiness": "review",
+      "explicit_section_coverage": {
+        "abstract": false,
+        "introduction": true,
+        "methods": true,
+        "results": false,
+        "discussion": false,
+        "conclusion": true,
+        "references": false
+      },
+      "effective_section_coverage": {
+        "abstract": true,
+        "introduction": true,
+        "methods": true,
+        "results": true,
+        "discussion": false,
+        "conclusion": true,
+        "references": true
+      },
+      "inference_reasons": {
+        "abstract": "unheaded opening summary",
+        "results": "article-style unheaded results body",
+        "references": "numbered bibliography without a References heading"
+      },
+      "numbered_reference_entry_count": 46,
+      "text_capture_fidelity": {
+        "score": 100,
+        "readiness": "ready"
+      },
+      "reading_order_integrity": {
+        "score": 54,
+        "readiness": "review",
+        "heading_interruptions": [
+          {
+            "heading_line": 23,
+            "before": "e fabrication of multiscale hierarchical optical architectures with distinct synergetic colouration performance. The meta-assembly model is designed with a microscale hemispherical",
+            "after": "configuration composed of hexagonal close-packed nanoparticles, forming a nanolattice-based microconcave interface. The nanolattice first defines a wavelength-selective photonic ba"
+          }
+        ],
+        "media_interruptions": [
+          {
+            "before_line": 39,
+            "resume_line": 73,
+            "before": " the rim field deflects rightward, exhibiting distinct interference cancellation in the overlap region. As a result, ray propagation is suppressed, inducing field valley (Fig. 3e),",
+            "after": "whereas the wavelengths outside $\\lambda_{PBG}$ exhibit field peaks at the same position (Fig. 3d,f). Notably, even when the incident light is deflected by the PBG effect, part of "
+          }
+        ],
+        "warnings": [
+          {
+            "code": "sentence_interrupted_by_layout_heading",
+            "severity": "high",
+            "message": "Detected 1 sentence continuation(s) split by a layout heading."
+          },
+          {
+            "code": "body_text_interrupted_by_media_stream",
+            "severity": "high",
+            "message": "Detected 1 likely body continuation(s) displaced by images/captions."
+          }
+        ]
+      },
+      "semantic_structure_integrity": {
+        "score": 53,
+        "readiness": "review",
+        "fake_heading_count": 7,
+        "fake_heading_chunks": [
+          "E002",
+          "E005",
+          "E006",
+          "E012",
+          "E032",
+          "E033",
+          "E034"
+        ],
+        "empty_node_count": 2,
+        "empty_node_chunks": [
+          "E012",
+          "E013"
+        ],
+        "warnings": [
+          {
+            "code": "layout_headings_not_semantic",
+            "severity": "medium",
+            "message": "7 layout/boilerplate headings were detached from semantic ownership."
+          },
+          {
+            "code": "empty_heading_nodes",
+            "severity": "medium",
+            "message": "Heading-only nodes were retained as containers, not scientific evidence: E012, E013."
+          }
+        ]
+      },
+      "chunk_coherence": {
+        "score": 55,
+        "readiness": "review",
+        "mixed_chunk_count": 5,
+        "mixed_chunks": [
+          {
+            "chunk_id": "E004",
+            "heading": "Optical synergies in meta-assembly systems",
+            "semantic_heading": "Optical synergies in meta-assembly systems",
+            "modalities": [
+              "body_text",
+              "figure_caption",
+              "image_ref"
+            ],
+            "figure_parents": [
+              "Fig. 1"
+            ]
+          },
+          {
+            "chunk_id": "E005",
+            "heading": "Article",
+            "semantic_heading": "Optical synergies in meta-assembly systems",
+            "modalities": [
+              "body_text",
+              "figure_caption",
+              "image_ref"
+            ],
+            "figure_parents": [
+              "Fig. 2",
+              "Fig. 3"
+            ]
+          },
+          {
+            "chunk_id": "E006",
+            "heading": "Article",
+            "semantic_heading": "Optical synergies in meta-assembly systems",
+            "modalities": [
+              "body_text",
+              "figure_caption",
+              "image_ref"
+            ],
+            "figure_parents": [
+              "Fig. 4",
+              "Fig. 5"
+            ]
+          },
+          {
+            "chunk_id": "E032",
+            "heading": "Article",
+            "semantic_heading": "Additional information",
+            "modalities": [
+              "boilerplate",
+              "figure_caption",
+              "image_ref"
+            ],
+            "figure_parents": [
+              "Extended Data Fig. 1",
+              "Extended Data Fig. 2"
+            ]
+          },
+          {
+            "chunk_id": "E033",
+            "heading": "Article",
+            "semantic_heading": "Additional information",
+            "modalities": [
+              "boilerplate",
+              "figure_caption",
+              "image_ref"
+            ],
+            "figure_parents": [
+              "Extended Data Fig. 3",
+              "Extended Data Fig. 4",
+              "Extended Data Fig. 5"
+            ]
+          }
+        ],
+        "warnings": [
+          {
+            "code": "mixed_scientific_streams_in_chunks",
+            "severity": "medium",
+            "message": "Chunks combine body, figure-caption and/or image streams: E004, E005, E006, E032, E033."
+          }
+        ]
+      },
+      "warnings": [
+        {
+          "code": "layout_headings_not_semantic",
+          "severity": "medium",
+          "message": "7 layout/boilerplate headings were detached from semantic ownership."
+        },
+        {
+          "code": "empty_heading_nodes",
+          "severity": "medium",
+          "message": "Heading-only nodes were retained as containers, not scientific evidence: E012, E013."
+        },
+        {
+          "code": "sentence_interrupted_by_layout_heading",
+          "severity": "high",
+          "message": "Detected 1 sentence continuation(s) split by a layout heading."
+        },
+        {
+          "code": "body_text_interrupted_by_media_stream",
+          "severity": "high",
+          "message": "Detected 1 likely body continuation(s) displaced by images/captions."
+        },
+        {
+          "code": "mixed_scientific_streams_in_chunks",
+          "severity": "medium",
+          "message": "Chunks combine body, figure-caption and/or image streams: E004, E005, E006, E032, E033."
+        }
+      ]
+    },
+    "reading_order": {
+      "score": 54,
+      "readiness": "review",
+      "heading_interruptions": [
+        {
+          "heading_line": 23,
+          "before": "e fabrication of multiscale hierarchical optical architectures with distinct synergetic colouration performance. The meta-assembly model is designed with a microscale hemispherical",
+          "after": "configuration composed of hexagonal close-packed nanoparticles, forming a nanolattice-based microconcave interface. The nanolattice first defines a wavelength-selective photonic ba"
+        }
+      ],
+      "media_interruptions": [
+        {
+          "before_line": 39,
+          "resume_line": 73,
+          "before": " the rim field deflects rightward, exhibiting distinct interference cancellation in the overlap region. As a result, ray propagation is suppressed, inducing field valley (Fig. 3e),",
+          "after": "whereas the wavelengths outside $\\lambda_{PBG}$ exhibit field peaks at the same position (Fig. 3d,f). Notably, even when the incident light is deflected by the PBG effect, part of "
+        }
+      ],
+      "warnings": [
+        {
+          "code": "sentence_interrupted_by_layout_heading",
+          "severity": "high",
+          "message": "Detected 1 sentence continuation(s) split by a layout heading."
+        },
+        {
+          "code": "body_text_interrupted_by_media_stream",
+          "severity": "high",
+          "message": "Detected 1 likely body continuation(s) displaced by images/captions."
+        }
+      ]
+    },
+    "semantic_structure": {
+      "score": 53,
+      "readiness": "review",
+      "fake_heading_count": 7,
+      "fake_heading_chunks": [
+        "E002",
+        "E005",
+        "E006",
+        "E012",
+        "E032",
+        "E033",
+        "E034"
+      ],
+      "empty_node_count": 2,
+      "empty_node_chunks": [
+        "E012",
+        "E013"
+      ],
+      "warnings": [
+        {
+          "code": "layout_headings_not_semantic",
+          "severity": "medium",
+          "message": "7 layout/boilerplate headings were detached from semantic ownership."
+        },
+        {
+          "code": "empty_heading_nodes",
+          "severity": "medium",
+          "message": "Heading-only nodes were retained as containers, not scientific evidence: E012, E013."
+        }
+      ]
+    },
+    "chunk_coherence": {
+      "score": 55,
+      "readiness": "review",
+      "mixed_chunk_count": 5,
+      "mixed_chunks": [
+        {
+          "chunk_id": "E004",
+          "heading": "Optical synergies in meta-assembly systems",
+          "semantic_heading": "Optical synergies in meta-assembly systems",
+          "modalities": [
+            "body_text",
+            "figure_caption",
+            "image_ref"
+          ],
+          "figure_parents": [
+            "Fig. 1"
+          ]
+        },
+        {
+          "chunk_id": "E005",
+          "heading": "Article",
+          "semantic_heading": "Optical synergies in meta-assembly systems",
+          "modalities": [
+            "body_text",
+            "figure_caption",
+            "image_ref"
+          ],
+          "figure_parents": [
+            "Fig. 2",
+            "Fig. 3"
+          ]
+        },
+        {
+          "chunk_id": "E006",
+          "heading": "Article",
+          "semantic_heading": "Optical synergies in meta-assembly systems",
+          "modalities": [
+            "body_text",
+            "figure_caption",
+            "image_ref"
+          ],
+          "figure_parents": [
+            "Fig. 4",
+            "Fig. 5"
+          ]
+        },
+        {
+          "chunk_id": "E032",
+          "heading": "Article",
+          "semantic_heading": "Additional information",
+          "modalities": [
+            "boilerplate",
+            "figure_caption",
+            "image_ref"
+          ],
+          "figure_parents": [
+            "Extended Data Fig. 1",
+            "Extended Data Fig. 2"
+          ]
+        },
+        {
+          "chunk_id": "E033",
+          "heading": "Article",
+          "semantic_heading": "Additional information",
+          "modalities": [
+            "boilerplate",
+            "figure_caption",
+            "image_ref"
+          ],
+          "figure_parents": [
+            "Extended Data Fig. 3",
+            "Extended Data Fig. 4",
+            "Extended Data Fig. 5"
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "code": "mixed_scientific_streams_in_chunks",
+          "severity": "medium",
+          "message": "Chunks combine body, figure-caption and/or image streams: E004, E005, E006, E032, E033."
+        }
+      ]
+    },
+    "retrieval": {
+      "scope": "Span-level evidence retrieval precision and workflow-facet coverage; not claim correctness.",
+      "score": 97,
+      "readiness": "ready",
+      "query_count": 8,
+      "acceptable_count": 8,
+      "precision_ratio": 0.905,
+      "mean_coverage_ratio": 1.0,
+      "support_span_exposure_ratio": 1.0,
+      "unique_evidence_count": 39,
+      "diagnostics": [
+        {
+          "query_id": "objective",
+          "canonical_query_id": "objective",
+          "intent": "objective",
+          "status": "acceptable",
+          "result_count": 5,
+          "unique_evidence_count": 5,
+          "precision_ratio": 1.0,
+          "coverage": {
+            "facet_count": 0,
+            "covered_facets": [],
+            "missing_facets": [],
+            "coverage_ratio": 1.0
+          }
+        },
+        {
+          "query_id": "methods",
+          "canonical_query_id": "methods",
+          "intent": "methods",
+          "status": "acceptable",
+          "result_count": 5,
+          "unique_evidence_count": 5,
+          "precision_ratio": 1.0,
+          "coverage": {
+            "facet_count": 0,
+            "covered_facets": [],
+            "missing_facets": [],
+            "coverage_ratio": 1.0
+          }
+        },
+        {
+          "query_id": "results",
+          "canonical_query_id": "results",
+          "intent": "key_results",
+          "status": "acceptable",
+          "result_count": 8,
+          "unique_evidence_count": 8,
+          "precision_ratio": 0.875,
+          "coverage": {
+            "facet_count": 5,
+            "covered_facets": [
+              "scale_or_throughput",
+              "yield_or_resolution",
+              "optical_tunability",
+              "stability",
+              "mechanical_robustness"
+            ],
+            "missing_facets": [],
+            "coverage_ratio": 1.0
+          }
+        },
+        {
+          "query_id": "limitations",
+          "canonical_query_id": "limitations",
+          "intent": "limitations",
+          "status": "acceptable",
+          "result_count": 5,
+          "unique_evidence_count": 5,
+          "precision_ratio": 0.8,
+          "coverage": {
+            "facet_count": 4,
+            "covered_facets": [
+              "illumination_geometry",
+              "observation_geometry",
+              "background_or_substrate",
+              "evidence_dependency"
+            ],
+            "missing_facets": [],
+            "coverage_ratio": 1.0
+          }
+        },
+        {
+          "query_id": "custom-01",
+          "canonical_query_id": "custom-01",
+          "intent": "sample_preparation",
+          "status": "acceptable",
+          "result_count": 12,
+          "unique_evidence_count": 12,
+          "precision_ratio": 1.0,
+          "coverage": {
+            "facet_count": 9,
+            "covered_facets": [
+              "materials",
+              "particle_synthesis",
+              "ink_formulation",
+              "substrate_preparation",
+              "printing",
+              "embedding_or_coating",
+              "curing",
+              "peeling_or_transfer",
+              "roll_to_roll"
+            ],
+            "missing_facets": [],
+            "coverage_ratio": 1.0
+          }
+        },
+        {
+          "query_id": "custom-02",
+          "canonical_query_id": "custom-02",
+          "intent": "physical_mechanism",
+          "status": "acceptable",
+          "result_count": 9,
+          "unique_evidence_count": 9,
+          "precision_ratio": 0.889,
+          "coverage": {
+            "facet_count": 6,
+            "covered_facets": [
+              "multiscale_structure",
+              "photonic_bandgap",
+              "total_internal_reflection",
+              "interference_or_dispersion",
+              "field_or_simulation",
+              "observable_mapping"
+            ],
+            "missing_facets": [],
+            "coverage_ratio": 1.0
+          }
+        },
+        {
+          "query_id": "custom-03",
+          "canonical_query_id": "results",
+          "intent": "key_results",
+          "status": "acceptable",
+          "result_count": 8,
+          "unique_evidence_count": 8,
+          "precision_ratio": 0.875,
+          "coverage": {
+            "facet_count": 5,
+            "covered_facets": [
+              "scale_or_throughput",
+              "yield_or_resolution",
+              "optical_tunability",
+              "stability",
+              "mechanical_robustness"
+            ],
+            "missing_facets": [],
+            "coverage_ratio": 1.0
+          }
+        },
+        {
+          "query_id": "custom-04",
+          "canonical_query_id": "limitations",
+          "intent": "limitations",
+          "status": "acceptable",
+          "result_count": 5,
+          "unique_evidence_count": 5,
+          "precision_ratio": 0.8,
+          "coverage": {
+            "facet_count": 4,
+            "covered_facets": [
+              "illumination_geometry",
+              "observation_geometry",
+              "background_or_substrate",
+              "evidence_dependency"
+            ],
+            "missing_facets": [],
+            "coverage_ratio": 1.0
+          }
+        }
+      ],
+      "warnings": []
+    },
+    "quantities": {
+      "scope": "Quantity and symbol guardrail; warnings request verification, not automatic correction.",
+      "score": 40,
+      "readiness": "review",
+      "temperature_ranges": [
+        {
+          "low": 50.0,
+          "high": 250.0,
+          "unit": "°C",
+          "line": 306,
+          "role": "stability_test",
+          "context": "Ultraviolet light (365 nm, 400 W) exposure was used to perform the accelerated light ageing tests. Low-temperature tests were performed by placing the sample in the freezer compartment of a commercial refrigerator for 24 h. High-temperature tests were performed by placing the sample on a hotplate with the temperature ranging from 50 to 250 °C for 24 h. Solvent resistance tests were performed by submerging the sample in a range of solvents for 24 h, including pure water, aqueous sodium hydroxide solution (1 mol l $^"
+        },
+        {
+          "low": -18.0,
+          "high": 240.0,
+          "unit": "°C",
+          "line": 461,
+          "role": "stability_test",
+          "context": "Extended Data Fig. 6 | Stability tests of the meta-assembly print in resistance to ultraviolet ageing, thermal, solvent, washing and mechanical deformation. a,b, Compared photostability tests of the meta-assembly print (a) and the commercial dye print (b). Under accelerated light ageing tests (365 nm, 400 W), the meta-assembly print exhibits unfading performance, whereas the commercial-dye-based print shows substantial colour degradation. c, Thermal resistance tests. With the temperature ranging from -18 to 240 °C,"
+        }
+      ],
+      "temperature_occurrences": [
+        {
+          "value": 70.0,
+          "unit": "°C",
+          "line": 254,
+          "role": "particle_synthesis",
+          "context": "PS nanospheres with core–shell structure were synthesized by the one-step emulsion polymerization method. Briefly, styrene (38.0 g), acrylic acid (2.0 g) and methyl methacrylate (2.0 g) were dispersed in 160 ml of water. 0–0.011 mmol emulsifier sodium dodecyl benzene sulfonate (lower than the critical micelle concentration) and 12.50 mmol of buffer agent of ammonium bicarbonate was dissolved previously. The reaction mixture was kept at 70 °C for 0.5 h. Aqueous solution of APS as the initiator was added separately t"
+        },
+        {
+          "value": 80.0,
+          "unit": "°C",
+          "line": 254,
+          "role": "particle_synthesis",
+          "context": "PS nanospheres with core–shell structure were synthesized by the one-step emulsion polymerization method. Briefly, styrene (38.0 g), acrylic acid (2.0 g) and methyl methacrylate (2.0 g) were dispersed in 160 ml of water. 0–0.011 mmol emulsifier sodium dodecyl benzene sulfonate (lower than the critical micelle concentration) and 12.50 mmol of buffer agent of ammonium bicarbonate was dissolved previously. The reaction mixture was kept at 70 °C for 0.5 h. Aqueous solution of APS as the initiator was added separately t"
+        },
+        {
+          "value": 80.0,
+          "unit": "°C",
+          "line": 254,
+          "role": "particle_synthesis",
+          "context": "PS nanospheres with core–shell structure were synthesized by the one-step emulsion polymerization method. Briefly, styrene (38.0 g), acrylic acid (2.0 g) and methyl methacrylate (2.0 g) were dispersed in 160 ml of water. 0–0.011 mmol emulsifier sodium dodecyl benzene sulfonate (lower than the critical micelle concentration) and 12.50 mmol of buffer agent of ammonium bicarbonate was dissolved previously. The reaction mixture was kept at 70 °C for 0.5 h. Aqueous solution of APS as the initiator was added separately t"
+        },
+        {
+          "value": 80.0,
+          "unit": "°C",
+          "line": 254,
+          "role": "particle_synthesis",
+          "context": "PS nanospheres with core–shell structure were synthesized by the one-step emulsion polymerization method. Briefly, styrene (38.0 g), acrylic acid (2.0 g) and methyl methacrylate (2.0 g) were dispersed in 160 ml of water. 0–0.011 mmol emulsifier sodium dodecyl benzene sulfonate (lower than the critical micelle concentration) and 12.50 mmol of buffer agent of ammonium bicarbonate was dissolved previously. The reaction mixture was kept at 70 °C for 0.5 h. Aqueous solution of APS as the initiator was added separately t"
+        },
+        {
+          "value": 210.0,
+          "unit": "°C",
+          "line": 258,
+          "role": "unspecified",
+          "context": "The colloidal particle supernatant was first concentrated by high-speed centrifugation (12,000 rpm, 20 min) and then dispersed in the solvent of formamide by ultrasonication (40 Hz, 30 min). The mass concentrations of the colloidal nanoparticles, ranging from 0.5 to 40 wt%, were adjusted by controlling the added solvent mass. The nanoparticle ink exhibits suitable printing parameters (such as viscosity: 3.84 mPa s, surface tension: 57.31 mN m $^{-1}$ , boiling point: 210 °C)."
+        },
+        {
+          "value": 80.0,
+          "unit": "°C",
+          "line": 262,
+          "role": "drying_or_substrate",
+          "context": "The substrates with smooth surface were sequentially sonicated in methanol, acetone and deionized water for 15 min and then blow-dried with nitrogen. To increase the surface energy, the substrates were treated with air plasma (DT02S, OPS Plasma Technology Co., Ltd.) at 200 W for 200 s. Then the superhydrophilic substrates were surface-modified with different molecules, such as the 1H,1H,2H, 2H-perfluorodecyltrimethoxysilane, (3-glycidoxypropyl)trimethoxysilane and triethoxy-n-octylsilane by chemical vapour depositi"
+        },
+        {
+          "value": 80.0,
+          "unit": "°C",
+          "line": 270,
+          "role": "curing",
+          "context": "The black background was prepared by doping commercial PDMS with the black dye nigrosine. First, the PDMS prepolymer and curing agent were mixed thoroughly and homogenously dispersed at a mass ratio of 10:1. Then nigrosine powder (Sigma-Aldrich) was added as the black dye at a mass fraction of 2 wt% relative to the PDMS prepolymer. Finally, the well-dispersed mixture was cast onto the back surface of the printed film and cured at 80 °C for 2 h, yielding a smooth, flat and uniform black PDMS background."
+        },
+        {
+          "value": 25.0,
+          "unit": "°C",
+          "line": 274,
+          "role": "drying_or_substrate",
+          "context": "The designed pattern was based on the binary bitmap. Controlled by the digital designed pattern, the colloidal ink was printed on the hydrophobic and low-adhesion substrate with the inkjet printing technology (independent R&D and customization) to form the domed microdroplets. After printing, the substrate was placed in situ and dried at room temperature (25 °C) to ensure the free movement of three-phase contact line and ordered self-assembly of the colloidal nanoparticles."
+        },
+        {
+          "value": 70.0,
+          "unit": "°C",
+          "line": 290,
+          "role": "curing",
+          "context": "Inkjet printing: nozzle diameter (25 $\\mu$ m), inter-nozzle spacing (100 $\\mu$ m), droplet volume (10 pl), printing speed (2 mm s $^{-1}$ ), jetting frequency (0.5–20.0 Hz), droplet drying temperature (70 °C); PDMS blading: blade gap (0.5 mm), blade height (1.5 mm), blading speed (2 mm s $^{-1}$ ); thermal curing: curing temperature (180 °C), curing time per unit length (5 s cm $^{-1}$ ); peeling: peeling angle (45°), peeling speed (2 mm s $^{-1}$ ), applied pressure (0.1 MPa); rolling: winding tension (5 N), windi"
+        },
+        {
+          "value": 180.0,
+          "unit": "°C",
+          "line": 290,
+          "role": "curing",
+          "context": "Inkjet printing: nozzle diameter (25 $\\mu$ m), inter-nozzle spacing (100 $\\mu$ m), droplet volume (10 pl), printing speed (2 mm s $^{-1}$ ), jetting frequency (0.5–20.0 Hz), droplet drying temperature (70 °C); PDMS blading: blade gap (0.5 mm), blade height (1.5 mm), blading speed (2 mm s $^{-1}$ ); thermal curing: curing temperature (180 °C), curing time per unit length (5 s cm $^{-1}$ ); peeling: peeling angle (45°), peeling speed (2 mm s $^{-1}$ ), applied pressure (0.1 MPa); rolling: winding tension (5 N), windi"
+        },
+        {
+          "value": 250.0,
+          "unit": "°C",
+          "line": 306,
+          "role": "stability_test",
+          "context": "Ultraviolet light (365 nm, 400 W) exposure was used to perform the accelerated light ageing tests. Low-temperature tests were performed by placing the sample in the freezer compartment of a commercial refrigerator for 24 h. High-temperature tests were performed by placing the sample on a hotplate with the temperature ranging from 50 to 250 °C for 24 h. Solvent resistance tests were performed by submerging the sample in a range of solvents for 24 h, including pure water, aqueous sodium hydroxide solution (1 mol l $^"
+        },
+        {
+          "value": 240.0,
+          "unit": "°C",
+          "line": 461,
+          "role": "stability_test",
+          "context": "Extended Data Fig. 6 | Stability tests of the meta-assembly print in resistance to ultraviolet ageing, thermal, solvent, washing and mechanical deformation. a,b, Compared photostability tests of the meta-assembly print (a) and the commercial dye print (b). Under accelerated light ageing tests (365 nm, 400 W), the meta-assembly print exhibits unfading performance, whereas the commercial-dye-based print shows substantial colour degradation. c, Thermal resistance tests. With the temperature ranging from -18 to 240 °C,"
+        }
+      ],
+      "operating_temperature_regimes": {
+        "particle_synthesis": [
+          70.0,
+          80.0
+        ],
+        "unspecified": [
+          210.0
+        ],
+        "drying_or_substrate": [
+          25.0,
+          80.0
+        ],
+        "curing": [
+          70.0,
+          80.0,
+          180.0
+        ],
+        "stability_test": [
+          240.0,
+          250.0
+        ]
+      },
+      "speed_relations": [
+        {
+          "relation": "winding speed synchronized with printing speed",
+          "printing_speed": 2.0,
+          "winding_speed": 3.0,
+          "unit": "mm/s",
+          "line": 290,
+          "status": "review",
+          "context": "Inkjet printing: nozzle diameter (25 $\\mu$ m), inter-nozzle spacing (100 $\\mu$ m), droplet volume (10 pl), printing speed (2 mm s $^{-1}$ ), jetting frequency (0.5–20.0 Hz), droplet drying temperature (70 °C); PDMS blading: blade gap (0.5 mm), blade height (1.5 mm), blading speed (2 mm s $^{-1}$ ); thermal curing: curing temperature (180 °C), curing time per unit length (5 s cm $^{-1}$ ); peeling: peeling angle (45°), peeling speed (2 mm s $^{-1}$ ), applied pressure (0.1 MPa); rolling: winding tension (5 N), winding speed (synchronized with the printing speed, 3 mm s $^{-1}$ ). To enable high"
+        }
+      ],
+      "symbol_definitions": [
+        {
+          "symbol": "D_n",
+          "definition": "nanoparticle_size",
+          "line": 118,
+          "context": "$D_{n}$ -based integrated printing, including the macroscopic image (e) and BF microscopy images (f,g) of the meta-assembly arrays composed of nanoparticles with three distinct sizes: 180, 216 and 240 nm. h, Demonstration of printing-enabled tunability using $D_{m}$ -based integrated printing, including the macroscopic image composed of patterned meta-assemblies with three distinct diameters of 14.3, 21.0 and 25.8 $\\mu$ m and the corresponding polarization optical microscopy images to exhibit the detailed spatial d"
+        },
+        {
+          "symbol": "D_n",
+          "definition": "photonic_lattice_constant",
+          "line": 128,
+          "context": "Notably, the pronounced multiscale optical interplay within the meta-assembly system offers a facile approach to tailoring its structural colouration. Accordingly, we collect the spectral data at specific spatial regions of the meta-assembly and convert the spectra into intuitive chromatic colours, first illustrating the distinct colour synergy from parts to the whole. Subsequently, the colour tunability corresponding to structural changes is systematically demonstrated. As shown in Fig. 4a, reducing the meta-assem"
+        },
+        {
+          "symbol": "D_n",
+          "definition": "nanoparticle_size",
+          "line": 409,
+          "context": "a, A printed comprehensive meta-assembly library with the variations of nanoparticle size ( $D_{n}$ ) and printed diameter ( $D_{m}$ ), offering a direct visual reference for the multiscale colouration, for instance, sample 6 ( $D_{n} = 180$ nm; $D_{m} \\approx 36$ μm) yielding a 'blue-centre + yellow-rim' colour and sample 11 ( $D_{n} = 216$ nm; $D_{m} \\approx 36$ μm) yielding a 'green-centre + orange-rim' colour."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "multiple_temperature_ranges",
+          "severity": "medium",
+          "message": "Multiple temperature ranges occur in different contexts; preserve each source location."
+        },
+        {
+          "code": "multiple_operating_temperature_regimes",
+          "severity": "medium",
+          "message": "Laboratory drying, synthesis and R2R curing temperatures form distinct operating regimes; do not merge them."
+        },
+        {
+          "code": "potential_relational_inconsistency",
+          "severity": "high",
+          "message": "Printing speed (2 mm/s) and synchronized winding speed (3 mm/s) differ at line 290; verify the intended relationship."
+        },
+        {
+          "code": "symbol_definition_drift",
+          "severity": "high",
+          "message": "D_n is associated with both photonic lattice constant and nanoparticle size; downstream claims must preserve the source wording."
+        }
+      ]
+    },
+    "dependencies": {
+      "scope": "Availability of sources referenced by the paper; DOI links do not count as local evidence.",
+      "score": 52,
+      "readiness": "review",
+      "dependencies": [
+        {
+          "dependency_type": "supplementary_information",
+          "required_for_full_evidence": true,
+          "reference_count": 3,
+          "reference_examples": [
+            "supplementary information",
+            "Supplementary Information",
+            "Supplementary information"
+          ],
+          "availability": "unavailable",
+          "local_paths": []
+        },
+        {
+          "dependency_type": "supplementary_discussions",
+          "required_for_full_evidence": true,
+          "reference_count": 1,
+          "reference_examples": [
+            "Supplementary Discussions"
+          ],
+          "availability": "unavailable",
+          "local_paths": []
+        },
+        {
+          "dependency_type": "supplementary_figures",
+          "required_for_full_evidence": true,
+          "reference_count": 19,
+          "reference_examples": [
+            "Supplementary Figs. 1–3",
+            "Supplementary Fig. 4",
+            "Supplementary Fig. 5",
+            "Supplementary Figs. 6",
+            "Supplementary Fig. 8",
+            "Supplementary Fig. 9",
+            "Supplementary Figs. 10",
+            "Supplementary Fig. 12",
+            "Supplementary Fig. 13",
+            "Supplementary Figs. 14–16",
+            "Supplementary Fig. 17",
+            "Supplementary Fig. 18"
+          ],
+          "availability": "unavailable",
+          "local_paths": []
+        },
+        {
+          "dependency_type": "supplementary_materials",
+          "required_for_full_evidence": true,
+          "reference_count": 2,
+          "reference_examples": [
+            "Supplementary Materials",
+            "supplementary material"
+          ],
+          "availability": "unavailable",
+          "local_paths": []
+        }
+      ],
+      "missing_required_count": 4,
+      "warnings": [
+        {
+          "code": "required_supplementary_sources_unavailable",
+          "severity": "high",
+          "message": "The paper relies on supplementary evidence that is referenced but not present locally: supplementary_information, supplementary_discussions, supplementary_figures, supplementary_materials."
+        }
+      ]
+    }
+  },
+  "synthesis_readiness": {
+    "scope": "Hard-gated scientific-synthesis hand-off; score is descriptive and cannot override a failed gate.",
+    "score": 69,
+    "readiness": "review",
+    "mechanism_completeness": "partial",
+    "gates": [
+      {
+        "gate": "text_capture_fidelity",
+        "status": "pass",
+        "message": "Raw OCR/Markdown text must be usable."
+      },
+      {
+        "gate": "reading_order_integrity",
+        "status": "review",
+        "message": "Scientific prose must not be silently reordered by layout streams."
+      },
+      {
+        "gate": "support_span_exposure",
+        "status": "pass",
+        "message": "Every retrieved item must expose an exact sentence/span and offsets."
+      },
+      {
+        "gate": "evidence_coverage",
+        "status": "pass",
+        "message": "Required workflow facets must be covered, not merely represented in top-k."
+      },
+      {
+        "gate": "supplementary_dependencies",
+        "status": "review",
+        "message": "Required supplementary evidence must be locally available for a complete mechanism audit."
+      },
+      {
+        "gate": "quantity_and_symbol_consistency",
+        "status": "review",
+        "message": "Linked quantities and symbol definitions require contextual consistency."
+      }
+    ],
+    "failed_gate_count": 3
+  },
+  "outline": {
+    "span_count": 683,
+    "chunk_count": 34,
+    "chunk_chars": 6000,
+    "sections": [
+      {
+        "chunk_id": "E001",
+        "heading": "Printable meta-assemblies enable synergetic colouration",
+        "raw_heading": "Printable meta-assemblies enable synergetic colouration",
+        "semantic_heading": "Printable meta-assemblies enable synergetic colouration",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 1,
+        "part": 1,
+        "line_start": 1,
+        "line_end": 21,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E002",
+        "heading": "Article",
+        "raw_heading": "Article",
+        "semantic_heading": "Printable meta-assemblies enable synergetic colouration",
+        "heading_kind": "boilerplate",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 23,
+        "line_end": 29,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E003",
+        "heading": "Principles for scalable R2R-ANP",
+        "raw_heading": "Principles for scalable R2R-ANP",
+        "semantic_heading": "Principles for scalable R2R-ANP",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 31,
+        "line_end": 35,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E004",
+        "heading": "Optical synergies in meta-assembly systems",
+        "raw_heading": "Optical synergies in meta-assembly systems",
+        "semantic_heading": "Optical synergies in meta-assembly systems",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 37,
+        "line_end": 58,
+        "modalities": [
+          "body_text",
+          "figure_caption",
+          "heading",
+          "image_ref"
+        ],
+        "figure_parents": [
+          "Fig. 1"
+        ],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E005",
+        "heading": "Article",
+        "raw_heading": "Article",
+        "semantic_heading": "Optical synergies in meta-assembly systems",
+        "heading_kind": "boilerplate",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 60,
+        "line_end": 111,
+        "modalities": [
+          "body_text",
+          "figure_caption",
+          "heading",
+          "image_ref"
+        ],
+        "figure_parents": [
+          "Fig. 2",
+          "Fig. 3"
+        ],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E006",
+        "heading": "Article",
+        "raw_heading": "Article",
+        "semantic_heading": "Optical synergies in meta-assembly systems",
+        "heading_kind": "boilerplate",
+        "empty_node": false,
+        "level": 2,
+        "part": 2,
+        "line_start": 113,
+        "line_end": 124,
+        "modalities": [
+          "body_text",
+          "figure_caption",
+          "image_ref"
+        ],
+        "figure_parents": [
+          "Fig. 4",
+          "Fig. 5"
+        ],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E007",
+        "heading": "Rich colour tunability of the meta-assembly",
+        "raw_heading": "Rich colour tunability of the meta-assembly",
+        "semantic_heading": "Rich colour tunability of the meta-assembly",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 126,
+        "line_end": 130,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E008",
+        "heading": "Macroscopic synergetic colouration",
+        "raw_heading": "Macroscopic synergetic colouration",
+        "semantic_heading": "Macroscopic synergetic colouration",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 132,
+        "line_end": 136,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E009",
+        "heading": "Conclusions",
+        "raw_heading": "Conclusions",
+        "semantic_heading": "Conclusions",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 138,
+        "line_end": 140,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E010",
+        "heading": "Online content",
+        "raw_heading": "Online content",
+        "semantic_heading": "Online content",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 142,
+        "line_end": 230,
+        "modalities": [
+          "boilerplate",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E011",
+        "heading": "Online content",
+        "raw_heading": "Online content",
+        "semantic_heading": "Online content",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 2,
+        "line_start": 232,
+        "line_end": 242,
+        "modalities": [
+          "boilerplate"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E012",
+        "heading": "Article",
+        "raw_heading": "Article",
+        "semantic_heading": "Online content",
+        "heading_kind": "boilerplate",
+        "empty_node": true,
+        "level": 2,
+        "part": 1,
+        "line_start": 244,
+        "line_end": 244,
+        "modalities": [
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E013",
+        "heading": "Methods",
+        "raw_heading": "Methods",
+        "semantic_heading": "Methods",
+        "heading_kind": "semantic_container",
+        "empty_node": true,
+        "level": 2,
+        "part": 1,
+        "line_start": 246,
+        "line_end": 246,
+        "modalities": [
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E014",
+        "heading": "Materials",
+        "raw_heading": "Materials",
+        "semantic_heading": "Materials",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 248,
+        "line_end": 250,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E015",
+        "heading": "Preparing monodispersed core-shell PS nanoparticles",
+        "raw_heading": "Preparing monodispersed core-shell PS nanoparticles",
+        "semantic_heading": "Preparing monodispersed core-shell PS nanoparticles",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 252,
+        "line_end": 258,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E016",
+        "heading": "Fabricating hydrophobic and low-adhesion substrates",
+        "raw_heading": "Fabricating hydrophobic and low-adhesion substrates",
+        "semantic_heading": "Fabricating hydrophobic and low-adhesion substrates",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 260,
+        "line_end": 262,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E017",
+        "heading": "Fabricating heterogeneous wettability substrates",
+        "raw_heading": "Fabricating heterogeneous wettability substrates",
+        "semantic_heading": "Fabricating heterogeneous wettability substrates",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 264,
+        "line_end": 266,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E018",
+        "heading": "Fabricating black background",
+        "raw_heading": "Fabricating black background",
+        "semantic_heading": "Fabricating black background",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 268,
+        "line_end": 270,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E019",
+        "heading": "Printing DCPCs",
+        "raw_heading": "Printing DCPCs",
+        "semantic_heading": "Printing DCPCs",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 272,
+        "line_end": 274,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E020",
+        "heading": "Coating PDMS polymer matrix",
+        "raw_heading": "Coating PDMS polymer matrix",
+        "semantic_heading": "Coating PDMS polymer matrix",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 276,
+        "line_end": 278,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E021",
+        "heading": "Curing the PDMS prepolymer",
+        "raw_heading": "Curing the PDMS prepolymer",
+        "semantic_heading": "Curing the PDMS prepolymer",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 280,
+        "line_end": 282,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E022",
+        "heading": "Peeling off the cured PDMS",
+        "raw_heading": "Peeling off the cured PDMS",
+        "semantic_heading": "Peeling off the cured PDMS",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 284,
+        "line_end": 286,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E023",
+        "heading": "Experimental details during R2R processing",
+        "raw_heading": "Experimental details during R2R processing",
+        "semantic_heading": "Experimental details during R2R processing",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 288,
+        "line_end": 290,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E024",
+        "heading": "Microscopic optical intensity test and normalization",
+        "raw_heading": "Microscopic optical intensity test and normalization",
+        "semantic_heading": "Microscopic optical intensity test and normalization",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 292,
+        "line_end": 294,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E025",
+        "heading": "Macroscopic optical performance test",
+        "raw_heading": "Macroscopic optical performance test",
+        "semantic_heading": "Macroscopic optical performance test",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 296,
+        "line_end": 298,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E026",
+        "heading": "Mechanical performance test",
+        "raw_heading": "Mechanical performance test",
+        "semantic_heading": "Mechanical performance test",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 300,
+        "line_end": 302,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E027",
+        "heading": "Stability tests",
+        "raw_heading": "Stability tests",
+        "semantic_heading": "Stability tests",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 304,
+        "line_end": 306,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E028",
+        "heading": "Numerical simulation of meta-assemblies",
+        "raw_heading": "Numerical simulation of meta-assemblies",
+        "semantic_heading": "Numerical simulation of meta-assemblies",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 308,
+        "line_end": 310,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E029",
+        "heading": "Characterizations",
+        "raw_heading": "Characterizations",
+        "semantic_heading": "Characterizations",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 312,
+        "line_end": 314,
+        "modalities": [
+          "body_text",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E030",
+        "heading": "Data availability",
+        "raw_heading": "Data availability",
+        "semantic_heading": "Data availability",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 316,
+        "line_end": 324,
+        "modalities": [
+          "boilerplate",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E031",
+        "heading": "Additional information",
+        "raw_heading": "Additional information",
+        "semantic_heading": "Additional information",
+        "heading_kind": "semantic",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 326,
+        "line_end": 334,
+        "modalities": [
+          "boilerplate",
+          "heading"
+        ],
+        "figure_parents": [],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E032",
+        "heading": "Article",
+        "raw_heading": "Article",
+        "semantic_heading": "Additional information",
+        "heading_kind": "boilerplate",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 336,
+        "line_end": 376,
+        "modalities": [
+          "boilerplate",
+          "figure_caption",
+          "heading",
+          "image_ref"
+        ],
+        "figure_parents": [
+          "Extended Data Fig. 1",
+          "Extended Data Fig. 2"
+        ],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E033",
+        "heading": "Article",
+        "raw_heading": "Article",
+        "semantic_heading": "Additional information",
+        "heading_kind": "boilerplate",
+        "empty_node": false,
+        "level": 2,
+        "part": 1,
+        "line_start": 378,
+        "line_end": 459,
+        "modalities": [
+          "boilerplate",
+          "figure_caption",
+          "formula",
+          "heading",
+          "image_ref"
+        ],
+        "figure_parents": [
+          "Extended Data Fig. 3",
+          "Extended Data Fig. 4",
+          "Extended Data Fig. 5"
+        ],
+        "semantic_owner_type": "section"
+      },
+      {
+        "chunk_id": "E034",
+        "heading": "Article",
+        "raw_heading": "Article",
+        "semantic_heading": "Extended Data Fig. 6",
+        "heading_kind": "boilerplate",
+        "empty_node": false,
+        "level": 2,
+        "part": 2,
+        "line_start": 461,
+        "line_end": 461,
+        "modalities": [
+          "figure_caption"
+        ],
+        "figure_parents": [
+          "Extended Data Fig. 6"
+        ],
+        "semantic_owner_type": "figure_caption"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "query_id": "objective",
+      "intent": "objective",
+      "label": "Research objective",
+      "query": "abstract objective objectives purpose aim motivation research question 摘要 目的 目标 动机 研究问题",
+      "expanded_query": "abstract objective objectives purpose aim motivation research question 摘要 目的 目标 动机 研究问题 abstract motivation purpose aim present demonstrate propose",
+      "query_expansion_applied": true,
+      "language_bridge_applied": false,
+      "canonical_query_id": "objective",
+      "results": [
+        {
+          "chunk_id": "E009",
+          "span_id": "S0199",
+          "heading": "Conclusions",
+          "raw_heading": "Conclusions",
+          "line_start": 140,
+          "line_end": 140,
+          "char_start": 32945,
+          "char_end": 33136,
+          "score": 6.987,
+          "relevance": "medium",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "research"
+          ],
+          "evidence_ids": [
+            "EV0001"
+          ]
+        },
+        {
+          "chunk_id": "E001",
+          "span_id": "S0017",
+          "heading": "Printable meta-assemblies enable synergetic colouration",
+          "raw_heading": "Printable meta-assemblies enable synergetic colouration",
+          "line_start": 15,
+          "line_end": 15,
+          "char_start": 2117,
+          "char_end": 2254,
+          "score": 5.172,
+          "relevance": "medium",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "research"
+          ],
+          "evidence_ids": [
+            "EV0002"
+          ]
+        },
+        {
+          "chunk_id": "E001",
+          "span_id": "S0012",
+          "heading": "Printable meta-assemblies enable synergetic colouration",
+          "raw_heading": "Printable meta-assemblies enable synergetic colouration",
+          "line_start": 15,
+          "line_end": 15,
+          "char_start": 1079,
+          "char_end": 1260,
+          "score": 4.174,
+          "relevance": "medium",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "present"
+          ],
+          "evidence_ids": [
+            "EV0003"
+          ]
+        },
+        {
+          "chunk_id": "E001",
+          "span_id": "S0028",
+          "heading": "Printable meta-assemblies enable synergetic colouration",
+          "raw_heading": "Printable meta-assemblies enable synergetic colouration",
+          "line_start": 21,
+          "line_end": 21,
+          "char_start": 4532,
+          "char_end": 4728,
+          "score": 4.068,
+          "relevance": "medium",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "present"
+          ],
+          "evidence_ids": [
+            "EV0004"
+          ]
+        },
+        {
+          "chunk_id": "E001",
+          "span_id": "S0025",
+          "heading": "Printable meta-assemblies enable synergetic colouration",
+          "raw_heading": "Printable meta-assemblies enable synergetic colouration",
+          "line_start": 19,
+          "line_end": 19,
+          "char_start": 4013,
+          "char_end": 4243,
+          "score": 3.872,
+          "relevance": "medium",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "present"
+          ],
+          "evidence_ids": [
+            "EV0005"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "EV0001",
+        "EV0002",
+        "EV0003",
+        "EV0004",
+        "EV0005"
+      ],
+      "coverage": {
+        "facet_count": 0,
+        "covered_facets": [],
+        "missing_facets": [],
+        "coverage_ratio": 1.0
+      },
+      "retrieval_status": "acceptable"
+    },
+    {
+      "query_id": "methods",
+      "intent": "methods",
+      "label": "Methods and conditions",
+      "query": "method methods methodology experiment experimental computational simulation sample materials measurement setup parameter condition 方法 实验 计算 模拟 样品 材料 测量 参数 条件",
+      "expanded_query": "method methods methodology experiment experimental computational simulation sample materials measurement setup parameter condition 方法 实验 计算 模拟 样品 材料 测量 参数 条件 methods materials experimental preparation fabrication synthesis polymerization substrate printing coating curing processing measurement simulation",
+      "query_expansion_applied": true,
+      "language_bridge_applied": false,
+      "canonical_query_id": "methods",
+      "results": [
+        {
+          "chunk_id": "E028",
+          "span_id": "S0562",
+          "heading": "Numerical simulation of meta-assemblies",
+          "raw_heading": "Numerical simulation of meta-assemblies",
+          "line_start": 310,
+          "line_end": 310,
+          "char_start": 51185,
+          "char_end": 51255,
+          "score": 21.066,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "materials",
+            "simulation"
+          ],
+          "evidence_ids": [
+            "EV0006"
+          ]
+        },
+        {
+          "chunk_id": "E015",
+          "span_id": "S0482",
+          "heading": "Preparing monodispersed core-shell PS nanoparticles",
+          "raw_heading": "Preparing monodispersed core-shell PS nanoparticles",
+          "line_start": 254,
+          "line_end": 254,
+          "char_start": 40986,
+          "char_end": 41091,
+          "score": 15.479,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "method",
+            "polymerization"
+          ],
+          "evidence_ids": [
+            "EV0007"
+          ]
+        },
+        {
+          "chunk_id": "E023",
+          "span_id": "S0527",
+          "heading": "Experimental details during R2R processing",
+          "raw_heading": "Experimental details during R2R processing",
+          "line_start": 290,
+          "line_end": 290,
+          "char_start": 46711,
+          "char_end": 47027,
+          "score": 12.997,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "curing",
+            "printing",
+            "processing"
+          ],
+          "evidence_ids": [
+            "EV0008"
+          ]
+        },
+        {
+          "chunk_id": "E023",
+          "span_id": "S0526",
+          "heading": "Experimental details during R2R processing",
+          "raw_heading": "Experimental details during R2R processing",
+          "line_start": 290,
+          "line_end": 290,
+          "char_start": 46125,
+          "char_end": 46710,
+          "score": 12.18,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "curing",
+            "printing"
+          ],
+          "evidence_ids": [
+            "EV0009"
+          ]
+        },
+        {
+          "chunk_id": "E005",
+          "span_id": "S0107",
+          "heading": "Optical synergies in meta-assembly systems",
+          "raw_heading": "Article",
+          "line_start": 71,
+          "line_end": 71,
+          "char_start": 16427,
+          "char_end": 16773,
+          "score": 10.074,
+          "relevance": "high",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "coating",
+            "curing",
+            "fabrication",
+            "printing"
+          ],
+          "evidence_ids": [
+            "EV0010"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "EV0006",
+        "EV0007",
+        "EV0008",
+        "EV0009",
+        "EV0010"
+      ],
+      "coverage": {
+        "facet_count": 0,
+        "covered_facets": [],
+        "missing_facets": [],
+        "coverage_ratio": 1.0
+      },
+      "retrieval_status": "acceptable"
+    },
+    {
+      "query_id": "results",
+      "intent": "key_results",
+      "label": "Results and conclusions",
+      "query": "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制",
+      "expanded_query": "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制 results conclusions demonstrate achieve yield resolution stability performance scalability tunability cycle metre-scale",
+      "query_expansion_applied": true,
+      "language_bridge_applied": false,
+      "canonical_query_id": "results",
+      "results": [
+        {
+          "chunk_id": "E003",
+          "span_id": "S0075",
+          "heading": "Principles for scalable R2R-ANP",
+          "raw_heading": "Principles for scalable R2R-ANP",
+          "line_start": 35,
+          "line_end": 35,
+          "char_start": 11728,
+          "char_end": 11965,
+          "score": 10.661,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "metre-scale",
+            "scalability"
+          ],
+          "evidence_ids": [
+            "EV0011"
+          ]
+        },
+        {
+          "chunk_id": "E001",
+          "span_id": "S0015",
+          "heading": "Printable meta-assemblies enable synergetic colouration",
+          "raw_heading": "Printable meta-assemblies enable synergetic colouration",
+          "line_start": 15,
+          "line_end": 15,
+          "char_start": 1691,
+          "char_end": 1899,
+          "score": 7.9,
+          "relevance": "high",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "metre-scale",
+            "scalability"
+          ],
+          "evidence_ids": [
+            "EV0012"
+          ]
+        },
+        {
+          "chunk_id": "E007",
+          "span_id": "S0174",
+          "heading": "Rich colour tunability of the meta-assembly",
+          "raw_heading": "Rich colour tunability of the meta-assembly",
+          "line_start": 130,
+          "line_end": 130,
+          "char_start": 28400,
+          "char_end": 28541,
+          "score": 8.915,
+          "relevance": "medium",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "achieve"
+          ],
+          "evidence_ids": [
+            "EV0013"
+          ]
+        },
+        {
+          "chunk_id": "E009",
+          "span_id": "S0198",
+          "heading": "Conclusions",
+          "raw_heading": "Conclusions",
+          "line_start": 140,
+          "line_end": 140,
+          "char_start": 32653,
+          "char_end": 32944,
+          "score": 10.26,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "performance",
+            "stability"
+          ],
+          "evidence_ids": [
+            "EV0014"
+          ]
+        },
+        {
+          "chunk_id": "E026",
+          "span_id": "S0541",
+          "heading": "Mechanical performance test",
+          "raw_heading": "Mechanical performance test",
+          "line_start": 302,
+          "line_end": 302,
+          "char_start": 48729,
+          "char_end": 48874,
+          "score": 3.713,
+          "relevance": "medium",
+          "section_fit": "method_context",
+          "matched_terms": [
+            "cycle"
+          ],
+          "evidence_ids": [
+            "EV0015"
+          ]
+        },
+        {
+          "chunk_id": "E007",
+          "span_id": "S0162",
+          "heading": "Rich colour tunability of the meta-assembly",
+          "raw_heading": "Rich colour tunability of the meta-assembly",
+          "line_start": 128,
+          "line_end": 128,
+          "char_start": 26246,
+          "char_end": 26349,
+          "score": 7.806,
+          "relevance": "medium",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "tunability"
+          ],
+          "evidence_ids": [
+            "EV0016"
+          ]
+        },
+        {
+          "chunk_id": "E034",
+          "span_id": "S0681",
+          "heading": "Extended Data Fig. 6",
+          "raw_heading": "Article",
+          "line_start": 461,
+          "line_end": 461,
+          "char_start": 63741,
+          "char_end": 63910,
+          "score": 7.756,
+          "relevance": "high",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "performance",
+            "stability"
+          ],
+          "evidence_ids": [
+            "EV0017"
+          ]
+        },
+        {
+          "chunk_id": "E009",
+          "span_id": "S0199",
+          "heading": "Conclusions",
+          "raw_heading": "Conclusions",
+          "line_start": 140,
+          "line_end": 140,
+          "char_start": 32945,
+          "char_end": 33136,
+          "score": 7.393,
+          "relevance": "medium",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "performance"
+          ],
+          "evidence_ids": [
+            "EV0001"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "EV0011",
+        "EV0012",
+        "EV0013",
+        "EV0014",
+        "EV0015",
+        "EV0016",
+        "EV0017",
+        "EV0001"
+      ],
+      "coverage": {
+        "facet_count": 5,
+        "covered_facets": [
+          "scale_or_throughput",
+          "yield_or_resolution",
+          "optical_tunability",
+          "stability",
+          "mechanical_robustness"
+        ],
+        "missing_facets": [],
+        "coverage_ratio": 1.0
+      },
+      "retrieval_status": "acceptable"
+    },
+    {
+      "query_id": "limitations",
+      "intent": "limitations",
+      "label": "Limitations and uncertainty",
+      "query": "limitation limitations uncertainty uncertainties error errors challenge challenges future work assumption assumptions constraint requirement viewing condition 局限 限制 不确定性 误差 挑战 未来 假设 约束 条件",
+      "expanded_query": "limitation limitations uncertainty uncertainties error errors challenge challenges future work assumption assumptions constraint requirement viewing condition 局限 限制 不确定性 误差 挑战 未来 假设 约束 条件 limitation constraint challenge uncertainty requirement depends recommended viewing illumination angle substrate background assumption future supplementary information discussions evidence dependency unavailable",
+      "query_expansion_applied": true,
+      "language_bridge_applied": false,
+      "canonical_query_id": "limitations",
+      "results": [
+        {
+          "chunk_id": "E025",
+          "span_id": "S0536",
+          "heading": "Macroscopic optical performance test",
+          "raw_heading": "Macroscopic optical performance test",
+          "line_start": 298,
+          "line_end": 298,
+          "char_start": 47913,
+          "char_end": 48342,
+          "score": 14.898,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "background",
+            "recommended",
+            "substrate",
+            "viewing"
+          ],
+          "evidence_ids": [
+            "EV0018"
+          ]
+        },
+        {
+          "chunk_id": "E008",
+          "span_id": "S0181",
+          "heading": "Macroscopic synergetic colouration",
+          "raw_heading": "Macroscopic synergetic colouration",
+          "line_start": 134,
+          "line_end": 134,
+          "char_start": 29701,
+          "char_end": 30007,
+          "score": 2.745,
+          "relevance": "medium",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "angle"
+          ],
+          "evidence_ids": [
+            "EV0019"
+          ]
+        },
+        {
+          "chunk_id": "E025",
+          "span_id": "S0534",
+          "heading": "Macroscopic optical performance test",
+          "raw_heading": "Macroscopic optical performance test",
+          "line_start": 298,
+          "line_end": 298,
+          "char_start": 47720,
+          "char_end": 47794,
+          "score": 7.568,
+          "relevance": "medium",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "background"
+          ],
+          "evidence_ids": [
+            "EV0020"
+          ]
+        },
+        {
+          "chunk_id": "E002",
+          "span_id": "S0033",
+          "heading": "Printable meta-assemblies enable synergetic colouration",
+          "raw_heading": "Article",
+          "line_start": 25,
+          "line_end": 25,
+          "char_start": 5213,
+          "char_end": 5261,
+          "score": 11.727,
+          "relevance": "high",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "discussions",
+            "supplementary"
+          ],
+          "evidence_ids": [
+            "EV0021"
+          ]
+        },
+        {
+          "chunk_id": "E001",
+          "span_id": "S0020",
+          "heading": "Printable meta-assemblies enable synergetic colouration",
+          "raw_heading": "Printable meta-assemblies enable synergetic colouration",
+          "line_start": 17,
+          "line_end": 17,
+          "char_start": 2690,
+          "char_end": 2877,
+          "score": 9.747,
+          "relevance": "high",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "challenges",
+            "limitations"
+          ],
+          "evidence_ids": [
+            "EV0022"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "EV0018",
+        "EV0019",
+        "EV0020",
+        "EV0021",
+        "EV0022"
+      ],
+      "coverage": {
+        "facet_count": 4,
+        "covered_facets": [
+          "illumination_geometry",
+          "observation_geometry",
+          "background_or_substrate",
+          "evidence_dependency"
+        ],
+        "missing_facets": [],
+        "coverage_ratio": 1.0
+      },
+      "retrieval_status": "acceptable"
+    },
+    {
+      "query_id": "custom-01",
+      "label": "Custom question 1",
+      "query": "样品制备方法是什么？",
+      "intent": "sample_preparation",
+      "expanded_query": "样品制备方法是什么？ sample preparation fabrication synthesis polymerization materials substrate substrates pretreatment plasma hydrophobic silane reagent styrene acrylic acid methyl methacrylate PDMS formamide ink formulation printing coating curing peeling transfer rolling winding processing experimental details",
+      "query_expansion_applied": true,
+      "language_bridge_applied": true,
+      "canonical_query_id": "custom-01",
+      "results": [
+        {
+          "chunk_id": "E015",
+          "span_id": "S0483",
+          "heading": "Preparing monodispersed core-shell PS nanoparticles",
+          "raw_heading": "Preparing monodispersed core-shell PS nanoparticles",
+          "line_start": 254,
+          "line_end": 254,
+          "char_start": 41092,
+          "char_end": 41206,
+          "score": 41.13,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "acid",
+            "acrylic",
+            "methacrylate",
+            "methyl",
+            "styrene"
+          ],
+          "evidence_ids": [
+            "EV0023"
+          ]
+        },
+        {
+          "chunk_id": "E015",
+          "span_id": "S0482",
+          "heading": "Preparing monodispersed core-shell PS nanoparticles",
+          "raw_heading": "Preparing monodispersed core-shell PS nanoparticles",
+          "line_start": 254,
+          "line_end": 254,
+          "char_start": 40986,
+          "char_end": 41091,
+          "score": 10.238,
+          "relevance": "medium",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "polymerization"
+          ],
+          "evidence_ids": [
+            "EV0007"
+          ]
+        },
+        {
+          "chunk_id": "E015",
+          "span_id": "S0493",
+          "heading": "Preparing monodispersed core-shell PS nanoparticles",
+          "raw_heading": "Preparing monodispersed core-shell PS nanoparticles",
+          "line_start": 258,
+          "line_end": 258,
+          "char_start": 42370,
+          "char_end": 42522,
+          "score": 11.82,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "ink",
+            "printing"
+          ],
+          "evidence_ids": [
+            "EV0024"
+          ]
+        },
+        {
+          "chunk_id": "E016",
+          "span_id": "S0496",
+          "heading": "Fabricating hydrophobic and low-adhesion substrates",
+          "raw_heading": "Fabricating hydrophobic and low-adhesion substrates",
+          "line_start": 262,
+          "line_end": 262,
+          "char_start": 42730,
+          "char_end": 42866,
+          "score": 19.631,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "plasma",
+            "substrates"
+          ],
+          "evidence_ids": [
+            "EV0025"
+          ]
+        },
+        {
+          "chunk_id": "E023",
+          "span_id": "S0526",
+          "heading": "Experimental details during R2R processing",
+          "raw_heading": "Experimental details during R2R processing",
+          "line_start": 290,
+          "line_end": 290,
+          "char_start": 46125,
+          "char_end": 46710,
+          "score": 28.515,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "curing",
+            "pdms",
+            "peeling",
+            "printing",
+            "rolling",
+            "winding"
+          ],
+          "evidence_ids": [
+            "EV0009"
+          ]
+        },
+        {
+          "chunk_id": "E020",
+          "span_id": "S0514",
+          "heading": "Coating PDMS polymer matrix",
+          "raw_heading": "Coating PDMS polymer matrix",
+          "line_start": 278,
+          "line_end": 278,
+          "char_start": 45012,
+          "char_end": 45206,
+          "score": 14.357,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "curing",
+            "pdms"
+          ],
+          "evidence_ids": [
+            "EV0026"
+          ]
+        },
+        {
+          "chunk_id": "E021",
+          "span_id": "S0520",
+          "heading": "Curing the PDMS prepolymer",
+          "raw_heading": "Curing the PDMS prepolymer",
+          "line_start": 282,
+          "line_end": 282,
+          "char_start": 45681,
+          "char_end": 45808,
+          "score": 17.211,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "pdms",
+            "polymerization"
+          ],
+          "evidence_ids": [
+            "EV0027"
+          ]
+        },
+        {
+          "chunk_id": "E022",
+          "span_id": "S0522",
+          "heading": "Peeling off the cured PDMS",
+          "raw_heading": "Peeling off the cured PDMS",
+          "line_start": 286,
+          "line_end": 286,
+          "char_start": 45841,
+          "char_end": 45899,
+          "score": 16.964,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "pdms",
+            "substrate"
+          ],
+          "evidence_ids": [
+            "EV0028"
+          ]
+        },
+        {
+          "chunk_id": "E023",
+          "span_id": "S0527",
+          "heading": "Experimental details during R2R processing",
+          "raw_heading": "Experimental details during R2R processing",
+          "line_start": 290,
+          "line_end": 290,
+          "char_start": 46711,
+          "char_end": 47027,
+          "score": 20.733,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "curing",
+            "details",
+            "pdms",
+            "printing",
+            "processing"
+          ],
+          "evidence_ids": [
+            "EV0008"
+          ]
+        },
+        {
+          "chunk_id": "E014",
+          "span_id": "S0476",
+          "heading": "Materials",
+          "raw_heading": "Materials",
+          "line_start": 250,
+          "line_end": 250,
+          "char_start": 40176,
+          "char_end": 40461,
+          "score": 30.937,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "acid",
+            "acrylic",
+            "methacrylate",
+            "methyl",
+            "styrene"
+          ],
+          "evidence_ids": [
+            "EV0029"
+          ]
+        },
+        {
+          "chunk_id": "E019",
+          "span_id": "S0511",
+          "heading": "Printing DCPCs",
+          "raw_heading": "Printing DCPCs",
+          "line_start": 274,
+          "line_end": 274,
+          "char_start": 44553,
+          "char_end": 44777,
+          "score": 21.167,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "hydrophobic",
+            "ink",
+            "printing",
+            "substrate"
+          ],
+          "evidence_ids": [
+            "EV0030"
+          ]
+        },
+        {
+          "chunk_id": "E005",
+          "span_id": "S0107",
+          "heading": "Optical synergies in meta-assembly systems",
+          "raw_heading": "Article",
+          "line_start": 71,
+          "line_end": 71,
+          "char_start": 16427,
+          "char_end": 16773,
+          "score": 17.908,
+          "relevance": "high",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "coating",
+            "curing",
+            "details",
+            "fabrication",
+            "pdms",
+            "peeling",
+            "printing"
+          ],
+          "evidence_ids": [
+            "EV0010"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "EV0023",
+        "EV0007",
+        "EV0024",
+        "EV0025",
+        "EV0009",
+        "EV0026",
+        "EV0027",
+        "EV0028",
+        "EV0008",
+        "EV0029",
+        "EV0030",
+        "EV0010"
+      ],
+      "coverage": {
+        "facet_count": 9,
+        "covered_facets": [
+          "materials",
+          "particle_synthesis",
+          "ink_formulation",
+          "substrate_preparation",
+          "printing",
+          "embedding_or_coating",
+          "curing",
+          "peeling_or_transfer",
+          "roll_to_roll"
+        ],
+        "missing_facets": [],
+        "coverage_ratio": 1.0
+      },
+      "retrieval_status": "acceptable"
+    },
+    {
+      "query_id": "custom-02",
+      "label": "Custom question 2",
+      "query": "物理图像/机制是什么？",
+      "intent": "physical_mechanism",
+      "expanded_query": "物理图像/机制是什么？ physical mechanism structure morphology optical field distribution light propagation photonic bandgap total internal reflection interference simulation working principle",
+      "query_expansion_applied": true,
+      "language_bridge_applied": true,
+      "canonical_query_id": "custom-02",
+      "results": [
+        {
+          "chunk_id": "E002",
+          "span_id": "S0032",
+          "heading": "Printable meta-assemblies enable synergetic colouration",
+          "raw_heading": "Article",
+          "line_start": 25,
+          "line_end": 25,
+          "char_start": 4926,
+          "char_end": 5212,
+          "score": 24.369,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "bandgap",
+            "internal",
+            "light",
+            "photonic",
+            "total"
+          ],
+          "evidence_ids": [
+            "EV0031"
+          ]
+        },
+        {
+          "chunk_id": "E005",
+          "span_id": "S0143",
+          "heading": "Optical synergies in meta-assembly systems",
+          "raw_heading": "Article",
+          "line_start": 109,
+          "line_end": 109,
+          "char_start": 21328,
+          "char_end": 21704,
+          "score": 12.137,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "field",
+            "light",
+            "optical",
+            "photonic"
+          ],
+          "evidence_ids": [
+            "EV0032"
+          ]
+        },
+        {
+          "chunk_id": "E005",
+          "span_id": "S0117",
+          "heading": "Optical synergies in meta-assembly systems",
+          "raw_heading": "Article",
+          "line_start": 77,
+          "line_end": 77,
+          "char_start": 18629,
+          "char_end": 18837,
+          "score": 16.603,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "interference",
+            "light",
+            "optical",
+            "propagation"
+          ],
+          "evidence_ids": [
+            "EV0033"
+          ]
+        },
+        {
+          "chunk_id": "E004",
+          "span_id": "S0084",
+          "heading": "Optical synergies in meta-assembly systems",
+          "raw_heading": "Optical synergies in meta-assembly systems",
+          "line_start": 39,
+          "line_end": 39,
+          "char_start": 13301,
+          "char_end": 13495,
+          "score": 11.807,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "field",
+            "interference"
+          ],
+          "evidence_ids": [
+            "EV0034"
+          ]
+        },
+        {
+          "chunk_id": "E004",
+          "span_id": "S0080",
+          "heading": "Optical synergies in meta-assembly systems",
+          "raw_heading": "Optical synergies in meta-assembly systems",
+          "line_start": 39,
+          "line_end": 39,
+          "char_start": 12612,
+          "char_end": 12788,
+          "score": 23.099,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "distribution",
+            "field",
+            "light",
+            "optical",
+            "propagation"
+          ],
+          "evidence_ids": [
+            "EV0035"
+          ]
+        },
+        {
+          "chunk_id": "E002",
+          "span_id": "S0049",
+          "heading": "Printable meta-assemblies enable synergetic colouration",
+          "raw_heading": "Article",
+          "line_start": 29,
+          "line_end": 29,
+          "char_start": 7704,
+          "char_end": 7884,
+          "score": 10.98,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "interference",
+            "light",
+            "optical"
+          ],
+          "evidence_ids": [
+            "EV0036"
+          ]
+        },
+        {
+          "chunk_id": "E005",
+          "span_id": "S0123",
+          "heading": "Optical synergies in meta-assembly systems",
+          "raw_heading": "Article",
+          "line_start": 77,
+          "line_end": 77,
+          "char_start": 19478,
+          "char_end": 19639,
+          "score": 19.267,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "distribution",
+            "field",
+            "optical",
+            "propagation"
+          ],
+          "evidence_ids": [
+            "EV0037"
+          ]
+        },
+        {
+          "chunk_id": "E004",
+          "span_id": "S0085",
+          "heading": "Optical synergies in meta-assembly systems",
+          "raw_heading": "Optical synergies in meta-assembly systems",
+          "line_start": 39,
+          "line_end": 39,
+          "char_start": 13496,
+          "char_end": 13572,
+          "score": 14.716,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "field",
+            "propagation"
+          ],
+          "evidence_ids": [
+            "EV0038"
+          ]
+        },
+        {
+          "chunk_id": "E028",
+          "span_id": "S0551",
+          "heading": "Numerical simulation of meta-assemblies",
+          "raw_heading": "Numerical simulation of meta-assemblies",
+          "line_start": 310,
+          "line_end": 310,
+          "char_start": 49964,
+          "char_end": 50118,
+          "score": 13.481,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "light",
+            "simulation"
+          ],
+          "evidence_ids": [
+            "EV0039"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "EV0031",
+        "EV0032",
+        "EV0033",
+        "EV0034",
+        "EV0035",
+        "EV0036",
+        "EV0037",
+        "EV0038",
+        "EV0039"
+      ],
+      "coverage": {
+        "facet_count": 6,
+        "covered_facets": [
+          "multiscale_structure",
+          "photonic_bandgap",
+          "total_internal_reflection",
+          "interference_or_dispersion",
+          "field_or_simulation",
+          "observable_mapping"
+        ],
+        "missing_facets": [],
+        "coverage_ratio": 1.0
+      },
+      "retrieval_status": "acceptable"
+    },
+    {
+      "query_id": "custom-03",
+      "label": "Custom question 3",
+      "query": "关键结果有哪些？",
+      "intent": "key_results",
+      "expanded_query": "关键结果有哪些？ results conclusions demonstrate achieve yield resolution stability performance scalability tunability cycle metre-scale",
+      "query_expansion_applied": true,
+      "language_bridge_applied": true,
+      "canonical_query_id": "results",
+      "results": [
+        {
+          "chunk_id": "E003",
+          "span_id": "S0075",
+          "heading": "Principles for scalable R2R-ANP",
+          "raw_heading": "Principles for scalable R2R-ANP",
+          "line_start": 35,
+          "line_end": 35,
+          "char_start": 11728,
+          "char_end": 11965,
+          "score": 10.661,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "metre-scale",
+            "scalability"
+          ],
+          "evidence_ids": [
+            "EV0011"
+          ]
+        },
+        {
+          "chunk_id": "E001",
+          "span_id": "S0015",
+          "heading": "Printable meta-assemblies enable synergetic colouration",
+          "raw_heading": "Printable meta-assemblies enable synergetic colouration",
+          "line_start": 15,
+          "line_end": 15,
+          "char_start": 1691,
+          "char_end": 1899,
+          "score": 7.9,
+          "relevance": "high",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "metre-scale",
+            "scalability"
+          ],
+          "evidence_ids": [
+            "EV0012"
+          ]
+        },
+        {
+          "chunk_id": "E007",
+          "span_id": "S0174",
+          "heading": "Rich colour tunability of the meta-assembly",
+          "raw_heading": "Rich colour tunability of the meta-assembly",
+          "line_start": 130,
+          "line_end": 130,
+          "char_start": 28400,
+          "char_end": 28541,
+          "score": 8.915,
+          "relevance": "medium",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "achieve"
+          ],
+          "evidence_ids": [
+            "EV0013"
+          ]
+        },
+        {
+          "chunk_id": "E009",
+          "span_id": "S0198",
+          "heading": "Conclusions",
+          "raw_heading": "Conclusions",
+          "line_start": 140,
+          "line_end": 140,
+          "char_start": 32653,
+          "char_end": 32944,
+          "score": 10.26,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "performance",
+            "stability"
+          ],
+          "evidence_ids": [
+            "EV0014"
+          ]
+        },
+        {
+          "chunk_id": "E026",
+          "span_id": "S0541",
+          "heading": "Mechanical performance test",
+          "raw_heading": "Mechanical performance test",
+          "line_start": 302,
+          "line_end": 302,
+          "char_start": 48729,
+          "char_end": 48874,
+          "score": 3.713,
+          "relevance": "medium",
+          "section_fit": "method_context",
+          "matched_terms": [
+            "cycle"
+          ],
+          "evidence_ids": [
+            "EV0015"
+          ]
+        },
+        {
+          "chunk_id": "E007",
+          "span_id": "S0162",
+          "heading": "Rich colour tunability of the meta-assembly",
+          "raw_heading": "Rich colour tunability of the meta-assembly",
+          "line_start": 128,
+          "line_end": 128,
+          "char_start": 26246,
+          "char_end": 26349,
+          "score": 7.806,
+          "relevance": "medium",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "tunability"
+          ],
+          "evidence_ids": [
+            "EV0016"
+          ]
+        },
+        {
+          "chunk_id": "E034",
+          "span_id": "S0681",
+          "heading": "Extended Data Fig. 6",
+          "raw_heading": "Article",
+          "line_start": 461,
+          "line_end": 461,
+          "char_start": 63741,
+          "char_end": 63910,
+          "score": 7.756,
+          "relevance": "high",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "performance",
+            "stability"
+          ],
+          "evidence_ids": [
+            "EV0017"
+          ]
+        },
+        {
+          "chunk_id": "E009",
+          "span_id": "S0199",
+          "heading": "Conclusions",
+          "raw_heading": "Conclusions",
+          "line_start": 140,
+          "line_end": 140,
+          "char_start": 32945,
+          "char_end": 33136,
+          "score": 7.393,
+          "relevance": "medium",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "performance"
+          ],
+          "evidence_ids": [
+            "EV0001"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "EV0011",
+        "EV0012",
+        "EV0013",
+        "EV0014",
+        "EV0015",
+        "EV0016",
+        "EV0017",
+        "EV0001"
+      ],
+      "coverage": {
+        "facet_count": 5,
+        "covered_facets": [
+          "scale_or_throughput",
+          "yield_or_resolution",
+          "optical_tunability",
+          "stability",
+          "mechanical_robustness"
+        ],
+        "missing_facets": [],
+        "coverage_ratio": 1.0
+      },
+      "retrieval_status": "acceptable"
+    },
+    {
+      "query_id": "custom-04",
+      "label": "Custom question 4",
+      "query": "局限性有哪些？",
+      "intent": "limitations",
+      "expanded_query": "局限性有哪些？ limitation constraint challenge uncertainty requirement depends recommended viewing illumination angle substrate background assumption future supplementary information discussions evidence dependency unavailable",
+      "query_expansion_applied": true,
+      "language_bridge_applied": true,
+      "canonical_query_id": "limitations",
+      "results": [
+        {
+          "chunk_id": "E025",
+          "span_id": "S0536",
+          "heading": "Macroscopic optical performance test",
+          "raw_heading": "Macroscopic optical performance test",
+          "line_start": 298,
+          "line_end": 298,
+          "char_start": 47913,
+          "char_end": 48342,
+          "score": 14.898,
+          "relevance": "high",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "background",
+            "recommended",
+            "substrate",
+            "viewing"
+          ],
+          "evidence_ids": [
+            "EV0018"
+          ]
+        },
+        {
+          "chunk_id": "E008",
+          "span_id": "S0181",
+          "heading": "Macroscopic synergetic colouration",
+          "raw_heading": "Macroscopic synergetic colouration",
+          "line_start": 134,
+          "line_end": 134,
+          "char_start": 29701,
+          "char_end": 30007,
+          "score": 2.745,
+          "relevance": "medium",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "angle"
+          ],
+          "evidence_ids": [
+            "EV0019"
+          ]
+        },
+        {
+          "chunk_id": "E025",
+          "span_id": "S0534",
+          "heading": "Macroscopic optical performance test",
+          "raw_heading": "Macroscopic optical performance test",
+          "line_start": 298,
+          "line_end": 298,
+          "char_start": 47720,
+          "char_end": 47794,
+          "score": 7.568,
+          "relevance": "medium",
+          "section_fit": "preferred",
+          "matched_terms": [
+            "background"
+          ],
+          "evidence_ids": [
+            "EV0020"
+          ]
+        },
+        {
+          "chunk_id": "E002",
+          "span_id": "S0033",
+          "heading": "Printable meta-assemblies enable synergetic colouration",
+          "raw_heading": "Article",
+          "line_start": 25,
+          "line_end": 25,
+          "char_start": 5213,
+          "char_end": 5261,
+          "score": 11.727,
+          "relevance": "high",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "discussions",
+            "supplementary"
+          ],
+          "evidence_ids": [
+            "EV0021"
+          ]
+        },
+        {
+          "chunk_id": "E001",
+          "span_id": "S0020",
+          "heading": "Printable meta-assemblies enable synergetic colouration",
+          "raw_heading": "Printable meta-assemblies enable synergetic colouration",
+          "line_start": 17,
+          "line_end": 17,
+          "char_start": 2690,
+          "char_end": 2877,
+          "score": 9.747,
+          "relevance": "high",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "challenges",
+            "limitations"
+          ],
+          "evidence_ids": [
+            "EV0022"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "EV0018",
+        "EV0019",
+        "EV0020",
+        "EV0021",
+        "EV0022"
+      ],
+      "coverage": {
+        "facet_count": 4,
+        "covered_facets": [
+          "illumination_geometry",
+          "observation_geometry",
+          "background_or_substrate",
+          "evidence_dependency"
+        ],
+        "missing_facets": [],
+        "coverage_ratio": 1.0
+      },
+      "retrieval_status": "acceptable"
+    }
+  ],
+  "evidence_registry": [
+    {
+      "evidence_id": "EV0001",
+      "span_id": "S0199",
+      "chunk_id": "E009",
+      "source_lines": {
+        "start": 140,
+        "end": 140
+      },
+      "source_chars": {
+        "start": 32945,
+        "end": 33136
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "Collectively, this printable meta-assembly strategy resolves the trade-off between optical functionality and engineering performance, providing key insights for multiscale photonics research.",
+      "query_ids": [
+        "objective",
+        "results",
+        "custom-03"
+      ],
+      "queries": [
+        "abstract objective objectives purpose aim motivation research question 摘要 目的 目标 动机 研究问题",
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制",
+        "关键结果有哪些？"
+      ]
+    },
+    {
+      "evidence_id": "EV0002",
+      "span_id": "S0017",
+      "chunk_id": "E001",
+      "source_lines": {
+        "start": 15,
+        "end": 15
+      },
+      "source_chars": {
+        "start": 2117,
+        "end": 2254
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "This work provides a versatile methodology for biologically inspired metamaterial construction by means of multiscale photonics research.",
+      "query_ids": [
+        "objective"
+      ],
+      "queries": [
+        "abstract objective objectives purpose aim motivation research question 摘要 目的 目标 动机 研究问题"
+      ]
+    },
+    {
+      "evidence_id": "EV0003",
+      "span_id": "S0012",
+      "chunk_id": "E001",
+      "source_lines": {
+        "start": 15,
+        "end": 15
+      },
+      "source_chars": {
+        "start": 1079,
+        "end": 1260
+      },
+      "modality": "body_text",
+      "support_type": "method_protocol",
+      "text": "Here we present a printable meta-assembly strategy that enables the fabrication of multiscale hierarchical optical architectures through continuous roll-to-roll (R2R) manufacturing.",
+      "query_ids": [
+        "objective"
+      ],
+      "queries": [
+        "abstract objective objectives purpose aim motivation research question 摘要 目的 目标 动机 研究问题"
+      ]
+    },
+    {
+      "evidence_id": "EV0004",
+      "span_id": "S0028",
+      "chunk_id": "E001",
+      "source_lines": {
+        "start": 21,
+        "end": 21
+      },
+      "source_chars": {
+        "start": 4532,
+        "end": 4728
+      },
+      "modality": "body_text",
+      "support_type": "method_protocol",
+      "text": "In this work, we present a printable meta-assembly strategy that enables the scalable fabrication of multiscale hierarchical optical architectures with distinct synergetic colouration performance.",
+      "query_ids": [
+        "objective"
+      ],
+      "queries": [
+        "abstract objective objectives purpose aim motivation research question 摘要 目的 目标 动机 研究问题"
+      ]
+    },
+    {
+      "evidence_id": "EV0005",
+      "span_id": "S0025",
+      "chunk_id": "E001",
+      "source_lines": {
+        "start": 19,
+        "end": 19
+      },
+      "source_chars": {
+        "start": 4013,
+        "end": 4243
+      },
+      "modality": "body_text",
+      "support_type": "author_inference",
+      "text": "Present artificial colouration systems struggle to predict multiscale synergetic interactions or unify disparate chromogenic mechanisms $^{38-40}$ , thus failing to guide the rational design of hierarchical colouration structures.",
+      "query_ids": [
+        "objective"
+      ],
+      "queries": [
+        "abstract objective objectives purpose aim motivation research question 摘要 目的 目标 动机 研究问题"
+      ]
+    },
+    {
+      "evidence_id": "EV0006",
+      "span_id": "S0562",
+      "chunk_id": "E028",
+      "source_lines": {
+        "start": 310,
+        "end": 310
+      },
+      "source_chars": {
+        "start": 51185,
+        "end": 51255
+      },
+      "modality": "body_text",
+      "support_type": "simulation",
+      "text": "More simulation details are summarized in the Supplementary Materials.",
+      "query_ids": [
+        "methods"
+      ],
+      "queries": [
+        "method methods methodology experiment experimental computational simulation sample materials measurement setup parameter condition 方法 实验 计算 模拟 样品 材料 测量 参数 条件"
+      ]
+    },
+    {
+      "evidence_id": "EV0007",
+      "span_id": "S0482",
+      "chunk_id": "E015",
+      "source_lines": {
+        "start": 254,
+        "end": 254
+      },
+      "source_chars": {
+        "start": 40986,
+        "end": 41091
+      },
+      "modality": "body_text",
+      "support_type": "method_protocol",
+      "text": "PS nanospheres with core–shell structure were synthesized by the one-step emulsion polymerization method.",
+      "query_ids": [
+        "methods",
+        "custom-01"
+      ],
+      "queries": [
+        "method methods methodology experiment experimental computational simulation sample materials measurement setup parameter condition 方法 实验 计算 模拟 样品 材料 测量 参数 条件",
+        "样品制备方法是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0008",
+      "span_id": "S0527",
+      "chunk_id": "E023",
+      "source_lines": {
+        "start": 290,
+        "end": 290
+      },
+      "source_chars": {
+        "start": 46711,
+        "end": 47027
+      },
+      "modality": "body_text",
+      "support_type": "method_protocol",
+      "text": "To enable high-efficiency R2R printing, the following details should be noted, including: preheating of the set-up to ensure rapid solvent evaporation and PDMS curing; presetting the module speeds to ensure coordination among various processing sections; overall cleanliness of the set-up to prevent optical defects.",
+      "query_ids": [
+        "methods",
+        "custom-01"
+      ],
+      "queries": [
+        "method methods methodology experiment experimental computational simulation sample materials measurement setup parameter condition 方法 实验 计算 模拟 样品 材料 测量 参数 条件",
+        "样品制备方法是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0009",
+      "span_id": "S0526",
+      "chunk_id": "E023",
+      "source_lines": {
+        "start": 290,
+        "end": 290
+      },
+      "source_chars": {
+        "start": 46125,
+        "end": 46710
+      },
+      "modality": "body_text",
+      "support_type": "method_protocol",
+      "text": "Inkjet printing: nozzle diameter (25 $\\mu$ m), inter-nozzle spacing (100 $\\mu$ m), droplet volume (10 pl), printing speed (2 mm s $^{-1}$ ), jetting frequency (0.5–20.0 Hz), droplet drying temperature (70 °C); PDMS blading: blade gap (0.5 mm), blade height (1.5 mm), blading speed (2 mm s $^{-1}$ ); thermal curing: curing temperature (180 °C), curing time per unit length (5 s cm $^{-1}$ ); peeling: peeling angle (45°), peeling speed (2 mm s $^{-1}$ ), applied pressure (0.1 MPa); rolling: winding tension (5 N), winding speed (synchronized with the printing speed, 3 mm s $^{-1}$ ).",
+      "query_ids": [
+        "methods",
+        "custom-01"
+      ],
+      "queries": [
+        "method methods methodology experiment experimental computational simulation sample materials measurement setup parameter condition 方法 实验 计算 模拟 样品 材料 测量 参数 条件",
+        "样品制备方法是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0010",
+      "span_id": "S0107",
+      "chunk_id": "E005",
+      "source_lines": {
+        "start": 71,
+        "end": 71
+      },
+      "source_chars": {
+        "start": 16427,
+        "end": 16773
+      },
+      "modality": "figure_caption",
+      "support_type": "figure_caption",
+      "text": "Fig. 2 | Principles for scalable meta-assembly printing. a, Schematic illustrations of the fabrication details, including inkjet printing of DCPC structures (1), PDMS prepolymer blade coating (2), thermal curing (3) and the cured PDMS peeling off (4). b, Top, rim intensity variations with the change of receding contact angle ( $\\theta_{Rec}$ ).",
+      "query_ids": [
+        "methods",
+        "custom-01"
+      ],
+      "queries": [
+        "method methods methodology experiment experimental computational simulation sample materials measurement setup parameter condition 方法 实验 计算 模拟 样品 材料 测量 参数 条件",
+        "样品制备方法是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0011",
+      "span_id": "S0075",
+      "chunk_id": "E003",
+      "source_lines": {
+        "start": 35,
+        "end": 35
+      },
+      "source_chars": {
+        "start": 11728,
+        "end": 11965
+      },
+      "modality": "body_text",
+      "support_type": "method_protocol",
+      "text": "Experimentally, we fabricate a metre-scale film containing more than 40 million meta-assemblies, with the total number of nanoparticles exceeding $7 \\times 10^{13}$ , which effectively validates the scalability of our strategy (Fig. 2e).",
+      "query_ids": [
+        "results",
+        "custom-03"
+      ],
+      "queries": [
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制",
+        "关键结果有哪些？"
+      ]
+    },
+    {
+      "evidence_id": "EV0012",
+      "span_id": "S0015",
+      "chunk_id": "E001",
+      "source_lines": {
+        "start": 15,
+        "end": 15
+      },
+      "source_chars": {
+        "start": 1691,
+        "end": 1899
+      },
+      "modality": "body_text",
+      "support_type": "method_protocol",
+      "text": "Overcoming scalability constraints, metre-scale meta-assembly prints with single-pixel customization can be rapidly fabricated from the nanoscale building blocks, spanning seven orders of magnitude in length.",
+      "query_ids": [
+        "results",
+        "custom-03"
+      ],
+      "queries": [
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制",
+        "关键结果有哪些？"
+      ]
+    },
+    {
+      "evidence_id": "EV0013",
+      "span_id": "S0174",
+      "chunk_id": "E007",
+      "source_lines": {
+        "start": 130,
+        "end": 130
+      },
+      "source_chars": {
+        "start": 28400,
+        "end": 28541
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "Second, meta-assemblies with different $D_{n}$ and $D_{m}$ can be integrated and printed to achieve the predefined macroscopic colour mixing.",
+      "query_ids": [
+        "results",
+        "custom-03"
+      ],
+      "queries": [
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制",
+        "关键结果有哪些？"
+      ]
+    },
+    {
+      "evidence_id": "EV0014",
+      "span_id": "S0198",
+      "chunk_id": "E009",
+      "source_lines": {
+        "start": 140,
+        "end": 140
+      },
+      "source_chars": {
+        "start": 32653,
+        "end": 32944
+      },
+      "modality": "body_text",
+      "support_type": "author_inference",
+      "text": "Moreover, the meta-assembly prints enable a more straightforward realization of synergistic optical performance while featuring excellent stability, thus offering substantial application potential for practical colouration scenarios ranging from information security to intelligent displays.",
+      "query_ids": [
+        "results",
+        "custom-03"
+      ],
+      "queries": [
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制",
+        "关键结果有哪些？"
+      ]
+    },
+    {
+      "evidence_id": "EV0015",
+      "span_id": "S0541",
+      "chunk_id": "E026",
+      "source_lines": {
+        "start": 302,
+        "end": 302
+      },
+      "source_chars": {
+        "start": 48729,
+        "end": 48874
+      },
+      "modality": "body_text",
+      "support_type": "measurement",
+      "text": "Similarly, the cycles-to-failure behaviours of the meta-assembly were tested at a constant rate of $30 \\, mm s^{-1}$ with cycle number of 10,000.",
+      "query_ids": [
+        "results",
+        "custom-03"
+      ],
+      "queries": [
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制",
+        "关键结果有哪些？"
+      ]
+    },
+    {
+      "evidence_id": "EV0016",
+      "span_id": "S0162",
+      "chunk_id": "E007",
+      "source_lines": {
+        "start": 128,
+        "end": 128
+      },
+      "source_chars": {
+        "start": 26246,
+        "end": 26349
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "Subsequently, the colour tunability corresponding to structural changes is systematically demonstrated.",
+      "query_ids": [
+        "results",
+        "custom-03"
+      ],
+      "queries": [
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制",
+        "关键结果有哪些？"
+      ]
+    },
+    {
+      "evidence_id": "EV0017",
+      "span_id": "S0681",
+      "chunk_id": "E034",
+      "source_lines": {
+        "start": 461,
+        "end": 461
+      },
+      "source_chars": {
+        "start": 63741,
+        "end": 63910
+      },
+      "modality": "figure_caption",
+      "support_type": "figure_caption",
+      "text": "With the temperature ranging from -18 to 240 °C, the meta-assembly retains its optical performance, illustrating its wide thermal stability. d, Solvent resistance tests.",
+      "query_ids": [
+        "results",
+        "custom-03"
+      ],
+      "queries": [
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制",
+        "关键结果有哪些？"
+      ]
+    },
+    {
+      "evidence_id": "EV0018",
+      "span_id": "S0536",
+      "chunk_id": "E025",
+      "source_lines": {
+        "start": 298,
+        "end": 298
+      },
+      "source_chars": {
+        "start": 47913,
+        "end": 48342
+      },
+      "modality": "body_text",
+      "support_type": "measurement",
+      "text": "For uniform colouration, the following viewing conditions are recommended: (1) ensure collimated incident light; (2) maintain a sufficiently small distance between the observation point and the light source (typically <2 cm); (3) ensure that the observer maintains a proper distance from the sample; (4) mount the sample on a black substrate to eliminate background reflection, absorb scattered light and enhance colour contrast.",
+      "query_ids": [
+        "limitations",
+        "custom-04"
+      ],
+      "queries": [
+        "limitation limitations uncertainty uncertainties error errors challenge challenges future work assumption assumptions constraint requirement viewing condition 局限 限制 不确定性 误差 挑战 未来 假设 约束 条件",
+        "局限性有哪些？"
+      ]
+    },
+    {
+      "evidence_id": "EV0019",
+      "span_id": "S0181",
+      "chunk_id": "E008",
+      "source_lines": {
+        "start": 134,
+        "end": 134
+      },
+      "source_chars": {
+        "start": 29701,
+        "end": 30007
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "This illumination-controlled reflection and retroreflection afford the macroscopic meta-assembly colouration with enhanced tunability, for which the colour output can be precisely modulated by tailoring the Bragg angle ( $\\theta$ , reflection mode) and the light-viewing distance (D, retroreflection mode).",
+      "query_ids": [
+        "limitations",
+        "custom-04"
+      ],
+      "queries": [
+        "limitation limitations uncertainty uncertainties error errors challenge challenges future work assumption assumptions constraint requirement viewing condition 局限 限制 不确定性 误差 挑战 未来 假设 约束 条件",
+        "局限性有哪些？"
+      ]
+    },
+    {
+      "evidence_id": "EV0020",
+      "span_id": "S0534",
+      "chunk_id": "E025",
+      "source_lines": {
+        "start": 298,
+        "end": 298
+      },
+      "source_chars": {
+        "start": 47720,
+        "end": 47794
+      },
+      "modality": "body_text",
+      "support_type": "measurement",
+      "text": "Macroscopic images were taken by placing the sample on a black background.",
+      "query_ids": [
+        "limitations",
+        "custom-04"
+      ],
+      "queries": [
+        "limitation limitations uncertainty uncertainties error errors challenge challenges future work assumption assumptions constraint requirement viewing condition 局限 限制 不确定性 误差 挑战 未来 假设 约束 条件",
+        "局限性有哪些？"
+      ]
+    },
+    {
+      "evidence_id": "EV0021",
+      "span_id": "S0033",
+      "chunk_id": "E002",
+      "source_lines": {
+        "start": 25,
+        "end": 25
+      },
+      "source_chars": {
+        "start": 5213,
+        "end": 5261
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "1–3; see Supplementary Discussions for details).",
+      "query_ids": [
+        "limitations",
+        "custom-04"
+      ],
+      "queries": [
+        "limitation limitations uncertainty uncertainties error errors challenge challenges future work assumption assumptions constraint requirement viewing condition 局限 限制 不确定性 误差 挑战 未来 假设 约束 条件",
+        "局限性有哪些？"
+      ]
+    },
+    {
+      "evidence_id": "EV0022",
+      "span_id": "S0020",
+      "chunk_id": "E001",
+      "source_lines": {
+        "start": 17,
+        "end": 17
+      },
+      "source_chars": {
+        "start": 2690,
+        "end": 2877
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "Although chemical dyes have dominated applications for millennia, the limitations of toxic chemical pollution $^{19-22}$ and colour fading $^{23,24}$ still persist as pressing challenges.",
+      "query_ids": [
+        "limitations",
+        "custom-04"
+      ],
+      "queries": [
+        "limitation limitations uncertainty uncertainties error errors challenge challenges future work assumption assumptions constraint requirement viewing condition 局限 限制 不确定性 误差 挑战 未来 假设 约束 条件",
+        "局限性有哪些？"
+      ]
+    },
+    {
+      "evidence_id": "EV0023",
+      "span_id": "S0483",
+      "chunk_id": "E015",
+      "source_lines": {
+        "start": 254,
+        "end": 254
+      },
+      "source_chars": {
+        "start": 41092,
+        "end": 41206
+      },
+      "modality": "body_text",
+      "support_type": "method_protocol",
+      "text": "Briefly, styrene (38.0 g), acrylic acid (2.0 g) and methyl methacrylate (2.0 g) were dispersed in 160 ml of water.",
+      "query_ids": [
+        "custom-01"
+      ],
+      "queries": [
+        "样品制备方法是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0024",
+      "span_id": "S0493",
+      "chunk_id": "E015",
+      "source_lines": {
+        "start": 258,
+        "end": 258
+      },
+      "source_chars": {
+        "start": 42370,
+        "end": 42522
+      },
+      "modality": "body_text",
+      "support_type": "method_protocol",
+      "text": "The nanoparticle ink exhibits suitable printing parameters (such as viscosity: 3.84 mPa s, surface tension: 57.31 mN m $^{-1}$ , boiling point: 210 °C).",
+      "query_ids": [
+        "custom-01"
+      ],
+      "queries": [
+        "样品制备方法是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0025",
+      "span_id": "S0496",
+      "chunk_id": "E016",
+      "source_lines": {
+        "start": 262,
+        "end": 262
+      },
+      "source_chars": {
+        "start": 42730,
+        "end": 42866
+      },
+      "modality": "body_text",
+      "support_type": "method_protocol",
+      "text": "To increase the surface energy, the substrates were treated with air plasma (DT02S, OPS Plasma Technology Co., Ltd.) at 200 W for 200 s.",
+      "query_ids": [
+        "custom-01"
+      ],
+      "queries": [
+        "样品制备方法是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0026",
+      "span_id": "S0514",
+      "chunk_id": "E020",
+      "source_lines": {
+        "start": 278,
+        "end": 278
+      },
+      "source_chars": {
+        "start": 45012,
+        "end": 45206
+      },
+      "modality": "body_text",
+      "support_type": "method_protocol",
+      "text": "Prepolymer of PDMS (SYLGARD 184 silicone elastomer kit, Dow) was prepared by mixing the monomers with the curing agent (with a mass ratio of 10:1) and stirred by a mechanical stirrer for 10 min.",
+      "query_ids": [
+        "custom-01"
+      ],
+      "queries": [
+        "样品制备方法是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0027",
+      "span_id": "S0520",
+      "chunk_id": "E021",
+      "source_lines": {
+        "start": 282,
+        "end": 282
+      },
+      "source_chars": {
+        "start": 45681,
+        "end": 45808
+      },
+      "modality": "body_text",
+      "support_type": "method_protocol",
+      "text": "With the polymerization of PDMS, the nano-assemblies would automatically form a robust composite unit with the polymer network.",
+      "query_ids": [
+        "custom-01"
+      ],
+      "queries": [
+        "样品制备方法是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0028",
+      "span_id": "S0522",
+      "chunk_id": "E022",
+      "source_lines": {
+        "start": 286,
+        "end": 286
+      },
+      "source_chars": {
+        "start": 45841,
+        "end": 45899
+      },
+      "modality": "body_text",
+      "support_type": "method_protocol",
+      "text": "The cured PDMS was directly peeled off from the substrate.",
+      "query_ids": [
+        "custom-01"
+      ],
+      "queries": [
+        "样品制备方法是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0029",
+      "span_id": "S0476",
+      "chunk_id": "E014",
+      "source_lines": {
+        "start": 250,
+        "end": 250
+      },
+      "source_chars": {
+        "start": 40176,
+        "end": 40461
+      },
+      "modality": "body_text",
+      "support_type": "method_protocol",
+      "text": "Styrene (99.0%), acrylic acid (98.0%), methyl methacrylate (99.9%), sodium dodecyl benzene sulfonate (95.0%), ammonium bicarbonate (99.0%), ammonium peroxodisulfate (APS, 99.0%), caustic soda (NaOH, 96.0%), acetic acid (98.0%) and hexadecane (98.0%) were purchased from J&K Scientific.",
+      "query_ids": [
+        "custom-01"
+      ],
+      "queries": [
+        "样品制备方法是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0030",
+      "span_id": "S0511",
+      "chunk_id": "E019",
+      "source_lines": {
+        "start": 274,
+        "end": 274
+      },
+      "source_chars": {
+        "start": 44553,
+        "end": 44777
+      },
+      "modality": "body_text",
+      "support_type": "method_protocol",
+      "text": "Controlled by the digital designed pattern, the colloidal ink was printed on the hydrophobic and low-adhesion substrate with the inkjet printing technology (independent R&D and customization) to form the domed microdroplets.",
+      "query_ids": [
+        "custom-01"
+      ],
+      "queries": [
+        "样品制备方法是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0031",
+      "span_id": "S0032",
+      "chunk_id": "E002",
+      "source_lines": {
+        "start": 25,
+        "end": 25
+      },
+      "source_chars": {
+        "start": 4926,
+        "end": 5212
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "The nanolattice first defines a wavelength-selective photonic bandgap (PBG) $^{9}$ and the curved interface with refractive index contrast subsequently endows the meta-assembly with light localization capability by means of total internal reflections (TIRs) $^{10}$ (Supplementary Figs.",
+      "query_ids": [
+        "custom-02"
+      ],
+      "queries": [
+        "物理图像/机制是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0032",
+      "span_id": "S0143",
+      "chunk_id": "E005",
+      "source_lines": {
+        "start": 109,
+        "end": 109
+      },
+      "source_chars": {
+        "start": 21328,
+        "end": 21704
+      },
+      "modality": "figure_caption",
+      "support_type": "figure_caption",
+      "text": "When the wavelength of incident light falls within the PBG range, the field intensity at the rim region can be greatly suppressed, owing to the interplay of different-scaled optical effects. g, h, The first Brillouin zone of the hexagonal close-packed photonic crystal with a lattice constant of 215 nm (g) and the calculated band diagram (h), demonstrating the incomplete PBG",
+      "query_ids": [
+        "custom-02"
+      ],
+      "queries": [
+        "物理图像/机制是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0033",
+      "span_id": "S0117",
+      "chunk_id": "E005",
+      "source_lines": {
+        "start": 77,
+        "end": 77
+      },
+      "source_chars": {
+        "start": 18629,
+        "end": 18837
+      },
+      "modality": "body_text",
+      "support_type": "author_inference",
+      "text": "Rim dispersion originates from the pronounced optical path difference during TIR-confined propagation when light impinges on the rim regions, thereby inducing the mutual interference of electromagnetic waves.",
+      "query_ids": [
+        "custom-02"
+      ],
+      "queries": [
+        "物理图像/机制是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0034",
+      "span_id": "S0084",
+      "chunk_id": "E004",
+      "source_lines": {
+        "start": 39,
+        "end": 39
+      },
+      "source_chars": {
+        "start": 13301,
+        "end": 13495
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "Notably, at this wavelength, the field near the central boundary deflects leftward, whereas the rim field deflects rightward, exhibiting distinct interference cancellation in the overlap region.",
+      "query_ids": [
+        "custom-02"
+      ],
+      "queries": [
+        "物理图像/机制是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0035",
+      "span_id": "S0080",
+      "chunk_id": "E004",
+      "source_lines": {
+        "start": 39,
+        "end": 39
+      },
+      "source_chars": {
+        "start": 12612,
+        "end": 12788
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "Unlike the predictable optical effects of single-scale structures, the meta-assembly enables non-trivial modulation of electromagnetic field distribution and light propagation.",
+      "query_ids": [
+        "custom-02"
+      ],
+      "queries": [
+        "物理图像/机制是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0036",
+      "span_id": "S0049",
+      "chunk_id": "E002",
+      "source_lines": {
+        "start": 29,
+        "end": 29
+      },
+      "source_chars": {
+        "start": 7704,
+        "end": 7884
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "Meanwhile, the concave optical interface confines the incident light to propagate along the curved trajectories, guiding multibounce interference and colouration at the rim region.",
+      "query_ids": [
+        "custom-02"
+      ],
+      "queries": [
+        "物理图像/机制是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0037",
+      "span_id": "S0123",
+      "chunk_id": "E005",
+      "source_lines": {
+        "start": 77,
+        "end": 77
+      },
+      "source_chars": {
+        "start": 19478,
+        "end": 19639
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "Consequently, the optical field distribution becomes stably established, with the specific wavelength components exhibiting a more uniform propagation direction.",
+      "query_ids": [
+        "custom-02"
+      ],
+      "queries": [
+        "物理图像/机制是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0038",
+      "span_id": "S0085",
+      "chunk_id": "E004",
+      "source_lines": {
+        "start": 39,
+        "end": 39
+      },
+      "source_chars": {
+        "start": 13496,
+        "end": 13572
+      },
+      "modality": "body_text",
+      "support_type": "author_inference",
+      "text": "As a result, ray propagation is suppressed, inducing field valley (Fig. 3e),",
+      "query_ids": [
+        "custom-02"
+      ],
+      "queries": [
+        "物理图像/机制是什么？"
+      ]
+    },
+    {
+      "evidence_id": "EV0039",
+      "span_id": "S0551",
+      "chunk_id": "E028",
+      "source_lines": {
+        "start": 310,
+        "end": 310
+      },
+      "source_chars": {
+        "start": 49964,
+        "end": 50118
+      },
+      "modality": "body_text",
+      "support_type": "simulation",
+      "text": "The finite-difference time-domain simulation technique was performed to understand the near-field coupling between the incident light and meta-assemblies.",
+      "query_ids": [
+        "custom-02"
+      ],
+      "queries": [
+        "物理图像/机制是什么？"
+      ]
+    }
+  ],
+  "source_dependencies": {
+    "scope": "Availability of sources referenced by the paper; DOI links do not count as local evidence.",
+    "score": 52,
+    "readiness": "review",
+    "dependencies": [
+      {
+        "dependency_type": "supplementary_information",
+        "required_for_full_evidence": true,
+        "reference_count": 3,
+        "reference_examples": [
+          "supplementary information",
+          "Supplementary Information",
+          "Supplementary information"
+        ],
+        "availability": "unavailable",
+        "local_paths": []
+      },
+      {
+        "dependency_type": "supplementary_discussions",
+        "required_for_full_evidence": true,
+        "reference_count": 1,
+        "reference_examples": [
+          "Supplementary Discussions"
+        ],
+        "availability": "unavailable",
+        "local_paths": []
+      },
+      {
+        "dependency_type": "supplementary_figures",
+        "required_for_full_evidence": true,
+        "reference_count": 19,
+        "reference_examples": [
+          "Supplementary Figs. 1–3",
+          "Supplementary Fig. 4",
+          "Supplementary Fig. 5",
+          "Supplementary Figs. 6",
+          "Supplementary Fig. 8",
+          "Supplementary Fig. 9",
+          "Supplementary Figs. 10",
+          "Supplementary Fig. 12",
+          "Supplementary Fig. 13",
+          "Supplementary Figs. 14–16",
+          "Supplementary Fig. 17",
+          "Supplementary Fig. 18"
+        ],
+        "availability": "unavailable",
+        "local_paths": []
+      },
+      {
+        "dependency_type": "supplementary_materials",
+        "required_for_full_evidence": true,
+        "reference_count": 2,
+        "reference_examples": [
+          "Supplementary Materials",
+          "supplementary material"
+        ],
+        "availability": "unavailable",
+        "local_paths": []
+      }
+    ],
+    "missing_required_count": 4,
+    "warnings": [
+      {
+        "code": "required_supplementary_sources_unavailable",
+        "severity": "high",
+        "message": "The paper relies on supplementary evidence that is referenced but not present locally: supplementary_information, supplementary_discussions, supplementary_figures, supplementary_materials."
+      }
+    ]
+  },
+  "related_documents": [],
+  "claim_ledger_contract": {
+    "required_claim_fields": [
+      "claim",
+      "evidence_refs",
+      "evidence_type",
+      "confidence",
+      "needs_review"
+    ],
+    "evidence_ref_format": {
+      "evidence_id": "EV####",
+      "span_id": "S####",
+      "chunk_id": "E###",
+      "source_lines": {
+        "start": "integer",
+        "end": "integer"
+      },
+      "source_chars": {
+        "start": "integer",
+        "end": "integer"
+      },
+      "page_or_figure": "optional string"
+    },
+    "allowed_evidence_types": [
+      "direct_observation",
+      "measurement",
+      "simulation",
+      "fit",
+      "author_inference",
+      "reviewer_inference",
+      "extrapolation",
+      "method_protocol",
+      "figure_caption"
+    ],
+    "rules": [
+      "Attach evidence to each major claim and every reported number.",
+      "Keep laboratory, optimized batch, and roll-to-roll process conditions separate.",
+      "Separate test conditions from observed performance.",
+      "Cite EV#### as the primary evidence reference; E### is only a coarse parent chunk.",
+      "Preserve span character offsets when reading order is under review.",
+      "Separate author-stated limitations from reviewer-inferred limitations.",
+      "Do not silently merge differing values or repair missing signs and units."
+    ]
+  },
+  "artifacts": {
+    "artifact_dir": "/home/simcrq/0_Project/paperworkflow/output/workflows/de757544d02c10b7",
+    "workflow_manifest_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/de757544d02c10b7/workflow.json",
+    "document_manifest_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/de757544d02c10b7/document.manifest.json",
+    "evidence_report_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/de757544d02c10b7/evidence.md"
+  },
+  "handoff": {
+    "primary_markdown_path": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/de757544d02c10b7/Li.md",
+    "preferred_context_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/de757544d02c10b7/evidence.md",
+    "provenance_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/de757544d02c10b7/workflow.json",
+    "line_addressable_manifest_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/de757544d02c10b7/document.manifest.json",
+    "needs_human_review": true,
+    "instruction": "Downstream plugins should read the evidence package first, use the primary Markdown when more context is needed, and cite EV#### plus S####/E###, exact line ranges and character offsets for every major claim and number. Follow claim_ledger_contract; keep process modes and evidence types separate."
+  },
+  "recommended_next_steps": [
+    "Review all quality dimensions before scientific synthesis.",
+    "Treat extraction readiness as OCR/Markdown usability only.",
+    "Use evidence.md as the compact input for a summarization, comparison, or tutorial plugin.",
+    "Use EV#### as the primary evidence reference; retain S####/E### and exact offsets.",
+    "Preserve differing numerical ranges with their individual contexts.",
+    "Inspect only filename-linked supplementary_candidate files."
+  ]
+}

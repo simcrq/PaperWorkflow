@@ -1,0 +1,670 @@
+{
+  "schema_version": 2,
+  "workflow_id": "49031bc44204946a",
+  "generated_at": "2026-08-19T13:53:22.462074+00:00",
+  "source": {
+    "input_path": "/home/simcrq/0_Project/paperworkflow/INput/300u.pdf",
+    "input_type": "pdf",
+    "markdown_path": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/92d8e7fd893864b0/300u.md",
+    "source_fingerprint": "92d8e7fd893864b0",
+    "source_sha256": "47cf8cc72d6b1b1277f9b0b0ad018a22013ca7e2024eae97b853ae84957dd5f0",
+    "markdown_sha256": "a9647e7899e744970501db16615c32ba81409a73b10333456aa032c2add27739",
+    "mineru": {
+      "source": "/home/simcrq/0_Project/paperworkflow/INput/300u.pdf",
+      "mineru_mode": "official_cli",
+      "cache_dir": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/92d8e7fd893864b0",
+      "requested_cache_dir": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/92d8e7fd893864b0",
+      "cache_hit": false,
+      "markdown_path": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/92d8e7fd893864b0/300u.md",
+      "char_count": 47513,
+      "message": "MinerU PDF-to-Markdown/OCR completed; no LLM summary was requested."
+    }
+  },
+  "stages": [
+    {
+      "stage": "ingestion",
+      "status": "completed",
+      "details": {
+        "source": "/home/simcrq/0_Project/paperworkflow/INput/300u.pdf",
+        "mineru_mode": "official_cli",
+        "cache_dir": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/92d8e7fd893864b0",
+        "requested_cache_dir": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/92d8e7fd893864b0",
+        "cache_hit": false,
+        "markdown_path": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/92d8e7fd893864b0/300u.md",
+        "char_count": 47513,
+        "message": "MinerU PDF-to-Markdown/OCR completed; no LLM summary was requested."
+      }
+    },
+    {
+      "stage": "metadata",
+      "status": "completed"
+    },
+    {
+      "stage": "extraction_quality_audit",
+      "status": "completed"
+    },
+    {
+      "stage": "section_index",
+      "status": "completed",
+      "chunk_count": 21
+    },
+    {
+      "stage": "evidence_retrieval",
+      "status": "completed",
+      "query_count": 7
+    },
+    {
+      "stage": "artifact_export",
+      "status": "completed"
+    }
+  ],
+  "metadata": {
+    "title_guess": "300-unit-per-second roll-to-roll manufacturing of visible metalenses",
+    "title_source": "filtered_level_one_heading",
+    "language_profile": "latin-dominant",
+    "dois": [
+      "10.1038/s41586-026-10369-y",
+      "10.1002/adfm.202524783",
+      "10.1038/s41578-025-00874-3"
+    ],
+    "arxiv_ids": [],
+    "urls": [
+      "https://doi.org/10.1038/s41586-026-10369-y",
+      "https://doi.org/10.1002/adfm.202524783",
+      "https://doi.org/10.1038/s41578-025-00874-3",
+      "http://www.nature.com/reprints"
+    ],
+    "section_headings": [
+      "300-unit-per-second roll-to-roll manufacturing of visible metalenses",
+      "Manufacturing workflow",
+      "Design principle of metalens",
+      "Pilot line for R2R manufacturing of visible metalenses",
+      "Characterization of the R2R-imprinted metalenses",
+      "Discussion",
+      "Online content",
+      "Article",
+      "Methods",
+      "Numerical analysis",
+      "Master template preparation",
+      "UV resin selection",
+      "R2R nanoimprint lithography",
+      "TiO ${2}$ deposition",
+      "Optical measurement set-up",
+      "Data availability",
+      "Additional information",
+      "Article"
+    ],
+    "section_coverage": {
+      "abstract": false,
+      "introduction": false,
+      "methods": true,
+      "results": false,
+      "discussion": true,
+      "conclusion": false,
+      "references": false
+    }
+  },
+  "quality_audit": {
+    "scope": "OCR/Markdown extraction usability only; not scientific-quality assessment",
+    "score": 90,
+    "readiness": "ready",
+    "metrics": {
+      "char_count": 47513,
+      "line_count": 352,
+      "nonempty_line_count": 188,
+      "heading_count": 18,
+      "chunk_count": 21,
+      "readable_character_ratio": 0.701619,
+      "replacement_character_count": 0,
+      "replacement_character_ratio": 0.0,
+      "duplicate_long_line_ratio": 0.0,
+      "broken_hyphen_line_count": 0
+    },
+    "content_inventory": {
+      "markdown_image_count": 32,
+      "figure_caption_count": 4,
+      "table_caption_count": 0,
+      "markdown_table_count": 0,
+      "formula_block_count": 3,
+      "inline_formula_estimate": 90,
+      "citation_marker_count": 0
+    },
+    "section_coverage": {
+      "abstract": false,
+      "introduction": false,
+      "methods": true,
+      "results": false,
+      "discussion": true,
+      "conclusion": false,
+      "references": false
+    },
+    "warnings": [
+      {
+        "code": "core_sections_missing",
+        "severity": "low",
+        "message": "Several common paper sections were not identified: abstract, results, conclusion."
+      }
+    ]
+  },
+  "outline": {
+    "chunk_count": 21,
+    "chunk_chars": 6000,
+    "sections": [
+      {
+        "chunk_id": "E001",
+        "heading": "300-unit-per-second roll-to-roll manufacturing of visible metalenses",
+        "level": 1,
+        "part": 1,
+        "line_start": 1,
+        "line_end": 33
+      },
+      {
+        "chunk_id": "E002",
+        "heading": "300-unit-per-second roll-to-roll manufacturing of visible metalenses",
+        "level": 1,
+        "part": 2,
+        "line_start": 35,
+        "line_end": 49
+      },
+      {
+        "chunk_id": "E003",
+        "heading": "Manufacturing workflow",
+        "level": 2,
+        "part": 1,
+        "line_start": 51,
+        "line_end": 53
+      },
+      {
+        "chunk_id": "E004",
+        "heading": "Design principle of metalens",
+        "level": 2,
+        "part": 1,
+        "line_start": 55,
+        "line_end": 90
+      },
+      {
+        "chunk_id": "E005",
+        "heading": "Pilot line for R2R manufacturing of visible metalenses",
+        "level": 2,
+        "part": 1,
+        "line_start": 92,
+        "line_end": 108
+      },
+      {
+        "chunk_id": "E006",
+        "heading": "Pilot line for R2R manufacturing of visible metalenses",
+        "level": 2,
+        "part": 2,
+        "line_start": 110,
+        "line_end": 110
+      },
+      {
+        "chunk_id": "E007",
+        "heading": "Characterization of the R2R-imprinted metalenses",
+        "level": 2,
+        "part": 1,
+        "line_start": 112,
+        "line_end": 118
+      },
+      {
+        "chunk_id": "E008",
+        "heading": "Discussion",
+        "level": 2,
+        "part": 1,
+        "line_start": 120,
+        "line_end": 124
+      },
+      {
+        "chunk_id": "E009",
+        "heading": "Online content",
+        "level": 2,
+        "part": 1,
+        "line_start": 126,
+        "line_end": 142
+      },
+      {
+        "chunk_id": "E010",
+        "heading": "Article",
+        "level": 2,
+        "part": 1,
+        "line_start": 144,
+        "line_end": 224
+      },
+      {
+        "chunk_id": "E011",
+        "heading": "Article",
+        "level": 2,
+        "part": 2,
+        "line_start": 226,
+        "line_end": 228
+      },
+      {
+        "chunk_id": "E012",
+        "heading": "Methods",
+        "level": 2,
+        "part": 1,
+        "line_start": 230,
+        "line_end": 230
+      },
+      {
+        "chunk_id": "E013",
+        "heading": "Numerical analysis",
+        "level": 2,
+        "part": 1,
+        "line_start": 232,
+        "line_end": 234
+      },
+      {
+        "chunk_id": "E014",
+        "heading": "Master template preparation",
+        "level": 2,
+        "part": 1,
+        "line_start": 236,
+        "line_end": 238
+      },
+      {
+        "chunk_id": "E015",
+        "heading": "UV resin selection",
+        "level": 2,
+        "part": 1,
+        "line_start": 240,
+        "line_end": 242
+      },
+      {
+        "chunk_id": "E016",
+        "heading": "R2R nanoimprint lithography",
+        "level": 2,
+        "part": 1,
+        "line_start": 244,
+        "line_end": 246
+      },
+      {
+        "chunk_id": "E017",
+        "heading": "TiO $_{2}$ deposition",
+        "level": 2,
+        "part": 1,
+        "line_start": 248,
+        "line_end": 252
+      },
+      {
+        "chunk_id": "E018",
+        "heading": "Optical measurement set-up",
+        "level": 2,
+        "part": 1,
+        "line_start": 254,
+        "line_end": 256
+      },
+      {
+        "chunk_id": "E019",
+        "heading": "Data availability",
+        "level": 2,
+        "part": 1,
+        "line_start": 258,
+        "line_end": 266
+      },
+      {
+        "chunk_id": "E020",
+        "heading": "Additional information",
+        "level": 2,
+        "part": 1,
+        "line_start": 268,
+        "line_end": 344
+      },
+      {
+        "chunk_id": "E021",
+        "heading": "Article",
+        "level": 2,
+        "part": 1,
+        "line_start": 346,
+        "line_end": 352
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "query_id": "objective",
+      "label": "Research objective",
+      "query": "abstract objective objectives purpose aim motivation research question 摘要 目的 目标 动机 研究问题",
+      "results": [
+        {
+          "chunk_id": "E019",
+          "heading": "Data availability",
+          "line_start": 258,
+          "line_end": 266,
+          "score": 4.0,
+          "snippet": "## Data availability\n\nThe data supporting the findings of this study are available from the corresponding authors on reasonable request.\n\nAcknowledgements This study was financially supported by the POSCO-POSTECH-RIST Convergence Research Center program funded by POSCO, the Samsung Research Funding and Incubation Center for Future Technology (grant nos. SRFC-IT1901-52 and SRFC-IT2401-01) funded by Samsung Electronics, the National Research Foundation (grant nos. RS-2020-NR049544, RS-2022-NR067559, RS-2024-00356928, RS-2024-00462912, RS-2024-00337012, RS-2024-00408286, RS-2024-00416272 and RS-2025-02217649) funded by the Ministry of Science and ICT of the Korean government, and the Korea Planning and Evaluation Institute of Industrial Technology (grant no. 1415185027/20019169; Alchemist pro"
+        },
+        {
+          "chunk_id": "E018",
+          "heading": "Optical measurement set-up",
+          "line_start": 254,
+          "line_end": 256,
+          "score": 2.0,
+          "snippet": "## Optical measurement set-up\n\nA spatial filtering set-up (Thorlabs, AC127-019-A; Thorlabs, P10CB) was used to generate a clean Gaussian beam from the incident laser. The collimated beam was then passed through a linear polarizer (Thorlabs, LPVISE050-A) followed by a quarter-wave plate (Thorlabs, AQWP05M-600) to produce LCP light. The LCP beam was normally incident on the metalens, and the transmitted light was collected by a commercial objective lens (Olympus, 1-U2M350). An analyser was inserted between the objective and the tube lens to isolate the conjugate RCP component corresponding to the point spread function (Thorlabs, TTL180-A). The resulting beam was imaged using a charge-coupled device camera (Lumenera, INFINITY2-1RC), and the intensity profiles at the focal plane were recorded "
+        },
+        {
+          "chunk_id": "E001",
+          "heading": "300-unit-per-second roll-to-roll manufacturing of visible metalenses",
+          "line_start": 1,
+          "line_end": 33,
+          "score": 1.0,
+          "snippet": "# 300-unit-per-second roll-to-roll manufacturing of visible metalenses\n\nhttps://doi.org/10.1038/s41586-026-10369-y\n\nReceived: 7 May 2025\n\nAccepted: 5 March 2026\n\nPublished online: 15 April 2026\n\nCheck for updates\n\nTrung Hoang $^{1,12}$ , Yujin Park $^{2,12}$ , Joohoon Kim $^{2,12}$ , Han Truong $^{1,3}$ , Sajjan Parajuli $^{1,4}$ , Beniel Jones Rajasekaran $^{4,5}$ , Kyungtae Kim $^{2}$ , Dohyun Kang $^{2}$ , Gyoseon Jeon $^{6}$ , Kyung-il Lee $^{6}$ , Dong Hyun Yoon $^{6}$ , Inki Kim $^{1,3,4,7}$ , Junsuk Rho $^{2,8,9,10,11}$ & Gyoujin Cho $^{1,3,4}$\n\nMetasurfaces have been extensively studied over the past decade for their ability to manipulate light at subwavelength scales $^{1}$ . One of the most critical trends emerging recently has been scalable manufacturing, which is paving the way"
+        },
+        {
+          "chunk_id": "E008",
+          "heading": "Discussion",
+          "line_start": 120,
+          "line_end": 124,
+          "score": 1.0,
+          "snippet": "## Discussion\n\nIn summary, we demonstrate metalens fabrication at an industrial scale using a custom-built R2R nanoimprinter in a cost-effective, fully automated and high-throughput manner, with a throughput as high as 300 lenses per second (Supplementary Table 1). By carefully optimizing the mould preparation and key process parameters—including web speed, tension and imprinting conditions—we have successfully implemented an R2R system for metalens production, achieving feature resolution down to 80 nm. By applying a hybrid material composed of UV-curable resin and a conformal TiO $_{2}$ thin film, the optical performance of the metalenses has been significantly improved, achieving about 49% efficiency across a full 300-mm wafer.\n\nDespite these advances, in situ metrology and quality cont"
+        },
+        {
+          "chunk_id": "E010",
+          "heading": "Article",
+          "line_start": 144,
+          "line_end": 224,
+          "score": 1.0,
+          "snippet": "## Article\n\n8. Kildishev, A. V., Boltasseva, A. & Shalaev, V. M. Planar photonics with metasurfaces. Science 339, 1232009 (2013).\n\n9. Badloe, T. et al. Liquid crystal-powered Mie resonators for electrically tunable photorealistic color gradients and dark blacks. Light Sci. Appl. 11, 118 (2022).\n\n10. Park, Y. et al. Tape-assisted residual layer-free one-step nanoimprinting of high-index hybrid polymer for optical loss-suppressed metasurfaces. Adv. Sci. 12, 2409371 (2025).\n\n11. Conteduca, D. et al. Dielectric nanohole array metasurface for high-resolution near-field sensing and imaging. Nat. Commun. 12, 3293 (2021).\n\n12. Barulin, A. et al. Axially multifocal metalens for 3D volumetric photoacoustic imaging of neuromelanin in live brain organoid. Sci. Adv. 11, eadr0654 (2025).\n\n13. Jo, Y. et "
+        }
+      ]
+    },
+    {
+      "query_id": "methods",
+      "label": "Methods and conditions",
+      "query": "method methods methodology experiment experimental computational simulation sample materials measurement setup parameter condition 方法 实验 计算 模拟 样品 材料 测量 参数 条件",
+      "results": [
+        {
+          "chunk_id": "E007",
+          "heading": "Characterization of the R2R-imprinted metalenses",
+          "line_start": 112,
+          "line_end": 118,
+          "score": 8.0,
+          "snippet": "## Characterization of the R2R-imprinted metalenses\n\nThe focusing characteristics of the R2R-imprinted metalens are evaluated using a customized optical measurement set-up (Methods). Measured intensity profiles of the focal spots demonstrate that light is well-focused at the designed focal lengths, with clear focal points forming at 2.90 cm (450 nm), 2.45 cm (532 nm) and 2.05 cm (635 nm), corresponding to numerical apertures of 0.17, 0.20 and 0.24, respectively. The normalized intensity distributions of the focal plane demonstrate well-defined symmetric focal spots at all wavelengths (Fig. 4a). The symmetry and uniformity of these focal spots indicate high fabrication quality and alignment of the meta-atoms, which are crucial for achieving optimal focusing. The cross-sectional intensity pr"
+        },
+        {
+          "chunk_id": "E012",
+          "heading": "Methods",
+          "line_start": 230,
+          "line_end": 230,
+          "score": 6.0,
+          "snippet": "## Methods"
+        },
+        {
+          "chunk_id": "E001",
+          "heading": "300-unit-per-second roll-to-roll manufacturing of visible metalenses",
+          "line_start": 1,
+          "line_end": 33,
+          "score": 4.0,
+          "snippet": "# 300-unit-per-second roll-to-roll manufacturing of visible metalenses\n\nhttps://doi.org/10.1038/s41586-026-10369-y\n\nReceived: 7 May 2025\n\nAccepted: 5 March 2026\n\nPublished online: 15 April 2026\n\nCheck for updates\n\nTrung Hoang $^{1,12}$ , Yujin Park $^{2,12}$ , Joohoon Kim $^{2,12}$ , Han Truong $^{1,3}$ , Sajjan Parajuli $^{1,4}$ , Beniel Jones Rajasekaran $^{4,5}$ , Kyungtae Kim $^{2}$ , Dohyun Kang $^{2}$ , Gyoseon Jeon $^{6}$ , Kyung-il Lee $^{6}$ , Dong Hyun Yoon $^{6}$ , Inki Kim $^{1,3,4,7}$ , Junsuk Rho $^{2,8,9,10,11}$ & Gyoujin Cho $^{1,3,4}$\n\nMetasurfaces have been extensively studied over the past decade for their ability to manipulate light at subwavelength scales $^{1}$ . One of the most critical trends emerging recently has been scalable manufacturing, which is paving the way"
+        },
+        {
+          "chunk_id": "E013",
+          "heading": "Numerical analysis",
+          "line_start": 232,
+          "line_end": 234,
+          "score": 4.0,
+          "snippet": "## Numerical analysis\n\nThe computational results presented here were obtained through numerical simulations using COMSOL Multiphysics v.6.0, which implements the finite-element method. Three-dimensional calculations were conducted in Cartesian coordinates with periodic boundary conditions applied to all sides."
+        },
+        {
+          "chunk_id": "E005",
+          "heading": "Pilot line for R2R manufacturing of visible metalenses",
+          "line_start": 92,
+          "line_end": 108,
+          "score": 3.0,
+          "snippet": "## Pilot line for R2R manufacturing of visible metalenses\n\nThe complete R2R process of metalenses starts by dispensing and uniformly coating UV resin on the running PET film, followed by an imprinting process in which the film is pressed against the imprinting roller, with the pressure controlled by the counter roller and irradiated with UV light to cure the resin. A support roller facilitates the demoulding process to complete the pattern transfer from the replica mould to the PET web, which is finally collected at the rewinding roller (Fig. 3a–e). The performance of the UV-curable resin is one of the key factors affecting the accuracy and efficiency of the imprinting process. Therefore, an optimal UV resin for the R2R process is selected on the basis of key parameters such as viscosity, "
+        }
+      ]
+    },
+    {
+      "query_id": "results",
+      "label": "Results and conclusions",
+      "query": "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制",
+      "results": [
+        {
+          "chunk_id": "E007",
+          "heading": "Characterization of the R2R-imprinted metalenses",
+          "line_start": 112,
+          "line_end": 118,
+          "score": 13.0,
+          "snippet": "## Characterization of the R2R-imprinted metalenses\n\nThe focusing characteristics of the R2R-imprinted metalens are evaluated using a customized optical measurement set-up (Methods). Measured intensity profiles of the focal spots demonstrate that light is well-focused at the designed focal lengths, with clear focal points forming at 2.90 cm (450 nm), 2.45 cm (532 nm) and 2.05 cm (635 nm), corresponding to numerical apertures of 0.17, 0.20 and 0.24, respectively. The normalized intensity distributions of the focal plane demonstrate well-defined symmetric focal spots at all wavelengths (Fig. 4a). The symmetry and uniformity of these focal spots indicate high fabrication quality and alignment of the meta-atoms, which are crucial for achieving optimal focusing. The cross-sectional intensity pr"
+        },
+        {
+          "chunk_id": "E020",
+          "heading": "Additional information",
+          "line_start": 268,
+          "line_end": 344,
+          "score": 6.0,
+          "snippet": "## Additional information\n\nSupplementary information The online version contains supplementary material available at https://doi.org/10.1038/s41586-026-10369-y.\n\nCorrespondence and requests for materials should be addressed to Inki Kim, Junsuk Rho or Gyoujin Cho.\n\nPeer review information Nature thanks L. Jay Guo who co-reviewed with Wei-Kuan Lin; and the other, anonymous reviewer(s) for their contribution to the peer review of this work. Peer reviewer reports are available.\n\nReprints and permissions information is available at http://www.nature.com/reprints.\n\n![](images/6d60e677828ae478c840b74df0c0b2caf6cd895d4a9ade6709748c7c5c3c4453.jpg)  \nExtended Data Fig. 1 | Master stamp (300-mm wafer) and corresponding flexible replica mould. (a) Photograph of the 300-mm wafer master stamp. (b, c) SE"
+        },
+        {
+          "chunk_id": "E004",
+          "heading": "Design principle of metalens",
+          "line_start": 55,
+          "line_end": 90,
+          "score": 5.0,
+          "snippet": "## Design principle of metalens\n\nA 0–2π phase modulation of the metalens is achieved by rotating anisotropic meta-atoms by an angle of θ, which is known as the Pancharatnam–Berry phase. An anisotropic meta-atom rotated by an angle θ can be theoretically modeled using a Jones matrix. When right circularly polarized (RCP) light is incident, the complex transmittance can be expressed as follows (Supplementary Note 2).\n\n$$\nE _ {\\mathrm{T}} = \\frac {t _ {x x} + t _ {y y}}{2} \\left[ \\begin{array}{c} 1 \\\\ - i \\end{array} \\right] + \\frac {t _ {x x} - t _ {y y}}{2} e ^ {- i 2 \\theta} \\left[ \\begin{array}{c} 1 \\\\ i \\end{array} \\right]\\tag{1}\n$$\n\n![](images/e39f11943532eafd192c658626de42f6052a5aae5d32fe8fa2dacf2e163ecd2b.jpg)\n\n![](images/1c65c1375665288db9f6748d1f00b43d6b0364451d5a7b468a2c87404fdbe3f"
+        },
+        {
+          "chunk_id": "E008",
+          "heading": "Discussion",
+          "line_start": 120,
+          "line_end": 124,
+          "score": 4.0,
+          "snippet": "## Discussion\n\nIn summary, we demonstrate metalens fabrication at an industrial scale using a custom-built R2R nanoimprinter in a cost-effective, fully automated and high-throughput manner, with a throughput as high as 300 lenses per second (Supplementary Table 1). By carefully optimizing the mould preparation and key process parameters—including web speed, tension and imprinting conditions—we have successfully implemented an R2R system for metalens production, achieving feature resolution down to 80 nm. By applying a hybrid material composed of UV-curable resin and a conformal TiO $_{2}$ thin film, the optical performance of the metalenses has been significantly improved, achieving about 49% efficiency across a full 300-mm wafer.\n\nDespite these advances, in situ metrology and quality cont"
+        },
+        {
+          "chunk_id": "E005",
+          "heading": "Pilot line for R2R manufacturing of visible metalenses",
+          "line_start": 92,
+          "line_end": 108,
+          "score": 3.0,
+          "snippet": "## Pilot line for R2R manufacturing of visible metalenses\n\nThe complete R2R process of metalenses starts by dispensing and uniformly coating UV resin on the running PET film, followed by an imprinting process in which the film is pressed against the imprinting roller, with the pressure controlled by the counter roller and irradiated with UV light to cure the resin. A support roller facilitates the demoulding process to complete the pattern transfer from the replica mould to the PET web, which is finally collected at the rewinding roller (Fig. 3a–e). The performance of the UV-curable resin is one of the key factors affecting the accuracy and efficiency of the imprinting process. Therefore, an optimal UV resin for the R2R process is selected on the basis of key parameters such as viscosity, "
+        }
+      ]
+    },
+    {
+      "query_id": "limitations",
+      "label": "Limitations and uncertainty",
+      "query": "limitation limitations uncertainty uncertainties error errors challenge challenges future work assumption assumptions 局限 限制 不确定性 误差 挑战 未来 假设",
+      "results": [
+        {
+          "chunk_id": "E003",
+          "heading": "Manufacturing workflow",
+          "line_start": 51,
+          "line_end": 53,
+          "score": 4.0,
+          "snippet": "## Manufacturing workflow\n\nA schematic of the manufacturing workflow is shown in Fig. 1a. In step 1, a 300-mm wafer master stamp comprising 450 dies of 1-cm-diameter metalenses is fabricated using an ArF immersion scanner with a 4× reticle (Fig. 1ai, left). Next, a flexible replica mould is directly fabricated by UV-NIL using a master stamp (Fig. 1ai, right, and Extended Data Fig. 1). In step 2, the flexible replica mould is applied to our custom-built R2R-UV-NIL system, which is composed of three sections: resin coating, imprinting-curing unit and rewinding (Fig. 1aii and Supplementary Note 1). The 200-m-long metalenses produced on the PET film using the R2R system are shown in Fig. 1b,c, featuring vivid colours indicative of well-replicated nanostructures. Figure 1d,e displays the comple"
+        },
+        {
+          "chunk_id": "E001",
+          "heading": "300-unit-per-second roll-to-roll manufacturing of visible metalenses",
+          "line_start": 1,
+          "line_end": 33,
+          "score": 3.0,
+          "snippet": "# 300-unit-per-second roll-to-roll manufacturing of visible metalenses\n\nhttps://doi.org/10.1038/s41586-026-10369-y\n\nReceived: 7 May 2025\n\nAccepted: 5 March 2026\n\nPublished online: 15 April 2026\n\nCheck for updates\n\nTrung Hoang $^{1,12}$ , Yujin Park $^{2,12}$ , Joohoon Kim $^{2,12}$ , Han Truong $^{1,3}$ , Sajjan Parajuli $^{1,4}$ , Beniel Jones Rajasekaran $^{4,5}$ , Kyungtae Kim $^{2}$ , Dohyun Kang $^{2}$ , Gyoseon Jeon $^{6}$ , Kyung-il Lee $^{6}$ , Dong Hyun Yoon $^{6}$ , Inki Kim $^{1,3,4,7}$ , Junsuk Rho $^{2,8,9,10,11}$ & Gyoujin Cho $^{1,3,4}$\n\nMetasurfaces have been extensively studied over the past decade for their ability to manipulate light at subwavelength scales $^{1}$ . One of the most critical trends emerging recently has been scalable manufacturing, which is paving the way"
+        },
+        {
+          "chunk_id": "E008",
+          "heading": "Discussion",
+          "line_start": 120,
+          "line_end": 124,
+          "score": 3.0,
+          "snippet": "## Discussion\n\nIn summary, we demonstrate metalens fabrication at an industrial scale using a custom-built R2R nanoimprinter in a cost-effective, fully automated and high-throughput manner, with a throughput as high as 300 lenses per second (Supplementary Table 1). By carefully optimizing the mould preparation and key process parameters—including web speed, tension and imprinting conditions—we have successfully implemented an R2R system for metalens production, achieving feature resolution down to 80 nm. By applying a hybrid material composed of UV-curable resin and a conformal TiO $_{2}$ thin film, the optical performance of the metalenses has been significantly improved, achieving about 49% efficiency across a full 300-mm wafer.\n\nDespite these advances, in situ metrology and quality cont"
+        },
+        {
+          "chunk_id": "E019",
+          "heading": "Data availability",
+          "line_start": 258,
+          "line_end": 266,
+          "score": 2.0,
+          "snippet": "## Data availability\n\nThe data supporting the findings of this study are available from the corresponding authors on reasonable request.\n\nAcknowledgements This study was financially supported by the POSCO-POSTECH-RIST Convergence Research Center program funded by POSCO, the Samsung Research Funding and Incubation Center for Future Technology (grant nos. SRFC-IT1901-52 and SRFC-IT2401-01) funded by Samsung Electronics, the National Research Foundation (grant nos. RS-2020-NR049544, RS-2022-NR067559, RS-2024-00356928, RS-2024-00462912, RS-2024-00337012, RS-2024-00408286, RS-2024-00416272 and RS-2025-02217649) funded by the Ministry of Science and ICT of the Korean government, and the Korea Planning and Evaluation Institute of Industrial Technology (grant no. 1415185027/20019169; Alchemist pro"
+        },
+        {
+          "chunk_id": "E004",
+          "heading": "Design principle of metalens",
+          "line_start": 55,
+          "line_end": 90,
+          "score": 1.0,
+          "snippet": "## Design principle of metalens\n\nA 0–2π phase modulation of the metalens is achieved by rotating anisotropic meta-atoms by an angle of θ, which is known as the Pancharatnam–Berry phase. An anisotropic meta-atom rotated by an angle θ can be theoretically modeled using a Jones matrix. When right circularly polarized (RCP) light is incident, the complex transmittance can be expressed as follows (Supplementary Note 2).\n\n$$\nE _ {\\mathrm{T}} = \\frac {t _ {x x} + t _ {y y}}{2} \\left[ \\begin{array}{c} 1 \\\\ - i \\end{array} \\right] + \\frac {t _ {x x} - t _ {y y}}{2} e ^ {- i 2 \\theta} \\left[ \\begin{array}{c} 1 \\\\ i \\end{array} \\right]\\tag{1}\n$$\n\n![](images/e39f11943532eafd192c658626de42f6052a5aae5d32fe8fa2dacf2e163ecd2b.jpg)\n\n![](images/1c65c1375665288db9f6748d1f00b43d6b0364451d5a7b468a2c87404fdbe3f"
+        }
+      ]
+    },
+    {
+      "query_id": "custom-01",
+      "label": "Custom question 1",
+      "query": "样品如何制备？sample preparation / synthesis / fabrication methods",
+      "results": [
+        {
+          "chunk_id": "E001",
+          "heading": "300-unit-per-second roll-to-roll manufacturing of visible metalenses",
+          "line_start": 1,
+          "line_end": 33,
+          "score": 4.0,
+          "snippet": "# 300-unit-per-second roll-to-roll manufacturing of visible metalenses\n\nhttps://doi.org/10.1038/s41586-026-10369-y\n\nReceived: 7 May 2025\n\nAccepted: 5 March 2026\n\nPublished online: 15 April 2026\n\nCheck for updates\n\nTrung Hoang $^{1,12}$ , Yujin Park $^{2,12}$ , Joohoon Kim $^{2,12}$ , Han Truong $^{1,3}$ , Sajjan Parajuli $^{1,4}$ , Beniel Jones Rajasekaran $^{4,5}$ , Kyungtae Kim $^{2}$ , Dohyun Kang $^{2}$ , Gyoseon Jeon $^{6}$ , Kyung-il Lee $^{6}$ , Dong Hyun Yoon $^{6}$ , Inki Kim $^{1,3,4,7}$ , Junsuk Rho $^{2,8,9,10,11}$ & Gyoujin Cho $^{1,3,4}$\n\nMetasurfaces have been extensively studied over the past decade for their ability to manipulate light at subwavelength scales $^{1}$ . One of the most critical trends emerging recently has been scalable manufacturing, which is paving the way"
+        },
+        {
+          "chunk_id": "E007",
+          "heading": "Characterization of the R2R-imprinted metalenses",
+          "line_start": 112,
+          "line_end": 118,
+          "score": 4.0,
+          "snippet": "## Characterization of the R2R-imprinted metalenses\n\nThe focusing characteristics of the R2R-imprinted metalens are evaluated using a customized optical measurement set-up (Methods). Measured intensity profiles of the focal spots demonstrate that light is well-focused at the designed focal lengths, with clear focal points forming at 2.90 cm (450 nm), 2.45 cm (532 nm) and 2.05 cm (635 nm), corresponding to numerical apertures of 0.17, 0.20 and 0.24, respectively. The normalized intensity distributions of the focal plane demonstrate well-defined symmetric focal spots at all wavelengths (Fig. 4a). The symmetry and uniformity of these focal spots indicate high fabrication quality and alignment of the meta-atoms, which are crucial for achieving optimal focusing. The cross-sectional intensity pr"
+        },
+        {
+          "chunk_id": "E012",
+          "heading": "Methods",
+          "line_start": 230,
+          "line_end": 230,
+          "score": 3.0,
+          "snippet": "## Methods"
+        },
+        {
+          "chunk_id": "E014",
+          "heading": "Master template preparation",
+          "line_start": 236,
+          "line_end": 238,
+          "score": 3.0,
+          "snippet": "## Master template preparation\n\nThe initial template comprised molybdenum silicide deposited on a silica substrate. Metalens patterns were created using a high-resolution electron-beam lithography system (JBX Series, JEOL) to expose the positive photoresist (FEP series, Fujifilm). Following exposure, patterns were developed using a tetramethylammonium solution. Molybdenum silicide was then deposited to a thickness of 69 nm via electron beam evaporation, using a silicon substrate as the cluster formation template. Pattern transfer was accomplished using ArF immersion lithography (XT-1900Gi, ASML) on positive photoresists, followed by development in a tetramethylammonium solution."
+        },
+        {
+          "chunk_id": "E005",
+          "heading": "Pilot line for R2R manufacturing of visible metalenses",
+          "line_start": 92,
+          "line_end": 108,
+          "score": 2.0,
+          "snippet": "## Pilot line for R2R manufacturing of visible metalenses\n\nThe complete R2R process of metalenses starts by dispensing and uniformly coating UV resin on the running PET film, followed by an imprinting process in which the film is pressed against the imprinting roller, with the pressure controlled by the counter roller and irradiated with UV light to cure the resin. A support roller facilitates the demoulding process to complete the pattern transfer from the replica mould to the PET web, which is finally collected at the rewinding roller (Fig. 3a–e). The performance of the UV-curable resin is one of the key factors affecting the accuracy and efficiency of the imprinting process. Therefore, an optimal UV resin for the R2R process is selected on the basis of key parameters such as viscosity, "
+        }
+      ]
+    },
+    {
+      "query_id": "custom-02",
+      "label": "Custom question 2",
+      "query": "物理图像是什么？physical picture / mechanism / model",
+      "results": [
+        {
+          "chunk_id": "E004",
+          "heading": "Design principle of metalens",
+          "line_start": 55,
+          "line_end": 90,
+          "score": 1.0,
+          "snippet": "## Design principle of metalens\n\nA 0–2π phase modulation of the metalens is achieved by rotating anisotropic meta-atoms by an angle of θ, which is known as the Pancharatnam–Berry phase. An anisotropic meta-atom rotated by an angle θ can be theoretically modeled using a Jones matrix. When right circularly polarized (RCP) light is incident, the complex transmittance can be expressed as follows (Supplementary Note 2).\n\n$$\nE _ {\\mathrm{T}} = \\frac {t _ {x x} + t _ {y y}}{2} \\left[ \\begin{array}{c} 1 \\\\ - i \\end{array} \\right] + \\frac {t _ {x x} - t _ {y y}}{2} e ^ {- i 2 \\theta} \\left[ \\begin{array}{c} 1 \\\\ i \\end{array} \\right]\\tag{1}\n$$\n\n![](images/e39f11943532eafd192c658626de42f6052a5aae5d32fe8fa2dacf2e163ecd2b.jpg)\n\n![](images/1c65c1375665288db9f6748d1f00b43d6b0364451d5a7b468a2c87404fdbe3f"
+        },
+        {
+          "chunk_id": "E006",
+          "heading": "Pilot line for R2R manufacturing of visible metalenses",
+          "line_start": 110,
+          "line_end": 110,
+          "score": 1.0,
+          "snippet": "R2R-UV-NIL process $^{41,42}$ . However, this moulding technique is complex, time-consuming and extremely expensive, particularly for the high-resolution (40 nm) and large-area (300 mm wafer-scale) master stamps required for industrial applications. Furthermore, the sticking issues of the material considerably shorten the lifetime of nickel shim. Another candidate material for replica mould is h-PDMS; however, noticeable defects such as swelling and missing nanofeatures are observed during large-area replication (Supplementary Note 4). By contrast, replica moulds consisting of patterned polymer layers supported by a polymer substrate have attracted extensive industrial attention due to their much lower production costs. Here we fabricate a flexible polymer replica mould by directly replica"
+        }
+      ]
+    },
+    {
+      "query_id": "custom-03",
+      "label": "Custom question 3",
+      "query": "最关键结果和局限性是什么？key results / main findings / limitations",
+      "results": [
+        {
+          "chunk_id": "E001",
+          "heading": "300-unit-per-second roll-to-roll manufacturing of visible metalenses",
+          "line_start": 1,
+          "line_end": 33,
+          "score": 5.0,
+          "snippet": "# 300-unit-per-second roll-to-roll manufacturing of visible metalenses\n\nhttps://doi.org/10.1038/s41586-026-10369-y\n\nReceived: 7 May 2025\n\nAccepted: 5 March 2026\n\nPublished online: 15 April 2026\n\nCheck for updates\n\nTrung Hoang $^{1,12}$ , Yujin Park $^{2,12}$ , Joohoon Kim $^{2,12}$ , Han Truong $^{1,3}$ , Sajjan Parajuli $^{1,4}$ , Beniel Jones Rajasekaran $^{4,5}$ , Kyungtae Kim $^{2}$ , Dohyun Kang $^{2}$ , Gyoseon Jeon $^{6}$ , Kyung-il Lee $^{6}$ , Dong Hyun Yoon $^{6}$ , Inki Kim $^{1,3,4,7}$ , Junsuk Rho $^{2,8,9,10,11}$ & Gyoujin Cho $^{1,3,4}$\n\nMetasurfaces have been extensively studied over the past decade for their ability to manipulate light at subwavelength scales $^{1}$ . One of the most critical trends emerging recently has been scalable manufacturing, which is paving the way"
+        },
+        {
+          "chunk_id": "E005",
+          "heading": "Pilot line for R2R manufacturing of visible metalenses",
+          "line_start": 92,
+          "line_end": 108,
+          "score": 3.0,
+          "snippet": "## Pilot line for R2R manufacturing of visible metalenses\n\nThe complete R2R process of metalenses starts by dispensing and uniformly coating UV resin on the running PET film, followed by an imprinting process in which the film is pressed against the imprinting roller, with the pressure controlled by the counter roller and irradiated with UV light to cure the resin. A support roller facilitates the demoulding process to complete the pattern transfer from the replica mould to the PET web, which is finally collected at the rewinding roller (Fig. 3a–e). The performance of the UV-curable resin is one of the key factors affecting the accuracy and efficiency of the imprinting process. Therefore, an optimal UV resin for the R2R process is selected on the basis of key parameters such as viscosity, "
+        },
+        {
+          "chunk_id": "E008",
+          "heading": "Discussion",
+          "line_start": 120,
+          "line_end": 124,
+          "score": 3.0,
+          "snippet": "## Discussion\n\nIn summary, we demonstrate metalens fabrication at an industrial scale using a custom-built R2R nanoimprinter in a cost-effective, fully automated and high-throughput manner, with a throughput as high as 300 lenses per second (Supplementary Table 1). By carefully optimizing the mould preparation and key process parameters—including web speed, tension and imprinting conditions—we have successfully implemented an R2R system for metalens production, achieving feature resolution down to 80 nm. By applying a hybrid material composed of UV-curable resin and a conformal TiO $_{2}$ thin film, the optical performance of the metalenses has been significantly improved, achieving about 49% efficiency across a full 300-mm wafer.\n\nDespite these advances, in situ metrology and quality cont"
+        },
+        {
+          "chunk_id": "E020",
+          "heading": "Additional information",
+          "line_start": 268,
+          "line_end": 344,
+          "score": 3.0,
+          "snippet": "## Additional information\n\nSupplementary information The online version contains supplementary material available at https://doi.org/10.1038/s41586-026-10369-y.\n\nCorrespondence and requests for materials should be addressed to Inki Kim, Junsuk Rho or Gyoujin Cho.\n\nPeer review information Nature thanks L. Jay Guo who co-reviewed with Wei-Kuan Lin; and the other, anonymous reviewer(s) for their contribution to the peer review of this work. Peer reviewer reports are available.\n\nReprints and permissions information is available at http://www.nature.com/reprints.\n\n![](images/6d60e677828ae478c840b74df0c0b2caf6cd895d4a9ade6709748c7c5c3c4453.jpg)  \nExtended Data Fig. 1 | Master stamp (300-mm wafer) and corresponding flexible replica mould. (a) Photograph of the 300-mm wafer master stamp. (b, c) SE"
+        },
+        {
+          "chunk_id": "E004",
+          "heading": "Design principle of metalens",
+          "line_start": 55,
+          "line_end": 90,
+          "score": 2.0,
+          "snippet": "## Design principle of metalens\n\nA 0–2π phase modulation of the metalens is achieved by rotating anisotropic meta-atoms by an angle of θ, which is known as the Pancharatnam–Berry phase. An anisotropic meta-atom rotated by an angle θ can be theoretically modeled using a Jones matrix. When right circularly polarized (RCP) light is incident, the complex transmittance can be expressed as follows (Supplementary Note 2).\n\n$$\nE _ {\\mathrm{T}} = \\frac {t _ {x x} + t _ {y y}}{2} \\left[ \\begin{array}{c} 1 \\\\ - i \\end{array} \\right] + \\frac {t _ {x x} - t _ {y y}}{2} e ^ {- i 2 \\theta} \\left[ \\begin{array}{c} 1 \\\\ i \\end{array} \\right]\\tag{1}\n$$\n\n![](images/e39f11943532eafd192c658626de42f6052a5aae5d32fe8fa2dacf2e163ecd2b.jpg)\n\n![](images/1c65c1375665288db9f6748d1f00b43d6b0364451d5a7b468a2c87404fdbe3f"
+        }
+      ]
+    }
+  ],
+  "related_documents": [
+    {
+      "path": "/home/simcrq/0_Project/paperworkflow/INput/4668/2601.11319v1.pdf",
+      "type": "pdf",
+      "role": "related_candidate",
+      "size_bytes": 6515224
+    },
+    {
+      "path": "/home/simcrq/0_Project/paperworkflow/INput/4668/Summary_deep_read_2601.11319v1.md",
+      "type": "md",
+      "role": "related_candidate",
+      "size_bytes": 4011
+    },
+    {
+      "path": "/home/simcrq/0_Project/paperworkflow/INput/e1.pdf",
+      "type": "pdf",
+      "role": "related_candidate",
+      "size_bytes": 2743930
+    }
+  ],
+  "artifacts": {
+    "artifact_dir": "/home/simcrq/0_Project/paperworkflow/output/workflows/92d8e7fd893864b0",
+    "workflow_manifest_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/92d8e7fd893864b0/workflow.json",
+    "document_manifest_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/92d8e7fd893864b0/document.manifest.json",
+    "evidence_report_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/92d8e7fd893864b0/evidence.md"
+  },
+  "handoff": {
+    "primary_markdown_path": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/92d8e7fd893864b0/300u.md",
+    "preferred_context_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/92d8e7fd893864b0/evidence.md",
+    "provenance_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/92d8e7fd893864b0/workflow.json",
+    "line_addressable_manifest_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/92d8e7fd893864b0/document.manifest.json",
+    "needs_human_review": false,
+    "instruction": "Downstream plugins should read the evidence package first, use the primary Markdown when more context is needed, and preserve chunk ids plus line ranges."
+  },
+  "recommended_next_steps": [
+    "Review extraction-quality warnings before scientific synthesis.",
+    "Use evidence.md as the compact input for a summarization, comparison, or tutorial plugin.",
+    "Keep E### chunk ids and line ranges in downstream claims.",
+    "Inspect supplementary_candidate files when the main paper references supporting information."
+  ]
+}

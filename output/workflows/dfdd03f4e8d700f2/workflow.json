@@ -1,0 +1,374 @@
+{
+  "schema_version": 2,
+  "workflow_id": "73bfdf1ae3af9663",
+  "generated_at": "2026-08-19T13:35:39.982815+00:00",
+  "source": {
+    "input_path": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/2601.11319v1/full.md",
+    "input_type": "md",
+    "markdown_path": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/2601.11319v1/full.md",
+    "source_fingerprint": "dfdd03f4e8d700f2",
+    "source_sha256": "bb16f65d06aece9778454d143efd4750bf4a38223a2d3eb74f9ab12ebf1a5ad0",
+    "markdown_sha256": "bb16f65d06aece9778454d143efd4750bf4a38223a2d3eb74f9ab12ebf1a5ad0",
+    "mineru": null
+  },
+  "stages": [
+    {
+      "stage": "ingestion",
+      "status": "skipped",
+      "details": {
+        "reason": "Markdown input; OCR was not required."
+      }
+    },
+    {
+      "stage": "metadata",
+      "status": "completed"
+    },
+    {
+      "stage": "extraction_quality_audit",
+      "status": "completed"
+    },
+    {
+      "stage": "section_index",
+      "status": "completed",
+      "chunk_count": 24
+    },
+    {
+      "stage": "evidence_retrieval",
+      "status": "completed",
+      "query_count": 1
+    },
+    {
+      "stage": "artifact_export",
+      "status": "completed"
+    }
+  ],
+  "metadata": {
+    "title_guess": "ARTICLE TYPE",
+    "title_source": "first_markdown_heading",
+    "language_profile": "latin-dominant",
+    "dois": [],
+    "arxiv_ids": [],
+    "urls": [],
+    "section_headings": [
+      "ARTICLE TYPE",
+      "Growth of Large Crystals of Janus Phase RhSeCl Using Self-Selecting Vapour Growth†",
+      "1 Introduction",
+      "2 Experimental Methods",
+      "2.1 Synthesis",
+      "2.1.1 Chemical Vapour Transport Method",
+      "2.1.2 Self-Selecting Vapour Growth Method",
+      "2.2 Scanning Electron Microscopy and Elemental Analysis",
+      "2.3 Powder X-ray Diffraction",
+      "2.4 Single Crystal X-ray Diffraction",
+      "2.5 Exfoliation and Raman spectroscopy",
+      "3 Results and Discussion",
+      "3.1 Chemical Vapour Transport Crystal Growth",
+      "3.2 Self-Selecting Vapour Growth",
+      "3.3 Crystal Growth Optimization",
+      "3.4 Self-Selecting Vapour Growth for Crystals with Needle-like Morphology",
+      "3.5 Comparison of the Crystal Growth Methods",
+      "3.6 Crystal structure",
+      "3.7 Exfoliation of RhSeCl",
+      "4 Conclusions",
+      "Conflicts of interest",
+      "Acknowledgements",
+      "Notes and references"
+    ],
+    "section_coverage": {
+      "abstract": false,
+      "introduction": true,
+      "methods": true,
+      "results": true,
+      "discussion": true,
+      "conclusion": true,
+      "references": true
+    }
+  },
+  "quality_audit": {
+    "scope": "OCR/Markdown extraction usability only; not scientific-quality assessment",
+    "score": 100,
+    "readiness": "ready",
+    "metrics": {
+      "char_count": 44337,
+      "line_count": 261,
+      "nonempty_line_count": 159,
+      "heading_count": 23,
+      "chunk_count": 24,
+      "readable_character_ratio": 0.72285,
+      "replacement_character_count": 0,
+      "replacement_character_ratio": 0.0,
+      "duplicate_long_line_ratio": 0.0,
+      "broken_hyphen_line_count": 0
+    },
+    "content_inventory": {
+      "markdown_image_count": 10,
+      "figure_caption_count": 3,
+      "table_caption_count": 0,
+      "markdown_table_count": 0,
+      "formula_block_count": 4,
+      "inline_formula_estimate": 232,
+      "citation_marker_count": 13
+    },
+    "section_coverage": {
+      "abstract": false,
+      "introduction": true,
+      "methods": true,
+      "results": true,
+      "discussion": true,
+      "conclusion": true,
+      "references": true
+    },
+    "warnings": []
+  },
+  "outline": {
+    "chunk_count": 24,
+    "chunk_chars": 6000,
+    "sections": [
+      {
+        "chunk_id": "E001",
+        "heading": "ARTICLE TYPE",
+        "level": 1,
+        "part": 1,
+        "line_start": 1,
+        "line_end": 3
+      },
+      {
+        "chunk_id": "E002",
+        "heading": "Growth of Large Crystals of Janus Phase RhSeCl Using Self-Selecting Vapour Growth",
+        "level": 1,
+        "part": 1,
+        "line_start": 5,
+        "line_end": 13
+      },
+      {
+        "chunk_id": "E003",
+        "heading": "1 Introduction",
+        "level": 1,
+        "part": 1,
+        "line_start": 15,
+        "line_end": 39
+      },
+      {
+        "chunk_id": "E004",
+        "heading": "1 Introduction",
+        "level": 1,
+        "part": 2,
+        "line_start": 41,
+        "line_end": 41
+      },
+      {
+        "chunk_id": "E005",
+        "heading": "2 Experimental Methods",
+        "level": 1,
+        "part": 1,
+        "line_start": 43,
+        "line_end": 43
+      },
+      {
+        "chunk_id": "E006",
+        "heading": "2.1 Synthesis",
+        "level": 1,
+        "part": 1,
+        "line_start": 45,
+        "line_end": 49
+      },
+      {
+        "chunk_id": "E007",
+        "heading": "2.1.1 Chemical Vapour Transport Method",
+        "level": 1,
+        "part": 1,
+        "line_start": 51,
+        "line_end": 53
+      },
+      {
+        "chunk_id": "E008",
+        "heading": "2.1.2 Self-Selecting Vapour Growth Method",
+        "level": 1,
+        "part": 1,
+        "line_start": 55,
+        "line_end": 67
+      },
+      {
+        "chunk_id": "E009",
+        "heading": "2.2 Scanning Electron Microscopy and Elemental Analysis",
+        "level": 1,
+        "part": 1,
+        "line_start": 69,
+        "line_end": 71
+      },
+      {
+        "chunk_id": "E010",
+        "heading": "2.3 Powder X-ray Diffraction",
+        "level": 1,
+        "part": 1,
+        "line_start": 73,
+        "line_end": 75
+      },
+      {
+        "chunk_id": "E011",
+        "heading": "2.4 Single Crystal X-ray Diffraction",
+        "level": 1,
+        "part": 1,
+        "line_start": 77,
+        "line_end": 79
+      },
+      {
+        "chunk_id": "E012",
+        "heading": "2.5 Exfoliation and Raman spectroscopy",
+        "level": 1,
+        "part": 1,
+        "line_start": 81,
+        "line_end": 85
+      },
+      {
+        "chunk_id": "E013",
+        "heading": "3 Results and Discussion",
+        "level": 1,
+        "part": 1,
+        "line_start": 87,
+        "line_end": 105
+      },
+      {
+        "chunk_id": "E014",
+        "heading": "3.1 Chemical Vapour Transport Crystal Growth",
+        "level": 1,
+        "part": 1,
+        "line_start": 107,
+        "line_end": 112
+      },
+      {
+        "chunk_id": "E015",
+        "heading": "3.2 Self-Selecting Vapour Growth",
+        "level": 1,
+        "part": 1,
+        "line_start": 114,
+        "line_end": 118
+      },
+      {
+        "chunk_id": "E016",
+        "heading": "3.3 Crystal Growth Optimization",
+        "level": 1,
+        "part": 1,
+        "line_start": 120,
+        "line_end": 138
+      },
+      {
+        "chunk_id": "E017",
+        "heading": "3.4 Self-Selecting Vapour Growth for Crystals with Needle-like Morphology",
+        "level": 1,
+        "part": 1,
+        "line_start": 140,
+        "line_end": 142
+      },
+      {
+        "chunk_id": "E018",
+        "heading": "3.5 Comparison of the Crystal Growth Methods",
+        "level": 1,
+        "part": 1,
+        "line_start": 144,
+        "line_end": 152
+      },
+      {
+        "chunk_id": "E019",
+        "heading": "3.6 Crystal structure",
+        "level": 1,
+        "part": 1,
+        "line_start": 154,
+        "line_end": 168
+      },
+      {
+        "chunk_id": "E020",
+        "heading": "3.7 Exfoliation of RhSeCl",
+        "level": 1,
+        "part": 1,
+        "line_start": 170,
+        "line_end": 205
+      },
+      {
+        "chunk_id": "E021",
+        "heading": "4 Conclusions",
+        "level": 1,
+        "part": 1,
+        "line_start": 207,
+        "line_end": 209
+      },
+      {
+        "chunk_id": "E022",
+        "heading": "Conflicts of interest",
+        "level": 1,
+        "part": 1,
+        "line_start": 211,
+        "line_end": 213
+      },
+      {
+        "chunk_id": "E023",
+        "heading": "Acknowledgements",
+        "level": 1,
+        "part": 1,
+        "line_start": 215,
+        "line_end": 217
+      },
+      {
+        "chunk_id": "E024",
+        "heading": "Notes and references",
+        "level": 1,
+        "part": 1,
+        "line_start": 219,
+        "line_end": 261
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "query_id": "custom-01",
+      "label": "Custom question 1",
+      "query": "growth temperature",
+      "results": [
+        {
+          "chunk_id": "E016",
+          "heading": "3.3 Crystal Growth Optimization",
+          "line_start": 120,
+          "line_end": 138,
+          "score": 21.0,
+          "snippet": "# 3.3 Crystal Growth Optimization\n\nSince we succeeded in growing small RhSeCl crystals via SSVG technique in the 'flipped' furnace, we then explored whether higher temperatures and a different temperature gradient could further enhance growth. To achieve this, we carried out SSVG in short ampules (6cm), with the end containing the precursors placed in the centre of a one-zone tubular furnace. This provided a small thermal gradient without inducing undesired CVT transport. We tested three precursor systems:  $\\mathrm{RhCl}_3$ -,  $\\mathrm{SeCl}_4$ -based\n\n![](images/5698ab5bd551b51314605af3569ed54863d9bbb6219c39caa3232c99d249e037.jpg)  \n(a)\n\n![](images/2b462bd1d57672f673b47456467fec8d3340831bc9a4a9da1d724cab9bc4e7f6.jpg)  \n(b)  \n(c)\n\n![](images/18ae525348dedb38677100270098a479019548198430b0"
+        },
+        {
+          "chunk_id": "E018",
+          "heading": "3.5 Comparison of the Crystal Growth Methods",
+          "line_start": 144,
+          "line_end": 152,
+          "score": 15.0,
+          "snippet": "# 3.5 Comparison of the Crystal Growth Methods\n\nComparing all crystal-growth approaches reveals how both the reaction chemistry and the thermal environment govern the formation of high-quality RhSeCl crystals. Conventional CVT methods, as previously reported in the literature, reliably produces\n\nRhSeCl crystals, however, their size remains limited. CVT growth for RhSeCl occurs primarily through vapour transport between the hot and cold ends of the ampule, leading to agglomerates of small crystallites, while additional evaporation-condensation processes at the source can occasionally yield larger, isolated crystals. In contrast, the SSVG technique in a 'flipped' box furnace enables growth directly within a minimal temperature gradient, and when applied using  $\\mathrm{RhCl}_3$ -based precur"
+        }
+      ]
+    }
+  ],
+  "related_documents": [
+    {
+      "path": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/2601.11319v1/4842d860-0c93-4cd5-b1e0-50114cb58a40_origin.pdf",
+      "type": "pdf",
+      "role": "related_candidate",
+      "size_bytes": 6492888
+    }
+  ],
+  "artifacts": {
+    "artifact_dir": "/home/simcrq/0_Project/paperworkflow/output/workflows/dfdd03f4e8d700f2",
+    "workflow_manifest_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/dfdd03f4e8d700f2/workflow.json",
+    "document_manifest_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/dfdd03f4e8d700f2/document.manifest.json",
+    "evidence_report_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/dfdd03f4e8d700f2/evidence.md"
+  },
+  "handoff": {
+    "primary_markdown_path": "/home/simcrq/0_Project/paperworkflow/temp_markdowns/2601.11319v1/full.md",
+    "preferred_context_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/dfdd03f4e8d700f2/evidence.md",
+    "provenance_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/dfdd03f4e8d700f2/workflow.json",
+    "line_addressable_manifest_path": "/home/simcrq/0_Project/paperworkflow/output/workflows/dfdd03f4e8d700f2/document.manifest.json",
+    "needs_human_review": false,
+    "instruction": "Downstream plugins should read the evidence package first, use the primary Markdown when more context is needed, and preserve chunk ids plus line ranges."
+  },
+  "recommended_next_steps": [
+    "Review extraction-quality warnings before scientific synthesis.",
+    "Use evidence.md as the compact input for a summarization, comparison, or tutorial plugin.",
+    "Keep E### chunk ids and line ranges in downstream claims.",
+    "Inspect supplementary_candidate files when the main paper references supporting information."
+  ]
+}

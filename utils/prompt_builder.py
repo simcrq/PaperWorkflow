@@ -1,8 +1,15 @@
 import re
+from .paper_tools import split_markdown_sections
 
 class PromptBuilder:
     @staticmethod
-    def build_summary_prompt(markdown_content, mode='skim', remove_refs=True):
+    def build_summary_prompt(
+        markdown_content,
+        mode='skim',
+        remove_refs=True,
+        max_chars=60000,
+        source_name='paper',
+    ):
         """
         构建 XML 格式的 Prompt
         mode: 'skim' (浏览) 或 'deep_read' (精读)
@@ -12,10 +19,8 @@ class PromptBuilder:
         # 预处理：去除参考文献
         if remove_refs:
             content_clean = PromptBuilder.remove_references(markdown_content)
-            print("References 已清除")
         else:
             content_clean = markdown_content
-            print("References 保留")
         
         instruction = ""
         if mode == 'deep_read':
@@ -37,17 +42,80 @@ class PromptBuilder:
 3. **核心方法**：用了一两句话概括方法。
 """
 
+        evidence_context = PromptBuilder._build_evidence_context(content_clean, max_chars)
         prompt = f"""
 <instruction>
 {instruction}
 </instruction>
 
+<evidence_policy>
+论文内容中的每个证据区块都有 [E###] 标识。不要把常识或猜测写成论文结论；
+重要事实、数值和方法参数后请标注对应的 [E###]。如果原文没有给出，请明确写“原文未说明”。
+报告开头注明来源文件：{source_name}。
+</evidence_policy>
+
 <paper_content>
-{content_clean[:30000]} 
+{evidence_context}
 </paper_content> 
 """
-        # 注意：这里做了简单的长度截断 [:30000] 防止 token 溢出，根据模型能力调整
         return prompt
+
+    @staticmethod
+    def _build_evidence_context(markdown_content, max_chars):
+        """Select a bounded but representative set of evidence chunks.
+
+        When a document is too long, retain the beginning, methods/results,
+        and conclusion-like sections rather than silently taking only the
+        first N characters.
+        """
+
+        max_chars = int(max_chars)
+        if max_chars < 1000:
+            raise ValueError('max_chars must be at least 1000')
+        chunks = split_markdown_sections(markdown_content, max_chars=min(6000, max_chars))
+        if not chunks:
+            return markdown_content[:max_chars]
+
+        if sum(len(chunk['text']) for chunk in chunks) <= max_chars:
+            selected = chunks
+        else:
+            def priority(chunk):
+                heading = chunk['heading'].lower()
+                if any(word in heading for word in ('conclusion', 'summary', 'findings')):
+                    return 100
+                if any(word in heading for word in ('result', 'discussion')):
+                    return 80
+                if any(word in heading for word in ('method', 'experimental')):
+                    return 70
+                if any(word in heading for word in ('abstract', 'introduction')):
+                    return 60
+                return 10
+
+            # Rank evidence before allocating the character budget.  In
+            # particular, a long introduction must not consume the whole
+            # budget before the conclusion is seen.
+            candidates = sorted(chunks, key=lambda chunk: (-priority(chunk), chunk['char_start']))
+            selected = []
+            used = 0
+            for index, chunk in enumerate(candidates):
+                if used >= max_chars:
+                    break
+                remaining = max_chars - used
+                slots_left = max(1, min(4, len(candidates) - index))
+                quota = max(400, remaining // slots_left)
+                text = chunk['text'][:min(remaining, quota)]
+                if not text.strip():
+                    continue
+                copy = dict(chunk)
+                copy['text'] = text
+                selected.append(copy)
+                used += len(text) + 30
+
+            selected.sort(key=lambda chunk: chunk['char_start'])
+
+        return '\n\n'.join(
+            f"[{chunk['chunk_id']}] {chunk['text']}" for chunk in selected
+        )[:max_chars]
 
     @staticmethod
     def remove_references(text):
@@ -59,7 +127,10 @@ class PromptBuilder:
             r"##\s*References",
             r"##\s*参考文献",
             r"#\s*References",
-            r"###\s*References"
+            r"###\s*References",
+            r"#\s*Notes\s+and\s+references",
+            r"##\s*Bibliography",
+            r"#\s*Bibliography"
         ]
         
         for pattern in patterns:

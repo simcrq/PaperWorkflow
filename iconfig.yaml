@@ -1,5 +1,5 @@
 # 项目配置文件
-# 向LLM发送请求长度最大值 [:30000] 设置在 utils/prompt_builder.py 第 46 行 中，默认长度30000，可根据模型能力调整
+# 向 LLM 发送的最大字符数由 processing_rules.max_prompt_chars 控制；超长文档会优先保留关键章节。
 # 路径配置 (使用正斜杠 / 或双反斜杠 \\)
 paths:
   # 待处理的论文根目录，会自动递归搜索该目录下的 PDF；
@@ -14,12 +14,20 @@ paths:
 
 # API 配置
 api:
-  # MinerU  配置 (如果是本地 CLI 可忽略 api_key)。若选择local_cli模式，请前往 utils/pdf_local_handler.py 中的第20行`cmd=[]`中修改相关实现，且此处的设置会作废
+  # MinerU 配置。推荐使用官方 mineru-open-api CLI；旧手写 HTTP 适配器仅用于迁移。
   mineru:
-    mode: "api"  # 可选: "api" 或 "local_cli"
-    api_url: "https://mineru.net/api/v4/file-urls/batch" # 如果 mode 是 api,这里是批量文件上传接口
+    mode: "official_cli"  # 可选: "official_cli", "local_cli", "api"
+    cli_command: "mineru-open-api" # 也可填入完整可执行文件路径
+    extract_mode: "precision" # precision (需 Token) 或 flash (小文件免 Token)
+    ocr: true # 开启扫描页 OCR；官方 CLI 也支持通过 --ocr 显式开启
+    model: "vlm" # precision 模式: vlm / pipeline / html
+    timeout: 1800
+    # 官方 CLI 优先读取 MINERU_TOKEN 或 mineru-open-api auth 保存的 Token；
+    # 也可在此填写 api_key，由工作流安全地传给子进程环境变量。
     polling_interval: 10 # API 轮询间隔(秒)
     api_key: "xxxxxxxxxxxxxxxxx" # 请替换为您的 MinerU API Key，前往 https://mineru.net 申请
+    # 只有 mode=api 且明确设为 true 时，才使用旧的手写 v4 HTTP 适配器
+    legacy_http: false
 
   # 大模型配置 (OpenAI 兼容接口)
   llm:
@@ -41,6 +49,10 @@ processing_rules:
   
   # 默认模式 (如果 ID 不在下面列表中)
   default_mode: "skim"
+  # Prompt 最大字符数；过长时保留摘要、方法、结果和结论等证据区块
+  max_prompt_chars: 60000
+  # 每个 E### 证据块的最大字符数
+  chunk_chars: 6000
   
   # 精读列表 (Deep Read) - 需要详细总结
   deep_read_ids:
