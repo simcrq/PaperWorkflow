@@ -18,6 +18,10 @@ api:
   mineru:
     mode: "official_cli"  # 可选: "official_cli", "local_cli", "api"
     cli_command: "mineru-open-api" # 也可填入完整可执行文件路径
+    # local_cli 模式专用（mode=local_cli 时生效）
+    local_command: "mineru"
+    local_backend: "hybrid-http-client"
+    local_backend_url: "http://127.0.0.1:30000"
     extract_mode: "precision" # precision (需 Token) 或 flash (小文件免 Token)
     ocr: true # 开启扫描页 OCR；官方 CLI 也支持通过 --ocr 显式开启
     model: "vlm" # precision 模式: vlm / pipeline / html
@@ -45,7 +49,7 @@ processing_rules:
   remove_references: false
 
   # 额外的可选功能
-  is_merger_md: true  # 是否将同一文件夹下的多个 PDF 合并为一个 Markdown 文件输出 (True/False)
+  is_merger_md: true  # 是否将所有生成的总结 Markdown 合并为一个文件输出 (True/False)
   
   # 默认模式 (如果 ID 不在下面列表中)
   default_mode: "skim"

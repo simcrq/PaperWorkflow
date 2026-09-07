@@ -1,11 +1,14 @@
 import { spawn } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
-import { defineTool } from '/home/simcrq/0_Project/dsh/packages/core/tools/lib/index.js'
+import { defineTool } from process.env.DSH_TOOLS_ENTRY || '/home/simcrq/0_Project/dsh/packages/core/tools/lib/index.js'
 
 export const name = 'paperworkflow-dsh-plugin'
 export const inject = ['tools']
 
-const PROJECT_ROOT = '/home/simcrq/0_Project/paperworkflow'
+// The PaperWorkflow project root is derived from this plugin's own location
+// (integrations/deepseek-harness -> project root) and can be overridden with
+// PAPERWORKFLOW_ROOT when the plugin is installed from a different checkout.
+const PROJECT_ROOT = process.env.PAPERWORKFLOW_ROOT || fileURLToPath(new URL('../..', import.meta.url))
 const BRIDGE_PATH = fileURLToPath(new URL('./bridge.py', import.meta.url))
 const PYTHON = process.env.PAPERWORKFLOW_PYTHON || 'python3'
 
@@ -61,7 +64,7 @@ export function apply(ctx) {
       source_path: {
         type: 'string',
         required: true,
-        description: 'Project-local .pdf or .md path, absolute or relative to /home/simcrq/0_Project/paperworkflow.',
+        description: 'Project-local .pdf or .md path, absolute or relative to the PaperWorkflow project root.',
       },
       queries: {
         type: 'array',
