@@ -27,7 +27,8 @@ from .workflow_audits import (
     synthesis_gate,
 )
 
-from .paper_tools import document_manifest, search_markdown, section_index, source_fingerprint
+from .evidence_graph import build_document_graph, search_graph
+from .paper_tools import source_fingerprint
 
 
 WORKFLOW_SCHEMA_VERSION = 4
@@ -84,11 +85,6 @@ TABLE_CAPTION_RE = re.compile(r"(?im)^\s*(?:table|表)\s*[\dA-Z一二三四五�
 MARKDOWN_TABLE_SEPARATOR_RE = re.compile(r"(?m)^\s*\|?(?:\s*:?-{3,}:?\s*\|)+\s*$")
 CITATION_RE = re.compile(r"\[(?:\d+(?:\s*[-,]\s*\d+)*)\]")
 SUPERSCRIPT_CITATION_RE = re.compile(r"\$\s*\^\{\s*\d+(?:\s*[-,]\s*\d+)*\s*\}\s*\$")
-NUMBERED_REFERENCE_RE = re.compile(r"(?m)^\s*\d{1,3}\.\s+\S")
-TEMPERATURE_RANGE_RE = re.compile(
-    r"(?P<low>-?\d+(?:\.\d+)?)\s*(?:to|–|—|-)\s*(?P<high>-?\d+(?:\.\d+)?)\s*°\s*C",
-    re.IGNORECASE,
-)
 TITLE_BOILERPLATE_RE = re.compile(
     r"^(?:article type|research article|original article|review article|contents?|"
     r"(?:\d+(?:\.\d+)*\s*)?(?:abstract|introduction|background|methods?|methodology|results?|discussion|conclusions?|summary|references?|bibliography|acknowledgements?|conflicts? of interest)|"
@@ -432,184 +428,9 @@ def audit_extraction(markdown: str, chunk_count: int) -> dict[str, Any]:
     }
 
 
-def audit_structure(markdown: str, extraction_audit: dict[str, Any]) -> dict[str, Any]:
-    """Distinguish explicit headings from article-style unheaded sections."""
-
-    explicit = dict(extraction_audit["section_coverage"])
-    inferred: dict[str, str] = {}
-    numbered_references = len(NUMBERED_REFERENCE_RE.findall(markdown))
-    figure_captions = extraction_audit["content_inventory"]["figure_caption_count"]
-    opening = markdown[:12000]
-
-    if not explicit["abstract"] and DOI_RE.search(opening) and len(opening) >= 1000:
-        inferred["abstract"] = "unheaded opening summary"
-    if not explicit["results"] and figure_captions >= 2 and explicit["conclusion"]:
-        inferred["results"] = "article-style unheaded results body"
-    if not explicit["references"] and numbered_references >= 5:
-        inferred["references"] = "numbered bibliography without a References heading"
-
-    effective = dict(explicit)
-    for section in inferred:
-        effective[section] = True
-    missing_core = [
-        section
-        for section in ("abstract", "methods", "results", "conclusion")
-        if not effective[section]
-    ]
-    score = max(0, 100 - 15 * len(missing_core) - (5 if not effective["references"] else 0))
-    readiness = "ready" if score >= 85 else "review" if score >= 55 else "blocked"
-    detection = {
-        section: (
-            "explicit_heading"
-            if explicit[section]
-            else "inferred_unheaded"
-            if section in inferred
-            else "missing"
-        )
-        for section in explicit
-    }
-    return {
-        "scope": "Document structure recognition; inferred sections are not explicit headings.",
-        "score": score,
-        "readiness": readiness,
-        "explicit_section_coverage": explicit,
-        "effective_section_coverage": effective,
-        "section_detection": detection,
-        "inference_reasons": inferred,
-        "numbered_reference_entry_count": numbered_references,
-        "warnings": (
-            [
-                {
-                    "code": "core_sections_unresolved",
-                    "severity": "medium",
-                    "message": "Core sections could not be resolved: " + ", ".join(missing_core) + ".",
-                }
-            ]
-            if missing_core
-            else []
-        ),
-    }
-
-
 def audit_quantities(markdown: str) -> dict[str, Any]:
     """Public wrapper for the relation- and symbol-aware quantity audit."""
     return audit_quantities_enhanced(markdown)
-
-
-def audit_retrieval(evidence: list[dict[str, Any]]) -> dict[str, Any]:
-    """Assess coverage and top-hit plausibility for every evidence question."""
-
-    diagnostics: list[dict[str, Any]] = []
-    acceptable = 0
-    weak = 0
-    for group in evidence:
-        results = group.get("results", [])
-        if not results:
-            status = "no_match"
-        else:
-            top = results[0]
-            if top.get("section_fit") == "deprioritized" or top.get("relevance") == "low":
-                status = "weak"
-                weak += 1
-            else:
-                status = "acceptable"
-                acceptable += 1
-        group["retrieval_status"] = status
-        diagnostics.append(
-            {
-                "query_id": group["query_id"],
-                "intent": group.get("intent", "general"),
-                "status": status,
-                "result_count": len(results),
-                "top_chunk_id": results[0]["chunk_id"] if results else None,
-                "top_heading": results[0]["heading"] if results else None,
-            }
-        )
-
-    total = len(evidence)
-    score = round(100 * (acceptable + 0.5 * weak) / total) if total else 100
-    warnings: list[dict[str, str]] = []
-    missing_ids = [item["query_id"] for item in diagnostics if item["status"] == "no_match"]
-    weak_ids = [item["query_id"] for item in diagnostics if item["status"] == "weak"]
-    if missing_ids:
-        warnings.append(
-            {
-                "code": "evidence_queries_without_matches",
-                "severity": "high",
-                "message": "No evidence match for: " + ", ".join(missing_ids) + ".",
-            }
-        )
-    if weak_ids:
-        warnings.append(
-            {
-                "code": "weak_evidence_queries",
-                "severity": "medium",
-                "message": "Top evidence requires review for: " + ", ".join(weak_ids) + ".",
-            }
-        )
-    readiness = "blocked" if score < 40 else "review" if score < 85 or warnings else "ready"
-    return {
-        "scope": "Evidence retrieval coverage and top-hit plausibility; not claim correctness.",
-        "score": score,
-        "readiness": readiness,
-        "query_count": total,
-        "acceptable_count": acceptable,
-        "weak_count": weak,
-        "no_match_count": len(missing_ids),
-        "diagnostics": diagnostics,
-        "warnings": warnings,
-    }
-
-
-def build_quality_dimensions(
-    extraction: dict[str, Any],
-    structure: dict[str, Any],
-    retrieval: dict[str, Any],
-    quantities: dict[str, Any],
-) -> dict[str, Any]:
-    """Build a synthesis gate without misrepresenting OCR quality as answer quality."""
-
-    score = round(
-        0.35 * extraction["score"]
-        + 0.15 * structure["score"]
-        + 0.35 * retrieval["score"]
-        + 0.15 * quantities["score"]
-    )
-    if extraction["readiness"] == "blocked" or retrieval["readiness"] == "blocked":
-        readiness = "blocked"
-    elif any(
-        audit["readiness"] == "review"
-        for audit in (extraction, structure, retrieval, quantities)
-    ):
-        readiness = "review"
-    else:
-        readiness = "ready"
-    return {
-        "scope": (
-            "Scientific-synthesis hand-off gate. A ready extraction alone does not imply "
-            "that scientific claims are verified."
-        ),
-        "score": score,
-        "readiness": readiness,
-        "dimensions": {
-            "extraction": {
-                "score": extraction["score"],
-                "readiness": extraction["readiness"],
-            },
-            "structure": {
-                "score": structure["score"],
-                "readiness": structure["readiness"],
-            },
-            "retrieval": {
-                "score": retrieval["score"],
-                "readiness": retrieval["readiness"],
-            },
-            "quantities": {
-                "score": quantities["score"],
-                "readiness": quantities["readiness"],
-            },
-        },
-    }
 
 
 def synthesis_contract() -> dict[str, Any]:
@@ -786,141 +607,6 @@ def _escape_table(value: Any) -> str:
     return str(value).replace("|", "\\|").replace("\n", " ")
 
 
-def _evidence_report(workflow: dict[str, Any]) -> str:
-    source = workflow["source"]
-    metadata = workflow["metadata"]
-    dimensions = workflow["quality_dimensions"]
-    extraction = dimensions["extraction"]
-    synthesis = workflow["synthesis_readiness"]
-    lines = [
-        "# PaperWorkflow evidence package",
-        "",
-        f"- Workflow ID: {workflow['workflow_id']}",
-        f"- Input: {source['input_path']}",
-        f"- Markdown: {source['markdown_path']}",
-        f"- Generated: {workflow['generated_at']}",
-        (
-            f"- Extraction readiness: **{extraction['readiness']}** "
-            f"({extraction['score']}/100; OCR/Markdown usability only)"
-        ),
-        (
-            f"- Scientific-synthesis readiness: **{synthesis['readiness']}** "
-            f"({synthesis['score']}/100)"
-        ),
-        "",
-        "## Metadata and identifiers",
-        "",
-        f"- Title guess: {metadata['title_guess'] or '(not detected)'}",
-        f"- Language profile: {metadata['language_profile']}",
-        f"- DOI: {', '.join(metadata['dois']) or '(none detected)'}",
-        f"- arXiv: {', '.join(metadata['arxiv_ids']) or '(none detected)'}",
-        "",
-        "## Quality dimensions",
-        "",
-        "| Dimension | Score | Readiness |",
-        "|---|---:|---|",
-    ]
-    for name in ("extraction", "structure", "retrieval", "quantities"):
-        audit = dimensions[name]
-        lines.append(f"| {name} | {audit['score']} | {audit['readiness']} |")
-
-    lines.extend(["", "### Audit warnings", ""])
-    warning_count = 0
-    for name in ("extraction", "structure", "retrieval", "quantities"):
-        for warning in dimensions[name].get("warnings", []):
-            warning_count += 1
-            lines.append(
-                f"- [{name}/{warning['severity']}] {warning['code']}: {warning['message']}"
-            )
-    if not warning_count:
-        lines.append("- No quality warnings.")
-
-    ranges = dimensions["quantities"].get("temperature_ranges", [])
-    if ranges:
-        lines.extend(["", "### Temperature ranges requiring context preservation", ""])
-        for item in ranges:
-            lines.append(
-                f"- {item['low']:g} to {item['high']:g} {item['unit']} · line {item['line']}"
-            )
-
-    lines.extend(
-        [
-            "",
-            "## Addressable outline",
-            "",
-            "| Chunk | Heading | Part | Lines |",
-            "|---|---|---:|---:|",
-        ]
-    )
-    for section in workflow["outline"]["sections"]:
-        lines.append(
-            "| {chunk} | {heading} | {part} | {start}-{end} |".format(
-                chunk=_escape_table(section["chunk_id"]),
-                heading=_escape_table(section["heading"]),
-                part=section["part"],
-                start=section["line_start"],
-                end=section["line_end"],
-            )
-        )
-
-    lines.extend(["", "## Evidence queries", ""])
-    if not workflow["evidence"]:
-        lines.append("No evidence queries were requested.")
-    for evidence_group in workflow["evidence"]:
-        lines.extend(
-            [
-                f"### {evidence_group['label']} ({evidence_group['query_id']})",
-                "",
-                f"- Original query: {evidence_group['query']}",
-                f"- Intent: {evidence_group.get('intent', 'general')}",
-                f"- Retrieval status: **{evidence_group.get('retrieval_status', 'unknown')}**",
-            ]
-        )
-        if evidence_group.get("expanded_query") != evidence_group["query"]:
-            lines.append(f"- Expanded retrieval query: {evidence_group['expanded_query']}")
-        lines.append("")
-        if not evidence_group["results"]:
-            lines.append("- No relevant match. Scientific synthesis requires review.")
-            lines.append("")
-            continue
-        for result in evidence_group["results"]:
-            snippet = re.sub(r"\s+", " ", result["snippet"]).strip()[:800]
-            lines.extend(
-                [
-                    (
-                        f"- **{result['chunk_id']}** · {result['heading']} · "
-                        f"lines {result['line_start']}-{result['line_end']} · "
-                        f"score {result['score']} · relevance {result['relevance']} · "
-                        f"section {result['section_fit']}"
-                    ),
-                    f"  - {snippet}",
-                ]
-            )
-        lines.append("")
-
-    lines.extend(["## Related-document candidates", ""])
-    if workflow["related_documents"]:
-        for document in workflow["related_documents"]:
-            lines.append(
-                f"- {document['role']}: {document['path']} ({document['match_reason']})"
-            )
-    else:
-        lines.append("- None identified by filename/folder relationship.")
-
-    lines.extend(
-        [
-            "",
-            "## Downstream claim ledger contract",
-            "",
-            "Each major claim and every number must retain E### plus exact line range. "
-            "Label evidence as observation, measurement, simulation, fit, inference, or extrapolation.",
-            "Keep laboratory, optimized batch, and roll-to-roll conditions separate. "
-            "Do not merge differing numerical ranges.",
-            "",
-        ]
-    )
-    return "\n".join(lines)
-
 def _evidence_report_v4(workflow: dict[str, Any]) -> str:
     """Render registry text once, then map every query to EV identifiers."""
 
@@ -1063,13 +749,26 @@ def build_literature_workflow(
     project_root = project_root.expanduser().resolve()
     output_dir = output_dir.expanduser().resolve()
     markdown = markdown_path.read_text(encoding="utf-8")
-    manifest = document_manifest(
-        markdown,
-        pdf_path=source_path if source_path.suffix.lower() == ".pdf" else None,
-        markdown_path=markdown_path,
-        chunk_chars=chunk_chars,
-    )
-    outline = section_index(markdown, chunk_chars=chunk_chars)
+    graph = build_document_graph(markdown, max_chars=chunk_chars)
+    manifest = dict(graph)
+    if source_path.suffix.lower() == ".pdf":
+        manifest["pdf_path"] = str(source_path)
+        try:
+            manifest["source_id"] = source_fingerprint(source_path)
+        except FileNotFoundError:
+            manifest["source_id"] = None
+    manifest["markdown_path"] = str(markdown_path)
+    outline = [
+        {
+            key: chunk[key]
+            for key in (
+                "chunk_id", "heading", "raw_heading", "semantic_heading",
+                "heading_kind", "empty_node", "level", "part", "line_start",
+                "line_end", "modalities", "figure_parents", "semantic_owner_type",
+            )
+        }
+        for chunk in graph["chunks"]
+    ]
     metadata = extract_metadata(markdown, source_path)
     extraction_audit = audit_extraction(markdown, len(outline))
     structure_audit = audit_structure_enhanced(markdown, extraction_audit, manifest)
@@ -1095,8 +794,8 @@ def build_literature_workflow(
                 "key_results": 8,
                 "limitations": 5,
             }.get(intent, top_k)
-            results_by_canonical[canonical_id] = search_markdown(
-                markdown_path,
+            results_by_canonical[canonical_id] = search_graph(
+                graph,
                 query_spec["expanded_query"],
                 top_k=max(top_k, coverage_depth),
                 intent=intent,

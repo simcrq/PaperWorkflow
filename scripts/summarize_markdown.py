@@ -13,13 +13,19 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 import time
 from pathlib import Path
 
 import yaml
 
-PROJECT_ROOT = Path("/home/simcrq/0_Project/paperworkflow").resolve()
+# The project root is derived from this script's own location (scripts/ ->
+# project root) and can be overridden with PAPERWORKFLOW_ROOT.
+PROJECT_ROOT = Path(
+    os.environ.get("PAPERWORKFLOW_ROOT")
+    or Path(__file__).resolve().parent.parent
+).resolve()
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from utils.agent_tools import get_document_outline, retrieve_evidence

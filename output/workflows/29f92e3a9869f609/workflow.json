@@ -1,7 +1,7 @@
 {
   "schema_version": 4,
-  "workflow_id": "9d52b167e5da5cdf",
-  "generated_at": "2026-08-29T15:58:38.300663+00:00",
+  "workflow_id": "4f732622cea1f062",
+  "generated_at": "2026-09-05T08:15:39.892315+00:00",
   "source": {
     "input_path": "/home/simcrq/0_Project/paperworkflow/INput/Fail.pdf",
     "input_type": "pdf",
@@ -62,10 +62,10 @@
       "span_count": 274
     },
     {
-      "unique_evidence_count": 27,
+      "unique_evidence_count": 21,
       "stage": "evidence_retrieval",
       "status": "completed",
-      "query_count": 7,
+      "query_count": 4,
       "readiness": "review"
     },
     {
@@ -320,19 +320,19 @@
     },
     "retrieval": {
       "scope": "Span-level evidence retrieval precision and workflow-facet coverage; not claim correctness.",
-      "score": 65,
+      "score": 66,
       "readiness": "review",
-      "query_count": 7,
-      "acceptable_count": 5,
-      "precision_ratio": 0.762,
-      "mean_coverage_ratio": 0.25,
+      "query_count": 4,
+      "acceptable_count": 3,
+      "precision_ratio": 0.719,
+      "mean_coverage_ratio": 0.3,
       "support_span_exposure_ratio": 1.0,
-      "unique_evidence_count": 27,
+      "unique_evidence_count": 21,
       "diagnostics": [
         {
-          "query_id": "custom-01",
-          "canonical_query_id": "custom-01",
-          "intent": "general",
+          "query_id": "objective",
+          "canonical_query_id": "objective",
+          "intent": "objective",
           "status": "acceptable",
           "result_count": 5,
           "unique_evidence_count": 5,
@@ -345,9 +345,9 @@
           }
         },
         {
-          "query_id": "custom-02",
-          "canonical_query_id": "custom-02",
-          "intent": "general",
+          "query_id": "methods",
+          "canonical_query_id": "methods",
+          "intent": "methods",
           "status": "acceptable",
           "result_count": 5,
           "unique_evidence_count": 5,
@@ -360,76 +360,30 @@
           }
         },
         {
-          "query_id": "custom-03",
-          "canonical_query_id": "custom-03",
-          "intent": "general",
+          "query_id": "results",
+          "canonical_query_id": "results",
+          "intent": "key_results",
           "status": "acceptable",
-          "result_count": 5,
-          "unique_evidence_count": 5,
-          "precision_ratio": 1.0,
+          "result_count": 8,
+          "unique_evidence_count": 8,
+          "precision_ratio": 0.875,
           "coverage": {
-            "facet_count": 0,
-            "covered_facets": [],
-            "missing_facets": [],
-            "coverage_ratio": 1.0
-          }
-        },
-        {
-          "query_id": "custom-04",
-          "canonical_query_id": "custom-04",
-          "intent": "physical_mechanism",
-          "status": "weak",
-          "result_count": 9,
-          "unique_evidence_count": 9,
-          "precision_ratio": 0.333,
-          "coverage": {
-            "facet_count": 6,
+            "facet_count": 5,
             "covered_facets": [
-              "interference_or_dispersion",
-              "field_or_simulation",
-              "observable_mapping"
+              "yield_or_resolution",
+              "stability",
+              "mechanical_robustness"
             ],
             "missing_facets": [
-              "multiscale_structure",
-              "photonic_bandgap",
-              "total_internal_reflection"
+              "scale_or_throughput",
+              "optical_tunability"
             ],
-            "coverage_ratio": 0.5
+            "coverage_ratio": 0.6
           }
         },
         {
-          "query_id": "custom-05",
-          "canonical_query_id": "custom-05",
-          "intent": "general",
-          "status": "acceptable",
-          "result_count": 5,
-          "unique_evidence_count": 5,
-          "precision_ratio": 1.0,
-          "coverage": {
-            "facet_count": 0,
-            "covered_facets": [],
-            "missing_facets": [],
-            "coverage_ratio": 1.0
-          }
-        },
-        {
-          "query_id": "custom-06",
-          "canonical_query_id": "custom-06",
-          "intent": "general",
-          "status": "acceptable",
-          "result_count": 5,
-          "unique_evidence_count": 5,
-          "precision_ratio": 1.0,
-          "coverage": {
-            "facet_count": 0,
-            "covered_facets": [],
-            "missing_facets": [],
-            "coverage_ratio": 1.0
-          }
-        },
-        {
-          "query_id": "custom-07",
-          "canonical_query_id": "custom-07",
+          "query_id": "limitations",
+          "canonical_query_id": "limitations",
           "intent": "limitations",
           "status": "weak",
           "result_count": 5,
@@ -452,7 +406,7 @@
         {
           "code": "evidence_coverage_incomplete",
           "severity": "medium",
-          "message": "Precision or facet coverage is incomplete for: custom-04, custom-07."
+          "message": "Precision or facet coverage is incomplete for: limitations."
         }
       ]
     },
@@ -595,31 +549,29 @@
   },
   "evidence": [
     {
-      "query_id": "custom-01",
-      "label": "Custom question 1",
-      "query": "soft phonon mode graphene tension instability",
-      "intent": "general",
-      "expanded_query": "soft phonon mode graphene tension instability",
-      "query_expansion_applied": false,
+      "query_id": "objective",
+      "intent": "objective",
+      "label": "Research objective",
+      "query": "abstract objective objectives purpose aim motivation research question 摘要 目的 目标 动机 研究问题",
+      "expanded_query": "abstract objective objectives purpose aim motivation research question 摘要 目的 目标 动机 研究问题 abstract motivation purpose aim present demonstrate propose",
+      "query_expansion_applied": true,
       "language_bridge_applied": false,
-      "canonical_query_id": "custom-01",
+      "canonical_query_id": "objective",
       "results": [
         {
-          "chunk_id": "E003",
-          "span_id": "S0101",
+          "chunk_id": "E001",
+          "span_id": "S0020",
           "heading": "Failure Mechanisms of Graphene under Tension",
           "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 35,
-          "line_end": 35,
-          "char_start": 12112,
-          "char_end": 12266,
-          "score": 10.369,
-          "relevance": "high",
+          "line_start": 14,
+          "line_end": 14,
+          "char_start": 1997,
+          "char_end": 2107,
+          "score": 3.951,
+          "relevance": "medium",
           "section_fit": "neutral",
           "matched_terms": [
-            "instability",
-            "mode",
-            "tension"
+            "question"
           ],
           "evidence_ids": [
             "EV0001"
@@ -634,14 +586,11 @@
           "line_end": 16,
           "char_start": 4004,
           "char_end": 4166,
-          "score": 10.236,
-          "relevance": "high",
+          "score": 3.919,
+          "relevance": "medium",
           "section_fit": "neutral",
           "matched_terms": [
-            "graphene",
-            "mode",
-            "soft",
-            "tension"
+            "demonstrate"
           ],
           "evidence_ids": [
             "EV0002"
@@ -649,41 +598,37 @@
         },
         {
           "chunk_id": "E001",
-          "span_id": "S0035",
+          "span_id": "S0008",
           "heading": "Failure Mechanisms of Graphene under Tension",
           "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 16,
-          "line_end": 16,
-          "char_start": 4630,
-          "char_end": 4779,
-          "score": 9.383,
-          "relevance": "high",
+          "line_start": 8,
+          "line_end": 8,
+          "char_start": 347,
+          "char_end": 492,
+          "score": 3.539,
+          "relevance": "medium",
           "section_fit": "neutral",
           "matched_terms": [
-            "graphene",
-            "instability",
-            "phonon"
+            "question"
           ],
           "evidence_ids": [
             "EV0003"
           ]
         },
         {
-          "chunk_id": "E002",
-          "span_id": "S0059",
+          "chunk_id": "E003",
+          "span_id": "S0101",
           "heading": "Failure Mechanisms of Graphene under Tension",
           "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 23,
-          "line_end": 23,
-          "char_start": 7369,
-          "char_end": 7533,
-          "score": 8.824,
-          "relevance": "high",
+          "line_start": 35,
+          "line_end": 35,
+          "char_start": 12112,
+          "char_end": 12266,
+          "score": 3.42,
+          "relevance": "medium",
           "section_fit": "neutral",
           "matched_terms": [
-            "mode",
-            "phonon",
-            "soft"
+            "question"
           ],
           "evidence_ids": [
             "EV0004"
@@ -691,20 +636,18 @@
         },
         {
           "chunk_id": "E003",
-          "span_id": "S0125",
+          "span_id": "S0117",
           "heading": "Failure Mechanisms of Graphene under Tension",
           "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 48,
-          "line_end": 48,
-          "char_start": 15199,
-          "char_end": 15338,
-          "score": 8.732,
-          "relevance": "high",
+          "line_start": 46,
+          "line_end": 46,
+          "char_start": 13973,
+          "char_end": 14186,
+          "score": 2.857,
+          "relevance": "medium",
           "section_fit": "neutral",
           "matched_terms": [
-            "mode",
-            "phonon",
-            "soft"
+            "present"
           ],
           "evidence_ids": [
             "EV0005"
@@ -727,300 +670,32 @@
       "retrieval_status": "acceptable"
     },
     {
-      "query_id": "custom-02",
-      "label": "Custom question 2",
-      "query": "K1 mode graphene soft mode strain",
-      "intent": "general",
-      "expanded_query": "K1 mode graphene soft mode strain",
-      "query_expansion_applied": false,
+      "query_id": "methods",
+      "intent": "methods",
+      "label": "Methods and conditions",
+      "query": "method methods methodology experiment experimental computational simulation sample materials measurement setup parameter condition 方法 实验 计算 模拟 样品 材料 测量 参数 条件",
+      "expanded_query": "method methods methodology experiment experimental computational simulation sample materials measurement setup parameter condition 方法 实验 计算 模拟 样品 材料 测量 参数 条件 methods materials experimental preparation fabrication synthesis polymerization substrate printing coating curing processing measurement simulation",
+      "query_expansion_applied": true,
       "language_bridge_applied": false,
-      "canonical_query_id": "custom-02",
+      "canonical_query_id": "methods",
       "results": [
         {
-          "chunk_id": "E002",
-          "span_id": "S0080",
+          "chunk_id": "E001",
+          "span_id": "S0018",
           "heading": "Failure Mechanisms of Graphene under Tension",
           "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 28,
-          "line_end": 28,
-          "char_start": 9535,
-          "char_end": 9685,
-          "score": 7.118,
-          "relevance": "high",
+          "line_start": 14,
+          "line_end": 14,
+          "char_start": 1758,
+          "char_end": 1871,
+          "score": 4.833,
+          "relevance": "medium",
           "section_fit": "neutral",
           "matched_terms": [
-            "mode",
-            "soft",
-            "strain"
+            "measurement"
           ],
           "evidence_ids": [
             "EV0006"
-          ]
-        },
-        {
-          "chunk_id": "E002",
-          "span_id": "S0059",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 23,
-          "line_end": 23,
-          "char_start": 7369,
-          "char_end": 7533,
-          "score": 6.783,
-          "relevance": "high",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "mode",
-            "soft",
-            "strain"
-          ],
-          "evidence_ids": [
-            "EV0004"
-          ]
-        },
-        {
-          "chunk_id": "E003",
-          "span_id": "S0125",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 48,
-          "line_end": 48,
-          "char_start": 15199,
-          "char_end": 15338,
-          "score": 6.607,
-          "relevance": "high",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "mode",
-            "soft",
-            "strain"
-          ],
-          "evidence_ids": [
-            "EV0005"
-          ]
-        },
-        {
-          "chunk_id": "E002",
-          "span_id": "S0081",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 28,
-          "line_end": 28,
-          "char_start": 9686,
-          "char_end": 9865,
-          "score": 6.599,
-          "relevance": "high",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "mode",
-            "soft"
-          ],
-          "evidence_ids": [
-            "EV0007"
-          ]
-        },
-        {
-          "chunk_id": "E001",
-          "span_id": "S0032",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 16,
-          "line_end": 16,
-          "char_start": 4004,
-          "char_end": 4166,
-          "score": 6.425,
-          "relevance": "high",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "graphene",
-            "mode",
-            "soft"
-          ],
-          "evidence_ids": [
-            "EV0002"
-          ]
-        }
-      ],
-      "evidence_ids": [
-        "EV0006",
-        "EV0004",
-        "EV0005",
-        "EV0007",
-        "EV0002"
-      ],
-      "coverage": {
-        "facet_count": 0,
-        "covered_facets": [],
-        "missing_facets": [],
-        "coverage_ratio": 1.0
-      },
-      "retrieval_status": "acceptable"
-    },
-    {
-      "query_id": "custom-03",
-      "label": "Custom question 3",
-      "query": "strain-induced phase transition graphene soft mode",
-      "intent": "general",
-      "expanded_query": "strain-induced phase transition graphene soft mode",
-      "query_expansion_applied": false,
-      "language_bridge_applied": false,
-      "canonical_query_id": "custom-03",
-      "results": [
-        {
-          "chunk_id": "E001",
-          "span_id": "S0032",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 16,
-          "line_end": 16,
-          "char_start": 4004,
-          "char_end": 4166,
-          "score": 11.562,
-          "relevance": "high",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "graphene",
-            "mode",
-            "phase",
-            "soft",
-            "transition"
-          ],
-          "evidence_ids": [
-            "EV0002"
-          ]
-        },
-        {
-          "chunk_id": "E001",
-          "span_id": "S0031",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 16,
-          "line_end": 16,
-          "char_start": 3759,
-          "char_end": 4003,
-          "score": 10.473,
-          "relevance": "high",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "mode",
-            "phase",
-            "soft",
-            "transition"
-          ],
-          "evidence_ids": [
-            "EV0008"
-          ]
-        },
-        {
-          "chunk_id": "E003",
-          "span_id": "S0093",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 30,
-          "line_end": 30,
-          "char_start": 11353,
-          "char_end": 11539,
-          "score": 8.989,
-          "relevance": "high",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "mode",
-            "phase",
-            "soft",
-            "transition"
-          ],
-          "evidence_ids": [
-            "EV0009"
-          ]
-        },
-        {
-          "chunk_id": "E002",
-          "span_id": "S0060",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 23,
-          "line_end": 23,
-          "char_start": 7534,
-          "char_end": 7659,
-          "score": 8.202,
-          "relevance": "high",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "mode",
-            "phase",
-            "transition"
-          ],
-          "evidence_ids": [
-            "EV0010"
-          ]
-        },
-        {
-          "chunk_id": "E001",
-          "span_id": "S0010",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 8,
-          "line_end": 8,
-          "char_start": 644,
-          "char_end": 867,
-          "score": 8.071,
-          "relevance": "high",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "graphene",
-            "mode",
-            "phase",
-            "transition"
-          ],
-          "evidence_ids": [
-            "EV0011"
-          ]
-        }
-      ],
-      "evidence_ids": [
-        "EV0002",
-        "EV0008",
-        "EV0009",
-        "EV0010",
-        "EV0011"
-      ],
-      "coverage": {
-        "facet_count": 0,
-        "covered_facets": [],
-        "missing_facets": [],
-        "coverage_ratio": 1.0
-      },
-      "retrieval_status": "acceptable"
-    },
-    {
-      "query_id": "custom-04",
-      "label": "Custom question 4",
-      "query": "graphene failure mechanism under tension",
-      "intent": "physical_mechanism",
-      "expanded_query": "graphene failure mechanism under tension physical mechanism structure morphology optical field distribution light propagation photonic bandgap total internal reflection interference simulation working principle",
-      "query_expansion_applied": true,
-      "language_bridge_applied": false,
-      "canonical_query_id": "custom-04",
-      "results": [
-        {
-          "chunk_id": "E001",
-          "span_id": "S0032",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 16,
-          "line_end": 16,
-          "char_start": 4004,
-          "char_end": 4166,
-          "score": 15.744,
-          "relevance": "high",
-          "section_fit": "preferred",
-          "matched_terms": [
-            "failure",
-            "graphene",
-            "tension"
-          ],
-          "evidence_ids": [
-            "EV0002"
           ]
         },
         {
@@ -1032,312 +707,80 @@
           "line_end": 18,
           "char_start": 5466,
           "char_end": 5560,
-          "score": 13.781,
+          "score": 4.652,
           "relevance": "medium",
-          "section_fit": "preferred",
+          "section_fit": "neutral",
           "matched_terms": [
             "simulation"
           ],
           "evidence_ids": [
-            "EV0012"
+            "EV0007"
           ]
         },
         {
-          "chunk_id": "E001",
-          "span_id": "S0020",
+          "chunk_id": "E002",
+          "span_id": "S0040",
           "heading": "Failure Mechanisms of Graphene under Tension",
           "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 14,
-          "line_end": 14,
-          "char_start": 1997,
-          "char_end": 2107,
-          "score": 11.432,
+          "line_start": 18,
+          "line_end": 18,
+          "char_start": 5326,
+          "char_end": 5465,
+          "score": 3.723,
           "relevance": "medium",
-          "section_fit": "preferred",
+          "section_fit": "neutral",
           "matched_terms": [
-            "under"
+            "method"
           ],
           "evidence_ids": [
-            "EV0013"
-          ]
-        },
-        {
-          "chunk_id": "E001",
-          "span_id": "S0009",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 8,
-          "line_end": 8,
-          "char_start": 493,
-          "char_end": 643,
-          "score": 18.932,
-          "relevance": "high",
-          "section_fit": "preferred",
-          "matched_terms": [
-            "failure",
-            "graphene",
-            "tension",
-            "under"
-          ],
-          "evidence_ids": [
-            "EV0014"
-          ]
-        },
-        {
-          "chunk_id": "E004",
-          "span_id": "S0145",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 52,
-          "line_end": 52,
-          "char_start": 18015,
-          "char_end": 18139,
-          "score": 16.933,
-          "relevance": "high",
-          "section_fit": "preferred",
-          "matched_terms": [
-            "failure",
-            "graphene",
-            "tension"
-          ],
-          "evidence_ids": [
-            "EV0015"
+            "EV0008"
           ]
         },
         {
           "chunk_id": "E002",
-          "span_id": "S0036",
+          "span_id": "S0045",
           "heading": "Failure Mechanisms of Graphene under Tension",
           "raw_heading": "Failure Mechanisms of Graphene under Tension",
           "line_start": 18,
           "line_end": 18,
-          "char_start": 4781,
-          "char_end": 5008,
-          "score": 15.802,
-          "relevance": "high",
-          "section_fit": "preferred",
-          "matched_terms": [
-            "failure",
-            "graphene",
-            "mechanism"
-          ],
-          "evidence_ids": [
-            "EV0016"
-          ]
-        },
-        {
-          "chunk_id": "E003",
-          "span_id": "S0129",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 48,
-          "line_end": 48,
-          "char_start": 15714,
-          "char_end": 15881,
-          "score": 15.779,
-          "relevance": "high",
-          "section_fit": "preferred",
-          "matched_terms": [
-            "graphene",
-            "tension",
-            "under"
-          ],
-          "evidence_ids": [
-            "EV0017"
-          ]
-        },
-        {
-          "chunk_id": "E001",
-          "span_id": "S0019",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 14,
-          "line_end": 14,
-          "char_start": 1872,
-          "char_end": 1996,
-          "score": 15.734,
-          "relevance": "high",
-          "section_fit": "preferred",
-          "matched_terms": [
-            "failure",
-            "graphene",
-            "under"
-          ],
-          "evidence_ids": [
-            "EV0018"
-          ]
-        },
-        {
-          "chunk_id": "E002",
-          "span_id": "S0050",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 21,
-          "line_end": 21,
-          "char_start": 6438,
-          "char_end": 6496,
-          "score": 15.681,
-          "relevance": "high",
-          "section_fit": "preferred",
-          "matched_terms": [
-            "graphene",
-            "under"
-          ],
-          "evidence_ids": [
-            "EV0019"
-          ]
-        }
-      ],
-      "evidence_ids": [
-        "EV0002",
-        "EV0012",
-        "EV0013",
-        "EV0014",
-        "EV0015",
-        "EV0016",
-        "EV0017",
-        "EV0018",
-        "EV0019"
-      ],
-      "coverage": {
-        "facet_count": 6,
-        "covered_facets": [
-          "interference_or_dispersion",
-          "field_or_simulation",
-          "observable_mapping"
-        ],
-        "missing_facets": [
-          "multiscale_structure",
-          "photonic_bandgap",
-          "total_internal_reflection"
-        ],
-        "coverage_ratio": 0.5
-      },
-      "retrieval_status": "weak"
-    },
-    {
-      "query_id": "custom-05",
-      "label": "Custom question 5",
-      "query": "critical strain optical phonon instability graphene",
-      "intent": "general",
-      "expanded_query": "critical strain optical phonon instability graphene",
-      "query_expansion_applied": false,
-      "language_bridge_applied": false,
-      "canonical_query_id": "custom-05",
-      "results": [
-        {
-          "chunk_id": "E001",
-          "span_id": "S0035",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 16,
-          "line_end": 16,
-          "char_start": 4630,
-          "char_end": 4779,
-          "score": 12.316,
-          "relevance": "high",
+          "char_start": 6004,
+          "char_end": 6172,
+          "score": 3.488,
+          "relevance": "medium",
           "section_fit": "neutral",
           "matched_terms": [
-            "graphene",
-            "instability",
-            "optical",
-            "phonon"
+            "method"
           ],
           "evidence_ids": [
-            "EV0003"
-          ]
-        },
-        {
-          "chunk_id": "E002",
-          "span_id": "S0036",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 18,
-          "line_end": 18,
-          "char_start": 4781,
-          "char_end": 5008,
-          "score": 7.676,
-          "relevance": "high",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "graphene",
-            "instability",
-            "phonon",
-            "strain"
-          ],
-          "evidence_ids": [
-            "EV0016"
-          ]
-        },
-        {
-          "chunk_id": "E001",
-          "span_id": "S0010",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 8,
-          "line_end": 8,
-          "char_start": 644,
-          "char_end": 867,
-          "score": 5.924,
-          "relevance": "high",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "graphene",
-            "instability",
-            "phonon"
-          ],
-          "evidence_ids": [
-            "EV0011"
-          ]
-        },
-        {
-          "chunk_id": "E003",
-          "span_id": "S0100",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 35,
-          "line_end": 35,
-          "char_start": 11886,
-          "char_end": 12111,
-          "score": 5.855,
-          "relevance": "high",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "graphene",
-            "instability",
-            "strain"
-          ],
-          "evidence_ids": [
-            "EV0020"
+            "EV0009"
           ]
         },
         {
           "chunk_id": "E004",
-          "span_id": "S0146",
+          "span_id": "S0140",
           "heading": "Failure Mechanisms of Graphene under Tension",
           "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 52,
-          "line_end": 52,
-          "char_start": 18140,
-          "char_end": 18318,
-          "score": 5.784,
-          "relevance": "high",
+          "line_start": 50,
+          "line_end": 50,
+          "char_start": 17217,
+          "char_end": 17415,
+          "score": 3.48,
+          "relevance": "medium",
           "section_fit": "neutral",
           "matched_terms": [
-            "instability",
-            "phonon"
+            "experimental"
           ],
           "evidence_ids": [
-            "EV0021"
+            "EV0010"
           ]
         }
       ],
       "evidence_ids": [
-        "EV0003",
-        "EV0016",
-        "EV0011",
-        "EV0020",
-        "EV0021"
+        "EV0006",
+        "EV0007",
+        "EV0008",
+        "EV0009",
+        "EV0010"
       ],
       "coverage": {
         "facet_count": 0,
@@ -1348,97 +791,93 @@
       "retrieval_status": "acceptable"
     },
     {
-      "query_id": "custom-06",
-      "label": "Custom question 6",
-      "query": "double-well potential graphene strain soft mode",
-      "intent": "general",
-      "expanded_query": "double-well potential graphene strain soft mode",
-      "query_expansion_applied": false,
+      "query_id": "results",
+      "intent": "key_results",
+      "label": "Results and conclusions",
+      "query": "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制",
+      "expanded_query": "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制 results conclusions demonstrate achieve yield resolution stability performance scalability tunability cycle metre-scale",
+      "query_expansion_applied": true,
       "language_bridge_applied": false,
-      "canonical_query_id": "custom-06",
+      "canonical_query_id": "results",
       "results": [
         {
-          "chunk_id": "E002",
-          "span_id": "S0082",
+          "chunk_id": "E004",
+          "span_id": "S0140",
           "heading": "Failure Mechanisms of Graphene under Tension",
           "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 28,
-          "line_end": 28,
-          "char_start": 9866,
-          "char_end": 9984,
-          "score": 12.201,
+          "line_start": 50,
+          "line_end": 50,
+          "char_start": 17217,
+          "char_end": 17415,
+          "score": 9.171,
           "relevance": "high",
           "section_fit": "neutral",
           "matched_terms": [
-            "double-well",
-            "potential",
-            "strain"
+            "result",
+            "value",
+            "yield"
           ],
           "evidence_ids": [
-            "EV0022"
+            "EV0010"
           ]
         },
         {
-          "chunk_id": "E002",
-          "span_id": "S0080",
+          "chunk_id": "E001",
+          "span_id": "S0035",
           "heading": "Failure Mechanisms of Graphene under Tension",
           "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 28,
-          "line_end": 28,
-          "char_start": 9535,
-          "char_end": 9685,
-          "score": 7.118,
+          "line_start": 16,
+          "line_end": 16,
+          "char_start": 4630,
+          "char_end": 4779,
+          "score": 6.04,
           "relevance": "high",
           "section_fit": "neutral",
           "matched_terms": [
-            "mode",
-            "soft",
-            "strain"
+            "results",
+            "yield"
           ],
           "evidence_ids": [
-            "EV0006"
+            "EV0011"
           ]
         },
         {
-          "chunk_id": "E002",
-          "span_id": "S0059",
+          "chunk_id": "E001",
+          "span_id": "S0025",
           "heading": "Failure Mechanisms of Graphene under Tension",
           "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 23,
-          "line_end": 23,
-          "char_start": 7369,
-          "char_end": 7533,
-          "score": 6.783,
-          "relevance": "high",
+          "line_start": 14,
+          "line_end": 14,
+          "char_start": 2866,
+          "char_end": 2932,
+          "score": 4.177,
+          "relevance": "medium",
           "section_fit": "neutral",
           "matched_terms": [
-            "mode",
-            "soft",
-            "strain"
+            "mechanism"
           ],
           "evidence_ids": [
-            "EV0004"
+            "EV0012"
           ]
         },
         {
           "chunk_id": "E003",
-          "span_id": "S0125",
+          "span_id": "S0121",
           "heading": "Failure Mechanisms of Graphene under Tension",
           "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 48,
-          "line_end": 48,
-          "char_start": 15199,
-          "char_end": 15338,
-          "score": 6.607,
+          "line_start": 46,
+          "line_end": 46,
+          "char_start": 14642,
+          "char_end": 14813,
+          "score": 6.25,
           "relevance": "high",
           "section_fit": "neutral",
           "matched_terms": [
-            "mode",
-            "soft",
-            "strain"
+            "result",
+            "results"
           ],
           "evidence_ids": [
-            "EV0005"
+            "EV0013"
           ]
         },
         {
@@ -1450,123 +889,15 @@
           "line_end": 28,
           "char_start": 9686,
           "char_end": 9865,
-          "score": 6.599,
+          "score": 5.659,
           "relevance": "high",
           "section_fit": "neutral",
           "matched_terms": [
-            "mode",
-            "soft"
+            "results",
+            "yield"
           ],
           "evidence_ids": [
-            "EV0007"
-          ]
-        }
-      ],
-      "evidence_ids": [
-        "EV0022",
-        "EV0006",
-        "EV0004",
-        "EV0005",
-        "EV0007"
-      ],
-      "coverage": {
-        "facet_count": 0,
-        "covered_facets": [],
-        "missing_facets": [],
-        "coverage_ratio": 1.0
-      },
-      "retrieval_status": "acceptable"
-    },
-    {
-      "query_id": "custom-07",
-      "label": "Custom question 7",
-      "query": "theory experiment limitation in situ strained graphene",
-      "intent": "limitations",
-      "expanded_query": "theory experiment limitation in situ strained graphene limitation constraint challenge uncertainty requirement depends recommended viewing illumination angle substrate background assumption future supplementary information discussions evidence dependency unavailable",
-      "query_expansion_applied": true,
-      "language_bridge_applied": false,
-      "canonical_query_id": "custom-07",
-      "results": [
-        {
-          "chunk_id": "E003",
-          "span_id": "S0128",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 48,
-          "line_end": 48,
-          "char_start": 15605,
-          "char_end": 15713,
-          "score": 16.002,
-          "relevance": "high",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "challenge",
-            "graphene",
-            "situ",
-            "strained"
-          ],
-          "evidence_ids": [
-            "EV0023"
-          ]
-        },
-        {
-          "chunk_id": "E004",
-          "span_id": "S0143",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 50,
-          "line_end": 50,
-          "char_start": 17758,
-          "char_end": 17834,
-          "score": 12.932,
-          "relevance": "high",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "experiment",
-            "future",
-            "theory"
-          ],
-          "evidence_ids": [
-            "EV0024"
-          ]
-        },
-        {
-          "chunk_id": "E004",
-          "span_id": "S0137",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 50,
-          "line_end": 50,
-          "char_start": 16803,
-          "char_end": 16898,
-          "score": 7.431,
-          "relevance": "high",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "experiment",
-            "theory"
-          ],
-          "evidence_ids": [
-            "EV0025"
-          ]
-        },
-        {
-          "chunk_id": "E003",
-          "span_id": "S0113",
-          "heading": "Failure Mechanisms of Graphene under Tension",
-          "raw_heading": "Failure Mechanisms of Graphene under Tension",
-          "line_start": 43,
-          "line_end": 43,
-          "char_start": 13564,
-          "char_end": 13633,
-          "score": 7.249,
-          "relevance": "medium",
-          "section_fit": "neutral",
-          "matched_terms": [
-            "angle"
-          ],
-          "evidence_ids": [
-            "EV0026"
+            "EV0014"
           ]
         },
         {
@@ -1578,24 +909,193 @@
           "line_end": 30,
           "char_start": 10317,
           "char_end": 10410,
-          "score": 6.91,
-          "relevance": "high",
+          "score": 4.833,
+          "relevance": "medium",
           "section_fit": "neutral",
           "matched_terms": [
-            "graphene",
-            "strained"
+            "stability"
           ],
           "evidence_ids": [
-            "EV0027"
+            "EV0015"
+          ]
+        },
+        {
+          "chunk_id": "E004",
+          "span_id": "S0145",
+          "heading": "Failure Mechanisms of Graphene under Tension",
+          "raw_heading": "Failure Mechanisms of Graphene under Tension",
+          "line_start": 52,
+          "line_end": 52,
+          "char_start": 18015,
+          "char_end": 18139,
+          "score": 4.484,
+          "relevance": "medium",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "conclusion"
+          ],
+          "evidence_ids": [
+            "EV0016"
+          ]
+        },
+        {
+          "chunk_id": "E001",
+          "span_id": "S0032",
+          "heading": "Failure Mechanisms of Graphene under Tension",
+          "raw_heading": "Failure Mechanisms of Graphene under Tension",
+          "line_start": 16,
+          "line_end": 16,
+          "char_start": 4004,
+          "char_end": 4166,
+          "score": 3.919,
+          "relevance": "medium",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "demonstrate"
+          ],
+          "evidence_ids": [
+            "EV0002"
           ]
         }
       ],
       "evidence_ids": [
-        "EV0023",
-        "EV0024",
-        "EV0025",
-        "EV0026",
-        "EV0027"
+        "EV0010",
+        "EV0011",
+        "EV0012",
+        "EV0013",
+        "EV0014",
+        "EV0015",
+        "EV0016",
+        "EV0002"
+      ],
+      "coverage": {
+        "facet_count": 5,
+        "covered_facets": [
+          "yield_or_resolution",
+          "stability",
+          "mechanical_robustness"
+        ],
+        "missing_facets": [
+          "scale_or_throughput",
+          "optical_tunability"
+        ],
+        "coverage_ratio": 0.6
+      },
+      "retrieval_status": "acceptable"
+    },
+    {
+      "query_id": "limitations",
+      "intent": "limitations",
+      "label": "Limitations and uncertainty",
+      "query": "limitation limitations uncertainty uncertainties error errors challenge challenges future work assumption assumptions constraint requirement viewing condition 局限 限制 不确定性 误差 挑战 未来 假设 约束 条件",
+      "expanded_query": "limitation limitations uncertainty uncertainties error errors challenge challenges future work assumption assumptions constraint requirement viewing condition 局限 限制 不确定性 误差 挑战 未来 假设 约束 条件 limitation constraint challenge uncertainty requirement depends recommended viewing illumination angle substrate background assumption future supplementary information discussions evidence dependency unavailable",
+      "query_expansion_applied": true,
+      "language_bridge_applied": false,
+      "canonical_query_id": "limitations",
+      "results": [
+        {
+          "chunk_id": "E004",
+          "span_id": "S0143",
+          "heading": "Failure Mechanisms of Graphene under Tension",
+          "raw_heading": "Failure Mechanisms of Graphene under Tension",
+          "line_start": 50,
+          "line_end": 50,
+          "char_start": 17758,
+          "char_end": 17834,
+          "score": 9.242,
+          "relevance": "high",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "future",
+            "work"
+          ],
+          "evidence_ids": [
+            "EV0017"
+          ]
+        },
+        {
+          "chunk_id": "E003",
+          "span_id": "S0113",
+          "heading": "Failure Mechanisms of Graphene under Tension",
+          "raw_heading": "Failure Mechanisms of Graphene under Tension",
+          "line_start": 43,
+          "line_end": 43,
+          "char_start": 13564,
+          "char_end": 13633,
+          "score": 5.999,
+          "relevance": "medium",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "angle"
+          ],
+          "evidence_ids": [
+            "EV0018"
+          ]
+        },
+        {
+          "chunk_id": "E003",
+          "span_id": "S0128",
+          "heading": "Failure Mechanisms of Graphene under Tension",
+          "raw_heading": "Failure Mechanisms of Graphene under Tension",
+          "line_start": 48,
+          "line_end": 48,
+          "char_start": 15605,
+          "char_end": 15713,
+          "score": 4.652,
+          "relevance": "medium",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "challenge"
+          ],
+          "evidence_ids": [
+            "EV0019"
+          ]
+        },
+        {
+          "chunk_id": "E001",
+          "span_id": "S0024",
+          "heading": "Failure Mechanisms of Graphene under Tension",
+          "raw_heading": "Failure Mechanisms of Graphene under Tension",
+          "line_start": 14,
+          "line_end": 14,
+          "char_start": 2660,
+          "char_end": 2865,
+          "score": 3.799,
+          "relevance": "medium",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "errors"
+          ],
+          "evidence_ids": [
+            "EV0020"
+          ]
+        },
+        {
+          "chunk_id": "E002",
+          "span_id": "S0054",
+          "heading": "Failure Mechanisms of Graphene under Tension",
+          "raw_heading": "Failure Mechanisms of Graphene under Tension",
+          "line_start": 23,
+          "line_end": 23,
+          "char_start": 6805,
+          "char_end": 6921,
+          "score": 3.69,
+          "relevance": "medium",
+          "section_fit": "neutral",
+          "matched_terms": [
+            "work"
+          ],
+          "evidence_ids": [
+            "EV0021"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "EV0017",
+        "EV0018",
+        "EV0019",
+        "EV0020",
+        "EV0021"
       ],
       "coverage": {
         "facet_count": 4,
@@ -1614,24 +1114,24 @@
   "evidence_registry": [
     {
       "evidence_id": "EV0001",
-      "span_id": "S0101",
-      "chunk_id": "E003",
+      "span_id": "S0020",
+      "chunk_id": "E001",
       "source_lines": {
-        "start": 35,
-        "end": 35
+        "start": 14,
+        "end": 14
       },
       "source_chars": {
-        "start": 12112,
-        "end": 12266
+        "start": 1997,
+        "end": 2107
       },
       "modality": "body_text",
       "support_type": "direct_observation",
-      "text": "Therefore, the question arises as to when the elastic instability is the failure mode versus the $K_{1}$ -mode instability for a generic state of tension.",
+      "text": "This experiment reinvigorates the fundamental question of how and why a material fails under ideal conditions.",
       "query_ids": [
-        "custom-01"
+        "objective"
       ],
       "queries": [
-        "soft phonon mode graphene tension instability"
+        "abstract objective objectives purpose aim motivation research question 摘要 目的 目标 动机 研究问题"
       ]
     },
     {
@@ -1650,234 +1150,104 @@
       "support_type": "direct_observation",
       "text": "In this work, we demonstrate that a soft mode is responsible for a phase transition and the resulting mechanical failure of graphene in certain states of tension.",
       "query_ids": [
-        "custom-01",
-        "custom-02",
-        "custom-03",
-        "custom-04"
+        "objective",
+        "results"
       ],
       "queries": [
-        "soft phonon mode graphene tension instability",
-        "K1 mode graphene soft mode strain",
-        "strain-induced phase transition graphene soft mode",
-        "graphene failure mechanism under tension"
+        "abstract objective objectives purpose aim motivation research question 摘要 目的 目标 动机 研究问题",
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制"
       ]
     },
     {
       "evidence_id": "EV0003",
-      "span_id": "S0035",
-      "chunk_id": "E001",
-      "source_lines": {
-        "start": 16,
-        "end": 16
-      },
-      "source_chars": {
-        "start": 4630,
-        "end": 4779
-      },
-      "modality": "body_text",
-      "support_type": "direct_observation",
-      "text": "Furthermore, our results on graphene yield an optical phonon instability, as opposed to the acoustic instability observed previously in bulk systems.",
-      "query_ids": [
-        "custom-01",
-        "custom-05"
-      ],
-      "queries": [
-        "soft phonon mode graphene tension instability",
-        "critical strain optical phonon instability graphene"
-      ]
-    },
-    {
-      "evidence_id": "EV0004",
-      "span_id": "S0059",
-      "chunk_id": "E002",
-      "source_lines": {
-        "start": 23,
-        "end": 23
-      },
-      "source_chars": {
-        "start": 7369,
-        "end": 7533
-      },
-      "modality": "body_text",
-      "support_type": "author_inference",
-      "text": "An additional phonon calculation at a strain of $\\epsilon_{A} = 0.212$ (not pictured) indicates that the $K_{1}$ mode has become imaginary resulting in a soft mode.",
-      "query_ids": [
-        "custom-01",
-        "custom-02",
-        "custom-06"
-      ],
-      "queries": [
-        "soft phonon mode graphene tension instability",
-        "K1 mode graphene soft mode strain",
-        "double-well potential graphene strain soft mode"
-      ]
-    },
-    {
-      "evidence_id": "EV0005",
-      "span_id": "S0125",
-      "chunk_id": "E003",
-      "source_lines": {
-        "start": 48,
-        "end": 48
-      },
-      "source_chars": {
-        "start": 15199,
-        "end": 15338
-      },
-      "modality": "body_text",
-      "support_type": "measurement",
-      "text": "Our prediction of the soft $K_{1}$ mode may be directly verified experimentally by measuring the phonon dispersion as a function of strain.",
-      "query_ids": [
-        "custom-01",
-        "custom-02",
-        "custom-06"
-      ],
-      "queries": [
-        "soft phonon mode graphene tension instability",
-        "K1 mode graphene soft mode strain",
-        "double-well potential graphene strain soft mode"
-      ]
-    },
-    {
-      "evidence_id": "EV0006",
-      "span_id": "S0080",
-      "chunk_id": "E002",
-      "source_lines": {
-        "start": 28,
-        "end": 28
-      },
-      "source_chars": {
-        "start": 9535,
-        "end": 9685
-      },
-      "modality": "body_text",
-      "support_type": "direct_observation",
-      "text": "As the strain is increased, the mode continually becomes softer and eventually the curvature at zero amplitude goes to zero and the mode becomes soft.",
-      "query_ids": [
-        "custom-02",
-        "custom-06"
-      ],
-      "queries": [
-        "K1 mode graphene soft mode strain",
-        "double-well potential graphene strain soft mode"
-      ]
-    },
-    {
-      "evidence_id": "EV0007",
-      "span_id": "S0081",
-      "chunk_id": "E002",
-      "source_lines": {
-        "start": 28,
-        "end": 28
-      },
-      "source_chars": {
-        "start": 9686,
-        "end": 9865
-      },
-      "modality": "body_text",
-      "support_type": "direct_observation",
-      "text": "This analysis predicts the soft mode to occur at $\\epsilon_{A}=0.213$ , independently confirming the results of our phonons which yield a soft mode at $\\epsilon_{A}=0.205-0.212$ .",
-      "query_ids": [
-        "custom-02",
-        "custom-06"
-      ],
-      "queries": [
-        "K1 mode graphene soft mode strain",
-        "double-well potential graphene strain soft mode"
-      ]
-    },
-    {
-      "evidence_id": "EV0008",
-      "span_id": "S0031",
-      "chunk_id": "E001",
-      "source_lines": {
-        "start": 16,
-        "end": 16
-      },
-      "source_chars": {
-        "start": 3759,
-        "end": 4003
-      },
-      "modality": "body_text",
-      "support_type": "direct_observation",
-      "text": "There are numerous structural phase transitions in which the two phases are directly connected by a soft mode, and the concept of the soft mode gained prominence in the context of elucidating the ferroelectric transition in $BaTiO_{3}$ [11,12].",
-      "query_ids": [
-        "custom-03"
-      ],
-      "queries": [
-        "strain-induced phase transition graphene soft mode"
-      ]
-    },
-    {
-      "evidence_id": "EV0009",
-      "span_id": "S0093",
-      "chunk_id": "E003",
-      "source_lines": {
-        "start": 30,
-        "end": 30
-      },
-      "source_chars": {
-        "start": 11353,
-        "end": 11539
-      },
-      "modality": "body_text",
-      "support_type": "author_inference",
-      "text": "As a result, the soft $K_{1}$ mode can be seen not only as the precursor to a phase transition as in soft-mode theory, but also as a soft-mode which leads directly to mechanical failure.",
-      "query_ids": [
-        "custom-03"
-      ],
-      "queries": [
-        "strain-induced phase transition graphene soft mode"
-      ]
-    },
-    {
-      "evidence_id": "EV0010",
-      "span_id": "S0060",
-      "chunk_id": "E002",
-      "source_lines": {
-        "start": 23,
-        "end": 23
-      },
-      "source_chars": {
-        "start": 7534,
-        "end": 7659
-      },
-      "modality": "body_text",
-      "support_type": "direct_observation",
-      "text": "This implies that the structure has become unstable and will undergo a phase transition by distorting along the $K_{1}$ mode.",
-      "query_ids": [
-        "custom-03"
-      ],
-      "queries": [
-        "strain-induced phase transition graphene soft mode"
-      ]
-    },
-    {
-      "evidence_id": "EV0011",
-      "span_id": "S0010",
+      "span_id": "S0008",
       "chunk_id": "E001",
       "source_lines": {
         "start": 8,
         "end": 8
       },
       "source_chars": {
-        "start": 644,
-        "end": 867
+        "start": 347,
+        "end": 492
       },
       "modality": "body_text",
       "support_type": "direct_observation",
-      "text": "One failure mechanism is a novel soft-mode phonon instability of the $K_{1}$ mode, whereby the graphene sheet undergoes a phase transition and is driven towards isolated hexagonal rings resulting in a reduction of strength.",
+      "text": "Recent experiments established pure graphene as the strongest material known to mankind, further invigorating the question of how graphene fails.",
       "query_ids": [
-        "custom-03",
-        "custom-05"
+        "objective"
       ],
       "queries": [
-        "strain-induced phase transition graphene soft mode",
-        "critical strain optical phonon instability graphene"
+        "abstract objective objectives purpose aim motivation research question 摘要 目的 目标 动机 研究问题"
       ]
     },
     {
-      "evidence_id": "EV0012",
+      "evidence_id": "EV0004",
+      "span_id": "S0101",
+      "chunk_id": "E003",
+      "source_lines": {
+        "start": 35,
+        "end": 35
+      },
+      "source_chars": {
+        "start": 12112,
+        "end": 12266
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "Therefore, the question arises as to when the elastic instability is the failure mode versus the $K_{1}$ -mode instability for a generic state of tension.",
+      "query_ids": [
+        "objective"
+      ],
+      "queries": [
+        "abstract objective objectives purpose aim motivation research question 摘要 目的 目标 动机 研究问题"
+      ]
+    },
+    {
+      "evidence_id": "EV0005",
+      "span_id": "S0117",
+      "chunk_id": "E003",
+      "source_lines": {
+        "start": 46,
+        "end": 46
+      },
+      "source_chars": {
+        "start": 13973,
+        "end": 14186
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "This analysis is not yet exhaustive due to the fact that graphene is anisotropic, and therefore shear strain would have to be included in the present coordinate system to enumerate every possible state of tension.",
+      "query_ids": [
+        "objective"
+      ],
+      "queries": [
+        "abstract objective objectives purpose aim motivation research question 摘要 目的 目标 动机 研究问题"
+      ]
+    },
+    {
+      "evidence_id": "EV0006",
+      "span_id": "S0018",
+      "chunk_id": "E001",
+      "source_lines": {
+        "start": 14,
+        "end": 14
+      },
+      "source_chars": {
+        "start": 1758,
+        "end": 1871
+      },
+      "modality": "body_text",
+      "support_type": "measurement",
+      "text": "Recently, the measurement of ideal strength has been achieved in the case of graphene [2], a monolayer of carbon.",
+      "query_ids": [
+        "methods"
+      ],
+      "queries": [
+        "method methods methodology experiment experimental computational simulation sample materials measurement setup parameter condition 方法 实验 计算 模拟 样品 材料 测量 参数 条件"
+      ]
+    },
+    {
+      "evidence_id": "EV0007",
       "span_id": "S0041",
       "chunk_id": "E002",
       "source_lines": {
@@ -1892,324 +1262,170 @@
       "support_type": "simulation",
       "text": "All DFT calculations were performed using the Vienna ab initio simulation program (VASP) [18].",
       "query_ids": [
-        "custom-04"
+        "methods"
       ],
       "queries": [
-        "graphene failure mechanism under tension"
+        "method methods methodology experiment experimental computational simulation sample materials measurement setup parameter condition 方法 实验 计算 模拟 样品 材料 测量 参数 条件"
       ]
     },
     {
-      "evidence_id": "EV0013",
-      "span_id": "S0020",
-      "chunk_id": "E001",
-      "source_lines": {
-        "start": 14,
-        "end": 14
-      },
-      "source_chars": {
-        "start": 1997,
-        "end": 2107
-      },
-      "modality": "body_text",
-      "support_type": "direct_observation",
-      "text": "This experiment reinvigorates the fundamental question of how and why a material fails under ideal conditions.",
-      "query_ids": [
-        "custom-04"
-      ],
-      "queries": [
-        "graphene failure mechanism under tension"
-      ]
-    },
-    {
-      "evidence_id": "EV0014",
-      "span_id": "S0009",
-      "chunk_id": "E001",
-      "source_lines": {
-        "start": 8,
-        "end": 8
-      },
-      "source_chars": {
-        "start": 493,
-        "end": 643
-      },
-      "modality": "body_text",
-      "support_type": "direct_observation",
-      "text": "Using density functional theory, we reveal the mechanisms of mechanical failure of pure graphene under a generic state of tension at zero temperature.",
-      "query_ids": [
-        "custom-04"
-      ],
-      "queries": [
-        "graphene failure mechanism under tension"
-      ]
-    },
-    {
-      "evidence_id": "EV0015",
-      "span_id": "S0145",
-      "chunk_id": "E004",
-      "source_lines": {
-        "start": 52,
-        "end": 52
-      },
-      "source_chars": {
-        "start": 18015,
-        "end": 18139
-      },
-      "modality": "body_text",
-      "support_type": "direct_observation",
-      "text": "In conclusion, we have determined the failure mechanisms of pure graphene in a generic state of tension at zero temperature.",
-      "query_ids": [
-        "custom-04"
-      ],
-      "queries": [
-        "graphene failure mechanism under tension"
-      ]
-    },
-    {
-      "evidence_id": "EV0016",
-      "span_id": "S0036",
+      "evidence_id": "EV0008",
+      "span_id": "S0040",
       "chunk_id": "E002",
       "source_lines": {
         "start": 18,
         "end": 18
       },
       "source_chars": {
-        "start": 4781,
-        "end": 5008
+        "start": 5326,
+        "end": 5465
       },
       "modality": "body_text",
       "support_type": "direct_observation",
-      "text": "In the case of graphene, previous phonon calculations have determined that the elastic instability is the mechanism of failure for uniaxial strain in the armchair or zigzag directions [15] [i.e., $x$ and $y$ directions in Figs.",
+      "text": "We compute the phonons using the displacement method [17], where the forces are generated using DFT within the local density approximation.",
       "query_ids": [
-        "custom-04",
-        "custom-05"
+        "methods"
       ],
       "queries": [
-        "graphene failure mechanism under tension",
-        "critical strain optical phonon instability graphene"
+        "method methods methodology experiment experimental computational simulation sample materials measurement setup parameter condition 方法 实验 计算 模拟 样品 材料 测量 参数 条件"
       ]
     },
     {
-      "evidence_id": "EV0017",
-      "span_id": "S0129",
-      "chunk_id": "E003",
+      "evidence_id": "EV0009",
+      "span_id": "S0045",
+      "chunk_id": "E002",
       "source_lines": {
-        "start": 48,
-        "end": 48
+        "start": 18,
+        "end": 18
       },
       "source_chars": {
-        "start": 15714,
-        "end": 15881
+        "start": 6004,
+        "end": 6172
       },
       "modality": "body_text",
-      "support_type": "measurement",
-      "text": "Another more indirect probe would be Raman spectroscopy [21], which has already been performed for graphene under uniaxial tension [24] in the regime of small strains.",
+      "support_type": "direct_observation",
+      "text": "Previous work has established that the displacement method is accurate for unstrained graphene [20] when using a $8 \\times 8$ supercell to generate the force constants.",
       "query_ids": [
-        "custom-04"
+        "methods"
       ],
       "queries": [
-        "graphene failure mechanism under tension"
+        "method methods methodology experiment experimental computational simulation sample materials measurement setup parameter condition 方法 实验 计算 模拟 样品 材料 测量 参数 条件"
       ]
     },
     {
-      "evidence_id": "EV0018",
-      "span_id": "S0019",
+      "evidence_id": "EV0010",
+      "span_id": "S0140",
+      "chunk_id": "E004",
+      "source_lines": {
+        "start": 50,
+        "end": 50
+      },
+      "source_chars": {
+        "start": 17217,
+        "end": 17415
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "Given that LDA overpredicts the energy of the $K_{1}$ mode in the unstrained case [6,7], the exact result is likely to yield an even smaller breaking strain even farther from the experimental value.",
+      "query_ids": [
+        "methods",
+        "results"
+      ],
+      "queries": [
+        "method methods methodology experiment experimental computational simulation sample materials measurement setup parameter condition 方法 实验 计算 模拟 样品 材料 测量 参数 条件",
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制"
+      ]
+    },
+    {
+      "evidence_id": "EV0011",
+      "span_id": "S0035",
+      "chunk_id": "E001",
+      "source_lines": {
+        "start": 16,
+        "end": 16
+      },
+      "source_chars": {
+        "start": 4630,
+        "end": 4779
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "Furthermore, our results on graphene yield an optical phonon instability, as opposed to the acoustic instability observed previously in bulk systems.",
+      "query_ids": [
+        "results"
+      ],
+      "queries": [
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制"
+      ]
+    },
+    {
+      "evidence_id": "EV0012",
+      "span_id": "S0025",
       "chunk_id": "E001",
       "source_lines": {
         "start": 14,
         "end": 14
       },
       "source_chars": {
-        "start": 1872,
-        "end": 1996
+        "start": 2866,
+        "end": 2932
       },
       "modality": "body_text",
       "support_type": "direct_observation",
-      "text": "Using nanoindentation, Lee et al. strained graphene until failure under conditions which appear to be very nearly ideal [3].",
+      "text": "In this study, we use DFT to determine the mechanism of mechanical",
       "query_ids": [
-        "custom-04"
+        "results"
       ],
       "queries": [
-        "graphene failure mechanism under tension"
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制"
       ]
     },
     {
-      "evidence_id": "EV0019",
-      "span_id": "S0050",
-      "chunk_id": "E002",
-      "source_lines": {
-        "start": 21,
-        "end": 21
-      },
-      "source_chars": {
-        "start": 6438,
-        "end": 6496
-      },
-      "modality": "body_text",
-      "support_type": "direct_observation",
-      "text": "The in-plane phonons of graphene under equibiaxial strain.",
-      "query_ids": [
-        "custom-04"
-      ],
-      "queries": [
-        "graphene failure mechanism under tension"
-      ]
-    },
-    {
-      "evidence_id": "EV0020",
-      "span_id": "S0100",
+      "evidence_id": "EV0013",
+      "span_id": "S0121",
       "chunk_id": "E003",
       "source_lines": {
-        "start": 35,
-        "end": 35
+        "start": 46,
+        "end": 46
       },
       "source_chars": {
-        "start": 11886,
-        "end": 12111
+        "start": 14642,
+        "end": 14813
       },
       "modality": "body_text",
       "support_type": "direct_observation",
-      "text": "The above analysis has revealed that for equibiaxial strain the mode of failure of graphene is radically different than the usual elastic instability which is observed for uniaxial strain in the zigzag or armchair directions.",
+      "text": "Conveniently, all of the results for the different rotations are bounded by the envelope curves created by superimposing the original result and the $15^{\\circ}$ rotation.",
       "query_ids": [
-        "custom-05"
+        "results"
       ],
       "queries": [
-        "critical strain optical phonon instability graphene"
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制"
       ]
     },
     {
-      "evidence_id": "EV0021",
-      "span_id": "S0146",
-      "chunk_id": "E004",
-      "source_lines": {
-        "start": 52,
-        "end": 52
-      },
-      "source_chars": {
-        "start": 18140,
-        "end": 18318
-      },
-      "modality": "body_text",
-      "support_type": "direct_observation",
-      "text": "The usual elastic instability causes failure for strains near uniaxial while a novel soft-mode phonon instability of the $K_{1}$ mode causes failure for strains near equibiaxial.",
-      "query_ids": [
-        "custom-05"
-      ],
-      "queries": [
-        "critical strain optical phonon instability graphene"
-      ]
-    },
-    {
-      "evidence_id": "EV0022",
-      "span_id": "S0082",
+      "evidence_id": "EV0014",
+      "span_id": "S0081",
       "chunk_id": "E002",
       "source_lines": {
         "start": 28,
         "end": 28
       },
       "source_chars": {
-        "start": 9866,
-        "end": 9984
+        "start": 9686,
+        "end": 9865
       },
       "modality": "body_text",
       "support_type": "direct_observation",
-      "text": "Further strain results in a double-well potential, where the well depth and amplitude increase with increasing strain.",
+      "text": "This analysis predicts the soft mode to occur at $\\epsilon_{A}=0.213$ , independently confirming the results of our phonons which yield a soft mode at $\\epsilon_{A}=0.205-0.212$ .",
       "query_ids": [
-        "custom-06"
+        "results"
       ],
       "queries": [
-        "double-well potential graphene strain soft mode"
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制"
       ]
     },
     {
-      "evidence_id": "EV0023",
-      "span_id": "S0128",
-      "chunk_id": "E003",
-      "source_lines": {
-        "start": 48,
-        "end": 48
-      },
-      "source_chars": {
-        "start": 15605,
-        "end": 15713
-      },
-      "modality": "body_text",
-      "support_type": "direct_observation",
-      "text": "The challenge in this particular case would be the fact that the graphene would have to be strained in situ.",
-      "query_ids": [
-        "custom-07"
-      ],
-      "queries": [
-        "theory experiment limitation in situ strained graphene"
-      ]
-    },
-    {
-      "evidence_id": "EV0024",
-      "span_id": "S0143",
-      "chunk_id": "E004",
-      "source_lines": {
-        "start": 50,
-        "end": 50
-      },
-      "source_chars": {
-        "start": 17758,
-        "end": 17834
-      },
-      "modality": "body_text",
-      "support_type": "direct_observation",
-      "text": "This issue can be resolved by bridging theory and experiment in future work.",
-      "query_ids": [
-        "custom-07"
-      ],
-      "queries": [
-        "theory experiment limitation in situ strained graphene"
-      ]
-    },
-    {
-      "evidence_id": "EV0025",
-      "span_id": "S0137",
-      "chunk_id": "E004",
-      "source_lines": {
-        "start": 50,
-        "end": 50
-      },
-      "source_chars": {
-        "start": 16803,
-        "end": 16898
-      },
-      "modality": "body_text",
-      "support_type": "direct_observation",
-      "text": "Any and all of these differences may be linked to the difference between theory and experiment.",
-      "query_ids": [
-        "custom-07"
-      ],
-      "queries": [
-        "theory experiment limitation in situ strained graphene"
-      ]
-    },
-    {
-      "evidence_id": "EV0026",
-      "span_id": "S0113",
-      "chunk_id": "E003",
-      "source_lines": {
-        "start": 43,
-        "end": 43
-      },
-      "source_chars": {
-        "start": 13564,
-        "end": 13633
-      },
-      "modality": "body_text",
-      "support_type": "direct_observation",
-      "text": "A given direction of strain corresponds to an angle $\\theta = 0-90$ .",
-      "query_ids": [
-        "custom-07"
-      ],
-      "queries": [
-        "theory experiment limitation in situ strained graphene"
-      ]
-    },
-    {
-      "evidence_id": "EV0027",
+      "evidence_id": "EV0015",
       "span_id": "S0085",
       "chunk_id": "E003",
       "source_lines": {
@@ -2224,10 +1440,142 @@
       "support_type": "direct_observation",
       "text": "Therefore, we must explore the strength and stability of this new phase of strained graphene.",
       "query_ids": [
-        "custom-07"
+        "results"
       ],
       "queries": [
-        "theory experiment limitation in situ strained graphene"
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制"
+      ]
+    },
+    {
+      "evidence_id": "EV0016",
+      "span_id": "S0145",
+      "chunk_id": "E004",
+      "source_lines": {
+        "start": 52,
+        "end": 52
+      },
+      "source_chars": {
+        "start": 18015,
+        "end": 18139
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "In conclusion, we have determined the failure mechanisms of pure graphene in a generic state of tension at zero temperature.",
+      "query_ids": [
+        "results"
+      ],
+      "queries": [
+        "result results finding findings discussion conclusion conclusions performance value observation mechanism 结果 发现 讨论 结论 性能 数值 观测 机制"
+      ]
+    },
+    {
+      "evidence_id": "EV0017",
+      "span_id": "S0143",
+      "chunk_id": "E004",
+      "source_lines": {
+        "start": 50,
+        "end": 50
+      },
+      "source_chars": {
+        "start": 17758,
+        "end": 17834
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "This issue can be resolved by bridging theory and experiment in future work.",
+      "query_ids": [
+        "limitations"
+      ],
+      "queries": [
+        "limitation limitations uncertainty uncertainties error errors challenge challenges future work assumption assumptions constraint requirement viewing condition 局限 限制 不确定性 误差 挑战 未来 假设 约束 条件"
+      ]
+    },
+    {
+      "evidence_id": "EV0018",
+      "span_id": "S0113",
+      "chunk_id": "E003",
+      "source_lines": {
+        "start": 43,
+        "end": 43
+      },
+      "source_chars": {
+        "start": 13564,
+        "end": 13633
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "A given direction of strain corresponds to an angle $\\theta = 0-90$ .",
+      "query_ids": [
+        "limitations"
+      ],
+      "queries": [
+        "limitation limitations uncertainty uncertainties error errors challenge challenges future work assumption assumptions constraint requirement viewing condition 局限 限制 不确定性 误差 挑战 未来 假设 约束 条件"
+      ]
+    },
+    {
+      "evidence_id": "EV0019",
+      "span_id": "S0128",
+      "chunk_id": "E003",
+      "source_lines": {
+        "start": 48,
+        "end": 48
+      },
+      "source_chars": {
+        "start": 15605,
+        "end": 15713
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "The challenge in this particular case would be the fact that the graphene would have to be strained in situ.",
+      "query_ids": [
+        "limitations"
+      ],
+      "queries": [
+        "limitation limitations uncertainty uncertainties error errors challenge challenges future work assumption assumptions constraint requirement viewing condition 局限 限制 不确定性 误差 挑战 未来 假设 约束 条件"
+      ]
+    },
+    {
+      "evidence_id": "EV0020",
+      "span_id": "S0024",
+      "chunk_id": "E001",
+      "source_lines": {
+        "start": 14,
+        "end": 14
+      },
+      "source_chars": {
+        "start": 2660,
+        "end": 2865
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "Although quantitative errors are still to be expected, in the vicinity of $10\\%$ for certain phonons of graphene [6,7], one can reliably explore the mechanical properties of graphene from first principles.",
+      "query_ids": [
+        "limitations"
+      ],
+      "queries": [
+        "limitation limitations uncertainty uncertainties error errors challenge challenges future work assumption assumptions constraint requirement viewing condition 局限 限制 不确定性 误差 挑战 未来 假设 约束 条件"
+      ]
+    },
+    {
+      "evidence_id": "EV0021",
+      "span_id": "S0054",
+      "chunk_id": "E002",
+      "source_lines": {
+        "start": 23,
+        "end": 23
+      },
+      "source_chars": {
+        "start": 6805,
+        "end": 6921
+      },
+      "modality": "body_text",
+      "support_type": "direct_observation",
+      "text": "In Fig. 1, we reproduce the phonons for unstrained graphene, showing excellent agreement with previous work [15,20].",
+      "query_ids": [
+        "limitations"
+      ],
+      "queries": [
+        "limitation limitations uncertainty uncertainties error errors challenge challenges future work assumption assumptions constraint requirement viewing condition 局限 限制 不确定性 误差 挑战 未来 假设 约束 条件"
       ]
     }
   ],

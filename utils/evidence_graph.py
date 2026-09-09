@@ -375,23 +375,25 @@ def _support_type(text: str, heading: str, modality: str) -> str:
     return "direct_observation"
 
 
-def search_spans(
-    markdown_or_path: str | Path,
+def search_graph(
+    graph: dict[str, Any],
     query: str,
     top_k: int = 5,
     *,
     intent: str | None = None,
-    max_chars: int = 6000,
 ) -> list[dict[str, Any]]:
-    """Rank atomic text spans and return the matching passage, never a chunk prefix."""
+    """Rank atomic spans from an already-built document graph.
+
+    This is the reusable core of ``search_spans``; callers that already hold a
+    graph (for example a workflow that builds it once) can avoid re-parsing the
+    Markdown for every query.
+    """
 
     if top_k < 1:
         raise ValueError("top_k must be at least 1")
     query_terms = terms(query)
     if not query_terms:
         raise ValueError("query must contain at least one searchable term")
-    markdown = _load_markdown(markdown_or_path)
-    graph = build_document_graph(markdown, max_chars=max_chars)
     candidates = [
         span for span in graph["spans"]
         if span["modality"] not in {"heading", "image_ref", "formula", "bibliography", "boilerplate"}
@@ -507,3 +509,17 @@ def search_spans(
             selected.append(item)
             selected_spans.add(item["span_id"])
     return selected[:top_k]
+
+
+def search_spans(
+    markdown_or_path: str | Path,
+    query: str,
+    top_k: int = 5,
+    *,
+    intent: str | None = None,
+    max_chars: int = 6000,
+) -> list[dict[str, Any]]:
+    """Rank atomic text spans and return the matching passage, never a chunk prefix."""
+    markdown = _load_markdown(markdown_or_path)
+    graph = build_document_graph(markdown, max_chars=max_chars)
+    return search_graph(graph, query, top_k=top_k, intent=intent)

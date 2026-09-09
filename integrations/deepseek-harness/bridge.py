@@ -4,12 +4,19 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import sys
 from pathlib import Path
 from typing import Any
 
 
-PROJECT_ROOT = Path("/home/simcrq/0_Project/paperworkflow").resolve()
+# The project root is derived from this file's own location
+# (integrations/deepseek-harness -> project root) and can be overridden with
+# PAPERWORKFLOW_ROOT when the plugin is installed from a different checkout.
+PROJECT_ROOT = Path(
+    os.environ.get("PAPERWORKFLOW_ROOT")
+    or Path(__file__).resolve().parent.parent.parent
+).resolve()
 INPUT_ROOT = PROJECT_ROOT / "INput"
 sys.path.insert(0, str(PROJECT_ROOT))
 

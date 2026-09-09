@@ -5,6 +5,10 @@ from loguru import logger
 class LocalPDFProcessor:
     def __init__(self, config):
         self.config = config
+        mineru = config.get('api', {}).get('mineru', {})
+        self.command = mineru.get('local_command', 'mineru')
+        self.backend = mineru.get('local_backend', 'hybrid-http-client')
+        self.backend_url = mineru.get('local_backend_url', 'http://127.0.0.1:30000')
 
     def process(self, pdf_path, output_dir):
         """
@@ -14,15 +18,13 @@ class LocalPDFProcessor:
         """
         # 确保 output_dir 是绝对路径
         abs_output_dir = os.path.abspath(output_dir).replace('\\', '/')
-        
-        # 这里的命令参数可能需要根据实际 config 调整，目前按照原代码硬编码
-        # 如果 config 中有更多配置，可以在这里读取
+
         cmd = [
-            "mineru", 
-            "-p", pdf_path, 
+            self.command,
+            "-p", pdf_path,
             "-o", abs_output_dir,
-            "-b", "hybrid-http-client",
-            "-u", "http://127.0.0.1:30000"
+            "-b", self.backend,
+            "-u", self.backend_url,
         ]
         logger.info(f"Running command: {' '.join(cmd)}")
         
